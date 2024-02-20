@@ -1,0 +1,136 @@
+[gd_scene load_steps=4 format=3 uid="uid://b44hse3febfl4"]
+
+[ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://Main_Theme.tres" id="1_1diit"]
+[ext_resource type="Script" path="res://DescriptionBox.gd" id="2_1hh7y"]
+[ext_resource type="Script" path="res://ItemDescriptionData.gd" id="3_v16wl"]
+
+[node name="InfoBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -552.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1diit")
+script = ExtResource("2_1hh7y")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(600, 900)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_v16wl")
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer"]
+custom_minimum_size = Vector2(450, 900)
+layout_mode = 2
+color = Color(0.313726, 0.298039, 0.298039, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/ColorRect"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 305.0
+offset_bottom = 533.0
+
+[node name="Quest Name" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Living High is Not a Crime
+Part 1"
+autowrap_mode = 2
+
+[node name="Quest Type" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "Pickup"
+autowrap_mode = 2
+
+[node name="Space" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="RequirementHeader" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Requirements:"
+autowrap_mode = 2
+
+[node name="Requirements" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "• 2 Bronze Lions
+• 2 Horse Figurines
+• 2 Cat Figurines
+• 1 Roler
+• 1 Golden Egg"
+autowrap_mode = 2
+
+[node name="Margin" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="Previous" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Previous:"
+autowrap_mode = 2
+
+[node name="Requirements2" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "The Blood of War pt. 1
+"
+autowrap_mode = 2
+
+[node name="Requirements3" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Sew it Good pt. 3"
+autowrap_mode = 2
+
+[node name="Margin2" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="Next" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Leads To:"
+autowrap_mode = 2
+
+[node name="Requirements4" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Living High is Not a Crime pt. 2"
+autowrap_mode = 2
+
+[node name="Space2" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="ScrollContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "Wiki Link"

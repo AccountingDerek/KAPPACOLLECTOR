@@ -1,0 +1,292 @@
+[gd_scene load_steps=24 format=3 uid="uid://baelcd5jeu4is"]
+
+[ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://Main_Theme.tres" id="1_4t2og"]
+[ext_resource type="Texture2D" uid="uid://otp1blkm1wkl" path="res://Icons/Prapor_Portrait.png" id="1_081cm"]
+[ext_resource type="PackedScene" uid="uid://bc0b7cix0ut0p" path="res://trader_button.tscn" id="1_jx004"]
+[ext_resource type="Script" path="res://main_screen.gd" id="2_ke3q4"]
+[ext_resource type="Texture2D" uid="uid://duo05283rga87" path="res://Icons/Therapist_Portrait.png" id="2_nj7nl"]
+[ext_resource type="Texture2D" uid="uid://b1k74opx5xmbq" path="res://Icons/Skier_Portrait.png" id="3_o2t25"]
+[ext_resource type="Texture2D" uid="uid://5lbrsi30p1kf" path="res://Icons/Peacekeeper_Portrait.png" id="4_ctom5"]
+[ext_resource type="Texture2D" uid="uid://kx6als4ehb5y" path="res://Icons/Mechanic_Portrait.png" id="5_eirne"]
+[ext_resource type="Texture2D" uid="uid://k6mtjw2joevu" path="res://Icons/Ragman_Portrait.png" id="6_ygfps"]
+[ext_resource type="Texture2D" uid="uid://6sfq5ck6y6ny" path="res://Icons/Jaeger_Portrait.png" id="7_8b2pv"]
+[ext_resource type="Texture2D" uid="uid://bl3copdd2c7g7" path="res://Icons/items.png" id="8_rhb1s"]
+[ext_resource type="Script" path="res://Scripts/PData.gd" id="10_fyte4"]
+[ext_resource type="Script" path="res://TraderScreen.gd" id="10_xn61f"]
+[ext_resource type="Script" path="res://Scripts/TData.gd" id="11_evlcu"]
+[ext_resource type="PackedScene" uid="uid://b44hse3febfl4" path="res://Description.tscn" id="12_6u7v6"]
+[ext_resource type="Script" path="res://Scripts/SData.gd" id="12_7218s"]
+[ext_resource type="Script" path="res://Scripts/PKData.gd" id="13_87w0u"]
+[ext_resource type="Script" path="res://Scripts/MData.gd" id="14_idi4n"]
+[ext_resource type="Script" path="res://Scripts/RData.gd" id="15_3n5bu"]
+[ext_resource type="Script" path="res://Scripts/JData.gd" id="16_54unl"]
+[ext_resource type="Script" path="res://Scripts/ItemsData.gd" id="17_nimxb"]
+[ext_resource type="AudioStream" uid="uid://bvpvhcmnku0ba" path="res://youtube_flSflAJ-FwA_audio.mp3" id="21_53ao2"]
+[ext_resource type="AudioStream" uid="uid://bipx2onoj3qp8" path="res://youtube_lTjUYYsxZ-4_audio.mp3" id="22_7vatw"]
+
+[node name="MainScreen" type="Control" node_paths=PackedStringArray("complete_trader_sound", "kappa_acquired")]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_4t2og")
+script = ExtResource("2_ke3q4")
+complete_trader_sound = NodePath("Trader Complete")
+kappa_acquired = NodePath("Kappa Acquired")
+
+[node name="Prapor" parent="." node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(64, 64)
+texture = ExtResource("1_081cm")
+screen = NodePath("../PraporScreen")
+
+[node name="Therapist" parent="Prapor" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("2_nj7nl")
+screen = NodePath("../../TherapistScreen")
+
+[node name="Skier" parent="Prapor/Therapist" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("3_o2t25")
+screen = NodePath("../../../SkierScreen")
+
+[node name="Peacekeeper" parent="Prapor/Therapist/Skier" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("4_ctom5")
+screen = NodePath("../../../../PeacekeeperScreen")
+
+[node name="Mechanic" parent="Prapor/Therapist/Skier/Peacekeeper" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("5_eirne")
+screen = NodePath("../../../../../MechanicScreen")
+
+[node name="Ragman" parent="Prapor/Therapist/Skier/Peacekeeper/Mechanic" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("6_ygfps")
+screen = NodePath("../../../../../../RagmanScreen")
+
+[node name="Jaeger" parent="Prapor/Therapist/Skier/Peacekeeper/Mechanic/Ragman" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("7_8b2pv")
+screen = NodePath("../../../../../../../JaegerScreen")
+
+[node name="Items" parent="Prapor/Therapist/Skier/Peacekeeper/Mechanic/Ragman/Jaeger" node_paths=PackedStringArray("screen") instance=ExtResource("1_jx004")]
+position = Vector2(128, 0)
+texture = ExtResource("8_rhb1s")
+screen = NodePath("../../../../../../../../ItemScreen")
+
+[node name="PraporScreen" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 776.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="PraporScreen" type="Control" parent="PraporScreen"]
+clip_contents = true
+custom_minimum_size = Vector2(768, 520)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="PraporScreen/PraporScreen"]
+script = ExtResource("10_fyte4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PraporScreen/PraporScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PraporScreen/PraporScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="TherapistScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 768.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="TherapistScreen" type="Control" parent="TherapistScreen"]
+custom_minimum_size = Vector2(768, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="TherapistScreen/TherapistScreen"]
+script = ExtResource("11_evlcu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TherapistScreen/TherapistScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TherapistScreen/TherapistScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="SkierScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 768.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="SkierScreen" type="Control" parent="SkierScreen"]
+custom_minimum_size = Vector2(768, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="SkierScreen/SkierScreen"]
+script = ExtResource("12_7218s")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SkierScreen/SkierScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SkierScreen/SkierScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="PeacekeeperScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 732.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="PeacekeeperScreen" type="Control" parent="PeacekeeperScreen"]
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="PeacekeeperScreen/PeacekeeperScreen"]
+script = ExtResource("13_87w0u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PeacekeeperScreen/PeacekeeperScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PeacekeeperScreen/PeacekeeperScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="MechanicScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 768.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="MechanicScreen" type="Control" parent="MechanicScreen"]
+custom_minimum_size = Vector2(768, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="MechanicScreen/MechanicScreen"]
+script = ExtResource("14_idi4n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MechanicScreen/MechanicScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MechanicScreen/MechanicScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="RagmanScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 732.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="RagmanScreen" type="Control" parent="RagmanScreen"]
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="RagmanScreen/RagmanScreen"]
+script = ExtResource("15_3n5bu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RagmanScreen/RagmanScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RagmanScreen/RagmanScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="JaegerScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 768.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="JaegerScreen" type="Control" parent="JaegerScreen"]
+custom_minimum_size = Vector2(768, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="JaegerScreen/JaegerScreen"]
+script = ExtResource("16_54unl")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="JaegerScreen/JaegerScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="JaegerScreen/JaegerScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="ItemScreen" type="ScrollContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(776, 0)
+layout_mode = 0
+offset_top = 130.0
+offset_right = 768.0
+offset_bottom = 750.0
+horizontal_scroll_mode = 0
+
+[node name="ItemScreen" type="Control" parent="ItemScreen"]
+custom_minimum_size = Vector2(768, 0)
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("10_xn61f")
+
+[node name="Data" type="Node" parent="ItemScreen/ItemScreen"]
+script = ExtResource("17_nimxb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ItemScreen/ItemScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ItemScreen/ItemScreen/HBoxContainer"]
+layout_mode = 2
+
+[node name="InfoBox" parent="." instance=ExtResource("12_6u7v6")]
+layout_mode = 1
+offset_left = 783.0
+offset_top = 129.0
+offset_right = 783.0
+offset_bottom = 279.0
+
+[node name="Trader Complete" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_53ao2")
+
+[node name="Kappa Acquired" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_7vatw")
