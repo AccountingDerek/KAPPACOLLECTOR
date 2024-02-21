@@ -1,27 +1,6 @@
+class_name RESET
 extends Node
-enum traders{
-	PRAPOR,
-	THERAPIST,
-	SKIER,
-	PEACEKEEPER,
-	MECHANIC,
-	RAGMAN,
-	JAEGER,
-	ITEMS
-}
-
-var istradercomplete:= {
-	traders.PRAPOR : false,
-	traders.THERAPIST : false,
-	traders.SKIER : false,
-	traders.PEACEKEEPER : false,
-	traders.MECHANIC : false,
-	traders.RAGMAN : false,
-	traders.JAEGER : false,
-	traders.ITEMS : false,
-}
-
-var TaskCompletion:= {
+const TaskCompletion:= {
 Tasks.tasks.Debut: false,
 Tasks.tasks.Search: false,
 Tasks.tasks.Checking: false,
@@ -287,7 +266,3 @@ Tasks.tasks.PressPass: false,
 Tasks.tasks.Axel: false,
 Tasks.tasks.BEARBuddy: false,
 }
-func reset():
-	for i in TaskCompletion.size():
-		TaskCompletion[i] = false
-	Utility.update.emit()

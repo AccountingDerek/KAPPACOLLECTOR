@@ -7,7 +7,7 @@ var complete: bool = false
 func _ready():
 	custom_minimum_size.y = data.TraderTasks.size() * 34
 	for i in data.TraderTasks.size():
-		var line = preload("res://new_line.tscn").instantiate()
+		var line = preload("res://Scenes/new_line.tscn").instantiate()
 		line.name = str(i)
 		line.assigned_task = data.TraderTasks[i]
 		line.generate_text(data.TaskNames[data.TraderTasks[i]])

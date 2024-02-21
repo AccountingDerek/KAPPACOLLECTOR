@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="KAPPACOLLECTOR"
-run/main_scene="res://main_screen.tscn"
+run/main_scene="res://Scenes/main_screen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/bg_color=Color(0.145098, 0.145098, 0.145098, 1)
 boot_splash/show_image=false
@@ -21,9 +21,9 @@ config/icon="res://deadskul.png"
 
 [autoload]
 
-SaveData="*res://SaveData.gd"
+SaveData="*res://Scripts/SaveData.gd"
 Utility="*res://Scripts/Utility.gd"
-Tasks="*res://tasks.gd"
+Tasks="*res://Scripts/tasks.gd"
 
 [display]
 

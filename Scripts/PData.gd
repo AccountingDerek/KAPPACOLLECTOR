@@ -72,7 +72,6 @@ const TaskNames:= {
 	Tasks.tasks.Recon : "Reconnaissance",
 }
 func _ready():
-	print(TraderTasks.size())
 	Utility.update.connect(update)
 
 func update() -> void:

@@ -1,73 +1,90 @@
-[gd_scene load_steps=3 format=3 uid="uid://b44hse3febfl4"]
+[gd_scene load_steps=4 format=3 uid="uid://b44hse3febfl4"]
 
-[ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://Main_Theme.tres" id="1_1diit"]
-[ext_resource type="Script" path="res://DescriptionBox.gd" id="2_1hh7y"]
+[ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_1diit"]
+[ext_resource type="Script" path="res://Scripts/DescriptionBox.gd" id="2_1hh7y"]
+[ext_resource type="Texture2D" uid="uid://dy14hqa7s45b4" path="res://stop fucking around.png" id="3_pvnm1"]
 
-[node name="InfoBox" type="Control" node_paths=PackedStringArray("quest_name", "quest_type", "requirements", "previous", "next", "link")]
+[node name="InfoBox" type="Control" node_paths=PackedStringArray("scroll", "vbox", "quest_name", "quest_type", "requirements", "previous", "next", "link")]
+custom_minimum_size = Vector2(450, 750)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -552.0
-offset_bottom = 150.0
+offset_right = -702.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_1diit")
 script = ExtResource("2_1hh7y")
-quest_name = NodePath("ScrollContainer/ColorRect/VBoxContainer/Quest Name")
-quest_type = NodePath("ScrollContainer/ColorRect/VBoxContainer/Quest Type")
-requirements = NodePath("ScrollContainer/ColorRect/VBoxContainer/Requirements")
-previous = NodePath("ScrollContainer/ColorRect/VBoxContainer/Previous")
-next = NodePath("ScrollContainer/ColorRect/VBoxContainer/Next")
-link = NodePath("ScrollContainer/ColorRect/VBoxContainer/LinkButton")
+scroll = NodePath("ScrollContainer/Control")
+vbox = NodePath("ScrollContainer/Control/VBoxContainer")
+quest_name = NodePath("ScrollContainer/Control/VBoxContainer/Quest Name")
+quest_type = NodePath("ScrollContainer/Control/VBoxContainer/Quest Type")
+requirements = NodePath("ScrollContainer/Control/VBoxContainer/Requirements")
+previous = NodePath("ScrollContainer/Control/VBoxContainer/Previous")
+next = NodePath("ScrollContainer/Control/VBoxContainer/Next")
+link = NodePath("ScrollContainer/Control/VBoxContainer/LinkButton")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-custom_minimum_size = Vector2(600, 900)
+custom_minimum_size = Vector2(376, 619)
 layout_mode = 2
-offset_right = 600.0
-offset_bottom = 900.0
+offset_top = -1.0
+offset_right = 376.0
+offset_bottom = 618.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
 
-[node name="ColorRect" type="ColorRect" parent="ScrollContainer"]
-custom_minimum_size = Vector2(450, 900)
+[node name="Control" type="Control" parent="ScrollContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(339, 619)
 layout_mode = 2
-color = Color(0.313726, 0.298039, 0.298039, 0)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/ColorRect"]
-layout_mode = 0
-offset_left = 30.0
-offset_top = 60.0
-offset_right = 364.0
-offset_bottom = 533.0
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control"]
+custom_minimum_size = Vector2(314, 177)
+layout_mode = 2
+offset_left = 63.0
+offset_top = 21.0
+offset_right = 377.0
+offset_bottom = 198.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_pvnm1")
+expand_mode = 2
 
-[node name="Quest Name" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Control"]
+custom_minimum_size = Vector2(300, 319)
+layout_mode = 2
+offset_left = 39.0
+offset_top = 174.0
+offset_right = 339.0
+offset_bottom = 619.0
+
+[node name="Quest Name" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-text = "Living High is Not a Crime
-Part 1"
+text = "Living High is not a Crime"
 autowrap_mode = 2
 
-[node name="Quest Type" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Quest Type" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 17
-text = "Pickup"
+text = "Part 1"
 autowrap_mode = 2
 
-[node name="Space" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Space" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 5
 autowrap_mode = 2
 
-[node name="RequirementHeader" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="RequirementHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "Requirements:"
 autowrap_mode = 2
 
-[node name="Requirements" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Requirements" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
@@ -78,20 +95,20 @@ text = "• 2 Bronze Lions
 • 1 Golden Egg"
 autowrap_mode = 2
 
-[node name="Margin" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Margin" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 5
 autowrap_mode = 2
 
-[node name="PreviousHeader" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="PreviousHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Previous:"
 autowrap_mode = 2
 
-[node name="Previous" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Previous" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
@@ -99,33 +116,33 @@ text = "The Blood of War pt. 1
 "
 autowrap_mode = 2
 
-[node name="Margin2" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Margin2" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 5
 autowrap_mode = 2
 
-[node name="NextHeader" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="NextHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Leads To:"
 autowrap_mode = 2
 
-[node name="Next" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Next" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Living High is Not a Crime pt. 2"
 autowrap_mode = 2
 
-[node name="Space2" type="Label" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="Space2" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
 custom_minimum_size = Vector2(275, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 5
 autowrap_mode = 2
 
-[node name="LinkButton" type="LinkButton" parent="ScrollContainer/ColorRect/VBoxContainer"]
+[node name="LinkButton" type="LinkButton" parent="ScrollContainer/Control/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
