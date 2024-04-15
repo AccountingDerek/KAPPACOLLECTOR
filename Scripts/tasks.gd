@@ -1,4 +1,5 @@
 extends Node
+@export var task_array: Array[TaskResource]
 enum traders{
 	PRAPOR,
 	THERAPIST,
@@ -20,7 +21,40 @@ var istradercomplete:= {
 	traders.JAEGER : false,
 	traders.ITEMS : false,
 }
-
+enum questlines {
+	Debut,
+	Punisher,
+	EasyJob,
+	Bunker,
+	Pharmacist,
+	SanitaryStandards,
+	OpAquarius,
+	Colleagues,
+	HCP,
+	Supplier,
+	FftW,
+	Chemical,
+	InformedArmed,
+	LendLease,
+	BusyWork,
+	SpaTour,
+	CargoX,
+	WetJob,
+	Cult,
+	Revision,
+	OnlyBusiness,
+	BloodOfWar,
+	Supervisor,
+	SewItGood,
+	LivingHigh,
+	Gunsmith,
+	Farming,
+	Acquaintance,
+	TheSignal,
+	Survivalist,
+	Huntsman,
+	TarkShooter,
+}
 enum tasks {
 	Debut,
 	Search,
