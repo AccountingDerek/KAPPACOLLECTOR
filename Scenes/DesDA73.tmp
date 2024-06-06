@@ -1,0 +1,163 @@
+[gd_scene load_steps=4 format=3 uid="uid://b44hse3febfl4"]
+
+[ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_1diit"]
+[ext_resource type="Script" path="res://Scripts/DescriptionBox.gd" id="2_1hh7y"]
+[ext_resource type="Texture2D" uid="uid://dy14hqa7s45b4" path="res://stop fucking around.png" id="3_pvnm1"]
+
+[node name="InfoBox" type="Control"]
+custom_minimum_size = Vector2(450, 750)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -702.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_1diit")
+script = ExtResource("2_1hh7y")
+scroll = Object(Control,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":true,"custom_minimum_size":Vector2(339, 619),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":1,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","script":null)
+
+vbox = Object(VBoxContainer,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(300, 319),"layout_direction":0,"layout_mode":2,"anchors_preset":0,"anchor_left":0.0,"anchor_top":0.0,"anchor_right":0.0,"anchor_bottom":0.0,"offset_left":39.0,"offset_top":174.0,"offset_right":339.0,"offset_bottom":619.0,"grow_horizontal":1,"grow_vertical":1,"rotation":0.0,"scale":Vector2(1, 1),"pivot_offset":Vector2(0, 0),"size_flags_horizontal":1,"size_flags_vertical":1,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":1,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","alignment":0,"script":null)
+
+quest_name = Object(Label,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(275, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":4,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_font_sizes/font_size":25,"text":"Living High is not a Crime","label_settings":null,"horizontal_alignment":0,"vertical_alignment":0,"autowrap_mode":2,"justification_flags":163,"clip_text":false,"text_overrun_behavior":0,"uppercase":false,"tab_stops":PackedFloat32Array(),"lines_skipped":0,"max_lines_visible":-1,"visible_characters":-1,"visible_characters_behavior":0,"visible_ratio":1.0,"text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+quest_type = Object(Label,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(275, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":4,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_font_sizes/font_size":17,"text":"Part 1","label_settings":null,"horizontal_alignment":0,"vertical_alignment":0,"autowrap_mode":2,"justification_flags":163,"clip_text":false,"text_overrun_behavior":0,"uppercase":false,"tab_stops":PackedFloat32Array(),"lines_skipped":0,"max_lines_visible":-1,"visible_characters":-1,"visible_characters_behavior":0,"visible_ratio":1.0,"text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+requirements = Object(Label,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(275, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":4,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_font_sizes/font_size":20,"text":"• 2 Bronze Lions
+• 2 Horse Figurines
+• 2 Cat Figurines
+• 1 Roler
+• 1 Golden Egg","label_settings":null,"horizontal_alignment":0,"vertical_alignment":0,"autowrap_mode":2,"justification_flags":163,"clip_text":false,"text_overrun_behavior":0,"uppercase":false,"tab_stops":PackedFloat32Array(),"lines_skipped":0,"max_lines_visible":-1,"visible_characters":-1,"visible_characters_behavior":0,"visible_ratio":1.0,"text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+previous = Object(Label,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(275, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":4,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_font_sizes/font_size":20,"text":"The Blood of War pt. 1
+","label_settings":null,"horizontal_alignment":0,"vertical_alignment":0,"autowrap_mode":2,"justification_flags":163,"clip_text":false,"text_overrun_behavior":0,"uppercase":false,"tab_stops":PackedFloat32Array(),"lines_skipped":0,"max_lines_visible":-1,"visible_characters":-1,"visible_characters_behavior":0,"visible_ratio":1.0,"text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+next = Object(Label,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(275, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":4,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":2,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":0,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_font_sizes/font_size":20,"text":"Living High is Not a Crime pt. 2","label_settings":null,"horizontal_alignment":0,"vertical_alignment":0,"autowrap_mode":2,"justification_flags":163,"clip_text":false,"text_overrun_behavior":0,"uppercase":false,"tab_stops":PackedFloat32Array(),"lines_skipped":0,"max_lines_visible":-1,"visible_characters":-1,"visible_characters_behavior":0,"visible_ratio":1.0,"text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+link = Object(LinkButton,"_import_path":NodePath(""),"unique_name_in_owner":false,"process_mode":0,"process_priority":0,"process_physics_priority":0,"process_thread_group":0,"editor_description":"","visible":true,"modulate":Color(1, 1, 1, 1),"self_modulate":Color(1, 1, 1, 1),"show_behind_parent":false,"top_level":false,"clip_children":0,"light_mask":1,"visibility_layer":1,"z_index":0,"z_as_relative":true,"y_sort_enabled":false,"texture_filter":0,"texture_repeat":0,"material":null,"use_parent_material":false,"clip_contents":false,"custom_minimum_size":Vector2(0, 0),"layout_direction":0,"layout_mode":2,"size_flags_horizontal":1,"size_flags_vertical":1,"size_flags_stretch_ratio":1.0,"auto_translate":true,"localize_numeral_system":true,"tooltip_text":"","focus_neighbor_left":NodePath(""),"focus_neighbor_top":NodePath(""),"focus_neighbor_right":NodePath(""),"focus_neighbor_bottom":NodePath(""),"focus_next":NodePath(""),"focus_previous":NodePath(""),"focus_mode":0,"mouse_filter":0,"mouse_force_pass_scroll_events":true,"mouse_default_cursor_shape":2,"shortcut_context":null,"theme":null,"theme_type_variation":&"","theme_override_colors/font_outline_color":Color(0, 0, 0, 1),"theme_override_constants/outline_size":2,"theme_override_font_sizes/font_size":15,"disabled":false,"toggle_mode":false,"button_pressed":false,"action_mode":1,"button_mask":1,"keep_pressed_outside":false,"button_group":null,"shortcut":null,"shortcut_feedback":true,"shortcut_in_tooltip":true,"text":"Wiki Link","underline":0,"uri":"","text_direction":0,"language":"","structured_text_bidi_override":0,"structured_text_bidi_override_options":[],"script":null)
+
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(376, 619)
+layout_mode = 2
+offset_top = -1.0
+offset_right = 376.0
+offset_bottom = 618.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(339, 619)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/Control"]
+custom_minimum_size = Vector2(314, 177)
+layout_mode = 2
+offset_left = 63.0
+offset_top = 21.0
+offset_right = 377.0
+offset_bottom = 198.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_pvnm1")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Control"]
+custom_minimum_size = Vector2(300, 319)
+layout_mode = 2
+offset_left = 39.0
+offset_top = 174.0
+offset_right = 339.0
+offset_bottom = 619.0
+
+[node name="Quest Name" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Living High is not a Crime"
+autowrap_mode = 2
+
+[node name="Quest Type" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "Part 1"
+autowrap_mode = 2
+
+[node name="Space" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="RequirementHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Requirements:"
+autowrap_mode = 2
+
+[node name="Requirements" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "• 2 Bronze Lions
+• 2 Horse Figurines
+• 2 Cat Figurines
+• 1 Roler
+• 1 Golden Egg"
+autowrap_mode = 2
+
+[node name="Margin" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="PreviousHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Previous:"
+autowrap_mode = 2
+
+[node name="Previous" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "The Blood of War pt. 1
+"
+autowrap_mode = 2
+
+[node name="Margin2" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="NextHeader" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Leads To:"
+autowrap_mode = 2
+
+[node name="Next" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Living High is Not a Crime pt. 2"
+autowrap_mode = 2
+
+[node name="Space2" type="Label" parent="ScrollContainer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(275, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 5
+autowrap_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="ScrollContainer/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "Wiki Link"

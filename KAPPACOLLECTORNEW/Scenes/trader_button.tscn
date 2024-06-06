@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc0b7cix0ut0p"]
+
+[ext_resource type="Script" path="res://Scripts/TraderIcon.gd" id="1_ydy00"]
+[ext_resource type="Texture2D" uid="uid://bj5qr83vv0aav" path="res://Icons/itemsgood.png" id="2_8f1y1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bqa4"]
+size = Vector2(128, 128)
+
+[node name="TraderButton" type="Area2D"]
+script = ExtResource("1_ydy00")
+
+[node name="ButtonIcon" type="Sprite2D" parent="."]
+texture = ExtResource("2_8f1y1")
+
+[node name="ButtonCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6bqa4")
+
+[node name="Data" type="Node" parent="."]

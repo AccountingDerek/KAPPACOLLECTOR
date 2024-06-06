@@ -32,7 +32,7 @@ var TraderTasks:= [
 
 const TaskNames:= {
 	Tasks.tasks.Supplier : "Supplier",
-	Tasks.tasks.Extortion : "Extortion",
+	Tasks.tasks.Extortion : "The Extortionist",
 	Tasks.tasks.Stirrup : "Stirrup",
 	Tasks.tasks.FlashDrives1 : "What's on the Flash Drive?",
 	Tasks.tasks.GoldenSwag : "Golden Swag",

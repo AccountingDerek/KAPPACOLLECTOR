@@ -1,12 +1,12 @@
 extends Control
-@export var scroll: Control
-@export var vbox: VBoxContainer
-@export var quest_name: Label
-@export var quest_type: Label
-@export var requirements: Label
-@export var previous: Label
-@export var next: Label
-@export var link: LinkButton
+@onready var scroll: Control = $ScrollContainer/Control
+@onready var vbox: VBoxContainer = $ScrollContainer/Control/VBoxContainer
+@onready var quest_name: Label = $"ScrollContainer/Control/VBoxContainer/Quest Name"
+@onready var quest_type: Label = $"ScrollContainer/Control/VBoxContainer/Quest Type"
+@onready var requirements: Label = $ScrollContainer/Control/VBoxContainer/Requirements
+@onready var previous: Label = $ScrollContainer/Control/VBoxContainer/Previous
+@onready var next: Label = $ScrollContainer/Control/VBoxContainer/Next
+@onready var link: LinkButton = $ScrollContainer/Control/VBoxContainer/LinkButton
 
 func _ready():
 	hide()
@@ -19,6 +19,7 @@ func switch_description(task: Tasks.tasks):
 	requirements.text = TaskDescriptions.TaskDescripts[task]
 	previous.text = TaskDescriptions.Previous[task]
 	next.text = TaskDescriptions.LeadsTo[task]
+	link.uri = TaskDescriptions.WikiLinks[task]
 
 func _process(delta):
 	scroll.custom_minimum_size.y = vbox.position.y + vbox.size.y + 20
