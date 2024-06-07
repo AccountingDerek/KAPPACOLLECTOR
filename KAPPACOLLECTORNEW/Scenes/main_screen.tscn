@@ -1,4 +1,4 @@
-[gd_scene load_steps=184 format=3 uid="uid://baelcd5jeu4is"]
+[gd_scene load_steps=185 format=3 uid="uid://baelcd5jeu4is"]
 
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
 [ext_resource type="Script" path="res://Scripts/TaskData.gd" id="1_t7o52"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://Scripts/TaskBox.gd" id="10_ab0s5"]
 [ext_resource type="Texture2D" uid="uid://b2gnnrgnkoh3f" path="res://Icons/stop fucking around.png" id="11_fa5r0"]
 [ext_resource type="Script" path="res://Scripts/DescriptionBox.gd" id="11_jhxhj"]
+[ext_resource type="PackedScene" uid="uid://b8as7e1yitaib" path="res://Scenes/setting.tscn" id="15_r71hq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64maq"]
 
@@ -3045,6 +3046,12 @@ clip_text = true
 [node name="LinkButton" type="LinkButton" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
 
+[node name="DEVNOTE" type="RichTextLabel" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+text = "DEV NOTE: Technically speaking, you need to complete Postman Pat Part 2 "
+fit_content = true
+
 [node name="TaskData" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_t7o52")
@@ -3057,8 +3064,64 @@ MechanicTasks = Array[ExtResource("10_2172y")]([SubResource("Resource_12uj6"), S
 [node name="Window" type="Window" parent="."]
 title = "SETTINGS"
 initial_position = 1
-size = Vector2i(1152, 648)
-visible = false
+size = Vector2i(507, 268)
+
+[node name="ColumnContainer" type="HBoxContainer" parent="Window"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Column1" type="VBoxContainer" parent="Window/ColumnContainer"]
+layout_mode = 2
+
+[node name="Volume" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting_name = "SFX Volume"
+slider_enabled = true
+number_enabled = true
+max_value = 100.0
+step = 5.0
+
+[node name="Hover Text Color" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting = 1
+setting_name = "Hover Text Color"
+slider_enabled = true
+number_enabled = true
+options = Array[String](["Red", "Green", "Blue", "Pink", "Custom"])
+
+[node name="Custom R" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting_name = "Custom R"
+show_on_custom = true
+slider_enabled = true
+number_enabled = true
+
+[node name="Custom G" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting_name = "Custom G"
+show_on_custom = true
+slider_enabled = true
+number_enabled = true
+
+[node name="Custom B" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting_name = "Custom B"
+show_on_custom = true
+slider_enabled = true
+number_enabled = true
+
+[node name="Background Image" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting = 5
+setting_name = "Background Image"
+option_enabled = true
+options = Array[String](["Woods", "Factory", "The Lab", "Unheard"])
+
+[node name="Dev Notes" parent="Window/ColumnContainer/Column1" instance=ExtResource("15_r71hq")]
+layout_mode = 2
+setting = 6
+setting_name = "Enable Dev Notes"
+check_enabled = true
 
 [connection signal="pressed" from="MainContainer/TradersContainer/Prapor" to="MainContainer/MainBody/TaskBox/Control" method="_on_prapor_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Therapist" to="MainContainer/MainBody/TaskBox/Control" method="_on_therapist_pressed"]

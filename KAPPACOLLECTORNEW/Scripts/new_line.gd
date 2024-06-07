@@ -22,7 +22,7 @@ func _ready():
 func onMouseEntered():
 	Utility.hover.emit(assigned_task)
 	if not task_done:
-		label.add_theme_color_override("font_color", Color(255,0,255))
+		label.add_theme_color_override("font_color", Settings.hover_color)
 	hover.play()
 
 func onMouseExited():
@@ -70,6 +70,7 @@ func logic():
 	Utility.update.emit()
 
 func update():
+	hover.volume_db *= Settings.volume/100
 	if task_done:
 		SaveData.TaskCompletion[assigned_task] = true
 		label.add_theme_color_override("font_color", Color(0,0,0))
