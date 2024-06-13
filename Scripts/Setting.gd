@@ -1,13 +1,17 @@
 @tool
 extends Control
-signal custom_check
+
+signal cycle_custom_visibility
+
+@export var setting_variable: String:
+	set(value):
+		setting_variable = value
+		update_configuration_warnings()
 
 @onready var label:= %Label as Label
-
-@export var setting: Settings.SettingIDs
-@export var setting_name: String = "":
+@export var setting_label: String = "":
 	set(value):
-		setting_name = value
+		setting_label = value
 		_update_label()
 @export var show_on_custom: bool = false
 
@@ -44,10 +48,26 @@ signal custom_check
 @export var options: Array[String]
 
 func _ready() -> void:
+	update()
+	custom_settings()
+	Utility.update.connect(update)
+	Settings.apply_settings.connect(custom_settings)
+	cycle_custom_visibility.connect(custom_settings)
+
+func update() -> void:
+	label.text = setting_label
+	
 	update_visibility()
 	_update_label()
+	
+	if Engine.is_editor_hint():
+		return
+	
 	update_control_settings()
-	custom_check.connect(custom_settings)
+	
+	load_variable()
+	
+	connect_signals()
 
 func update_control_settings() -> void:
 	if Engine.is_editor_hint():
@@ -82,55 +102,54 @@ func update_visibility() -> void:
 		option_button.visible = option_enabled
 	if Engine.is_editor_hint():
 		notify_property_list_changed()
-	change_settings()
 
 func custom_settings():
 	if show_on_custom:
-		visible = (Settings.hover_color == Settings.HoverColors.CUSTOM)
-
-func change_settings():
-	match setting:
-		Settings.SettingIDs.VOL:
-			pass
-		Settings.SettingIDs.HOVER:
-			if option_button:
-				match options:
-					"Red":
-						Settings.hover_color = Color(255,0,0)
-					"Green":
-						Settings.hover_color = Color(0,255,0)
-					"Blue":
-						Settings.hover_color = Color(0,0,255)
-					"Pink":
-						Settings.hover_color = Color(255,0,255)
-					"Custom":
-						Settings.hover_color = Settings.custom_color
-			custom_check.emit()
-		Settings.SettingIDs.CUSTOMR:
-			if slider:
-				Settings.custom_color_r = slider.value
-		Settings.SettingIDs.CUSTOMG:
-			if slider:
-				Settings.custom_color_g = slider.value
-		Settings.SettingIDs.CUSTOMB:
-			if slider:
-				Settings.custom_color_b = slider.value
-		Settings.SettingIDs.BG:
-			if option_button:
-				match options:
-					"Woods":
-						Settings.background = Settings.Backgrounds.WOODS
-					"Factory":
-						Settings.background = Settings.Backgrounds.FACTORY
-					"The Lab":
-						Settings.background = Settings.Backgrounds.THELAB
-					"Unheard":
-						Settings.background = Settings.Backgrounds.UNHEARD
-		Settings.SettingIDs.DEV:
-			if check_button:
-				Settings.dev_notes = check_button.toggle_mode
+		visible = (Settings.hover_color == 4)
 
 #region TOOL
 func _update_label() -> void:
 	if label:
-		label.text = setting_name
+		label.text = setting_label
+
+func connect_signals() -> void:
+	if Engine.is_editor_hint():
+		return
+	
+	if slider_enabled:
+		slider.value_changed.connect(set_variable)
+	
+	if number_enabled:
+		number_box.value_changed.connect(set_variable)
+	
+	if check_enabled:
+		check_button.toggled.connect(set_variable)
+	
+	if option_enabled:
+		option_button.item_selected.connect(set_variable)
+
+func load_variable() -> void:
+	if Engine.is_editor_hint():
+		return
+	
+	if setting_variable.is_empty():
+		return
+	
+	var variable_exists: bool = setting_variable in Settings
+	assert(variable_exists, setting_variable + " is not a variable in Settings")
+	if not variable_exists:
+		queue_free()
+	
+	var value: Variant = Settings.get(setting_variable)
+	slider.value = value
+	number_box.value = value
+	option_button.selected = value
+
+
+func set_variable(value: Variant) -> void:
+	if Engine.is_editor_hint():
+		return
+	Settings.set(setting_variable, value)
+	Settings.save_settings()
+	cycle_custom_visibility.emit()
+	load_variable()

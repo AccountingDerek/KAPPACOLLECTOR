@@ -21,8 +21,6 @@ var reference_list:= {}
 	Tasks.traders.ITEMS: Items,
 }
 
-
-
 func _ready() -> void:
 	generate_and_append(PraporTasks)
 	generate_and_append(TherapistTasks)
@@ -36,8 +34,11 @@ func _ready() -> void:
 func generate_and_append(list: Array[TaskResource]):
 	for p in list:
 		print(p.task_id)
+		print(p.task_name + " " + p.task_part)
 		if p.task_part != "":
 			p.displayed_task_name = p.task_name + " - " + p.task_part
 		else:
 			p.displayed_task_name = p.task_name
+		print(p.task_id)
+		print(p.displayed_task_name)
 		reference_list[p.task_id] = p

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b8as7e1yitaib"]
 
-[ext_resource type="Script" path="res://Setting.gd" id="1_86u8s"]
+[ext_resource type="Script" path="res://Scripts/Setting.gd" id="1_86u8s"]
 
 [node name="Setting" type="MarginContainer"]
 custom_minimum_size = Vector2(500, 0)
@@ -11,7 +11,7 @@ theme_override_constants/margin_top = 3
 theme_override_constants/margin_right = 3
 theme_override_constants/margin_bottom = 3
 script = ExtResource("1_86u8s")
-setting_name = "wahoo"
+setting_label = "ewrsd"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -20,6 +20,8 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "ewrsd"
 
 [node name="HSlider" type="HSlider" parent="HBoxContainer"]
 unique_name_in_owner = true

@@ -1,6 +1,6 @@
 extends Node
 
-signal screen_switch
+signal screen_switch(trader: Tasks.traders)
 signal update
 signal completion
 signal hover(task: Tasks.tasks)

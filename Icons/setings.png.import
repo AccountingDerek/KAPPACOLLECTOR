@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy14hqa7s45b4"
-path="res://.godot/imported/stop fucking around.png-21254e287b753556f15afd45ba67c3eb.ctex"
+uid="uid://dhu61i1glj2qf"
+path="res://.godot/imported/setings.png-39a9f997b3a564d9324c6121c05b980f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stop fucking around.png"
-dest_files=["res://.godot/imported/stop fucking around.png-21254e287b753556f15afd45ba67c3eb.ctex"]
+source_file="res://Icons/setings.png"
+dest_files=["res://.godot/imported/setings.png-39a9f997b3a564d9324c6121c05b980f.ctex"]
 
 [params]
 

@@ -1,4 +1,5 @@
 extends Node
+
 enum traders{
 	PRAPOR,
 	THERAPIST,
@@ -22,7 +23,9 @@ var istradercomplete:= {
 }
 
 var TaskCompletion:= {
+Tasks.tasks.ShootingCans: false,
 Tasks.tasks.Debut: false,
+Tasks.tasks.Luxurious: false,
 Tasks.tasks.Search: false,
 Tasks.tasks.Checking: false,
 Tasks.tasks.Shootout: false,
@@ -53,6 +56,7 @@ Tasks.tasks.Intimidator: false,
 Tasks.tasks.EasyJob1: false,
 Tasks.tasks.EasyJob2: false,
 Tasks.tasks.Recon: false,
+Tasks.tasks.FirstinLine: false,
 Tasks.tasks.Shortage: false,
 Tasks.tasks.Aq1: false,
 Tasks.tasks.Aq2: false,
@@ -81,6 +85,7 @@ Tasks.tasks.Crisis: false,
 Tasks.tasks.Seaside: false,
 Tasks.tasks.LostContact: false,
 Tasks.tasks.Trafficking: false,
+Tasks.tasks.BurningRubber: false,
 Tasks.tasks.Supplier: false,
 Tasks.tasks.Extortion: false,
 Tasks.tasks.Stirrup: false,
@@ -139,6 +144,7 @@ Tasks.tasks.Cargo4: false,
 Tasks.tasks.Insomnia: false,
 Tasks.tasks.Overpopulation: false,
 Tasks.tasks.RevisLighthouse: false,
+Tasks.tasks.SavingtheMole: false,
 Tasks.tasks.Intro: false,
 Tasks.tasks.GS1: false,
 Tasks.tasks.GS2: false,
