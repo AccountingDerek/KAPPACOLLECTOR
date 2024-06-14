@@ -79,4 +79,4 @@ func apply_settings() -> void:
 	note.visible = Settings.dev_notes
 
 func _process(delta):
-	self.custom_minimum_size.y = vbox.position.y + vbox.size.y + 20
+	self.custom_minimum_size.y = vbox.position.y + vbox.size.y

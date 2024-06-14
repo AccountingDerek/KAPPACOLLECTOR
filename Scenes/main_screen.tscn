@@ -1,24 +1,36 @@
-[gd_scene load_steps=305 format=3 uid="uid://baelcd5jeu4is"]
+[gd_scene load_steps=317 format=3 uid="uid://baelcd5jeu4is"]
 
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
 [ext_resource type="Script" path="res://Scripts/TaskData.gd" id="1_t7o52"]
+[ext_resource type="Texture2D" uid="uid://cvw0tnusca8hp" path="res://VFX/unheardnew.png" id="1_yypv0"]
+[ext_resource type="Script" path="res://Scripts/Background.gd" id="2_e0ssb"]
 [ext_resource type="Texture2D" uid="uid://otp1blkm1wkl" path="res://Icons/Prapor_Portrait.png" id="2_gns63"]
 [ext_resource type="Texture2D" uid="uid://duo05283rga87" path="res://Icons/Therapist_Portrait.png" id="3_r7pwn"]
 [ext_resource type="Texture2D" uid="uid://b1k74opx5xmbq" path="res://Icons/Skier_Portrait.png" id="4_kq56s"]
+[ext_resource type="Script" path="res://Scripts/TraderButton.gd" id="5_45lv0"]
 [ext_resource type="Texture2D" uid="uid://5lbrsi30p1kf" path="res://Icons/Peacekeeper_Portrait.png" id="5_i0ijl"]
 [ext_resource type="Texture2D" uid="uid://kx6als4ehb5y" path="res://Icons/Mechanic_Portrait.png" id="6_6fxj7"]
+[ext_resource type="Texture2D" uid="uid://bmkh1ty14p4to" path="res://Icons/Prapor_Alt_Portrait.png" id="6_cdllc"]
 [ext_resource type="Texture2D" uid="uid://k6mtjw2joevu" path="res://Icons/Ragman_Portrait.png" id="7_rwjyk"]
 [ext_resource type="Texture2D" uid="uid://6sfq5ck6y6ny" path="res://Icons/Jaeger_Portrait.png" id="8_oqx12"]
+[ext_resource type="Texture2D" uid="uid://ce7pewwfyuv6q" path="res://Icons/Therapist_Alt_Portrait.png" id="8_ppv5k"]
 [ext_resource type="Texture2D" uid="uid://bl3copdd2c7g7" path="res://Icons/items.png" id="9_6flb8"]
 [ext_resource type="Script" path="res://Scripts/Task.gd" id="10_2172y"]
 [ext_resource type="Script" path="res://Scripts/TaskBox.gd" id="10_ab0s5"]
 [ext_resource type="Texture2D" uid="uid://dhu61i1glj2qf" path="res://Icons/setings.png" id="10_iw8gn"]
+[ext_resource type="Texture2D" uid="uid://c3hk2gs2us2ch" path="res://Icons/Skier_Alt_Portrait.png" id="10_k4n8y"]
 [ext_resource type="Texture2D" uid="uid://b2gnnrgnkoh3f" path="res://Icons/stop fucking around.png" id="11_fa5r0"]
 [ext_resource type="Script" path="res://Scripts/DescriptionBox.gd" id="11_jhxhj"]
+[ext_resource type="Texture2D" uid="uid://d3fi7ggwxkwgl" path="res://Icons/Peacekeeper_Alt_Portrait.png" id="12_2kesq"]
+[ext_resource type="Texture2D" uid="uid://d3sg53m5dg3cd" path="res://Icons/Mechanic_Alt_Portrait.png" id="14_xm8pn"]
 [ext_resource type="FontFile" uid="uid://ca7i2juxfkj6s" path="res://VFX/bender.regular.otf" id="15_h5a2j"]
 [ext_resource type="PackedScene" uid="uid://b8as7e1yitaib" path="res://Scenes/setting.tscn" id="15_r71hq"]
-[ext_resource type="Script" path="res://Scenes/SettingsWindow.gd" id="16_8okyb"]
-[ext_resource type="Script" path="res://Scenes/settingscolorrect.gd" id="16_ctjih"]
+[ext_resource type="Script" path="res://Scripts/SettingsWindow.gd" id="16_8okyb"]
+[ext_resource type="Script" path="res://Scripts/settingscolorrect.gd" id="16_ctjih"]
+[ext_resource type="Texture2D" uid="uid://cdjekgblyhmvd" path="res://Icons/Ragman_Alt_Portrait.png" id="16_f8e6d"]
+[ext_resource type="Texture2D" uid="uid://bfvmlbsnqxn58" path="res://Icons/Jaeger_Alt_Portrait.png" id="18_a1mn3"]
+[ext_resource type="Texture2D" uid="uid://bj5qr83vv0aav" path="res://Icons/itemsgood.png" id="20_d6mi7"]
+[ext_resource type="Texture2D" uid="uid://dgsq7hsxs1if5" path="res://VFX/HOG.jpg" id="28_0500x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64maq"]
 
@@ -42,7 +54,7 @@ to = Array[int]([189])
 link = ""
 additional_info = ""
 
-[sub_resource type="Image" id="Image_nm8x1"]
+[sub_resource type="Image" id="Image_ivum6"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 153, 178, 178, 178, 166, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 166, 178, 178, 178, 151, 255, 255, 255, 0, 255, 255, 255, 0, 178, 178, 178, 166, 178, 178, 178, 217, 178, 178, 178, 179, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 175, 175, 175, 19, 178, 178, 178, 179, 178, 178, 178, 217, 178, 178, 178, 165, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 179, 179, 179, 180, 175, 175, 175, 19, 175, 175, 175, 19, 179, 179, 179, 180, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 181, 178, 178, 178, 181, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 165, 178, 178, 178, 165, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -52,7 +64,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_tanj7"]
-image = SubResource("Image_nm8x1")
+image = SubResource("Image_ivum6")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56tmi"]
 content_margin_left = 8.0
@@ -4455,7 +4467,7 @@ additional_info = ""
 
 [sub_resource type="Resource" id="Resource_85rx3"]
 script = ExtResource("10_2172y")
-task_id = 0
+task_id = 255
 trader = 7
 mutual_exclusives = Array[int]([])
 post_choice = false
@@ -4665,6 +4677,14 @@ additional_info = "DEV NOTE: I want one of these in real life"
 
 [node name="MainScreen" type="Node2D"]
 
+[node name="Background" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1152, 648)
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_yypv0")
+expand_mode = 2
+script = ExtResource("2_e0ssb")
+
 [node name="MainContainer" type="VBoxContainer" parent="."]
 offset_top = -1.0
 offset_right = 1052.0
@@ -4685,6 +4705,9 @@ icon = ExtResource("2_gns63")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("2_gns63")
+hover = ExtResource("6_cdllc")
 
 [node name="Therapist" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4692,6 +4715,9 @@ icon = ExtResource("3_r7pwn")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("3_r7pwn")
+hover = ExtResource("8_ppv5k")
 
 [node name="Skier" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4699,6 +4725,9 @@ icon = ExtResource("4_kq56s")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("4_kq56s")
+hover = ExtResource("10_k4n8y")
 
 [node name="Peacekeeper" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4706,6 +4735,9 @@ icon = ExtResource("5_i0ijl")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("5_i0ijl")
+hover = ExtResource("12_2kesq")
 
 [node name="Mechanic" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4713,6 +4745,9 @@ icon = ExtResource("6_6fxj7")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("6_6fxj7")
+hover = ExtResource("14_xm8pn")
 
 [node name="Ragman" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4720,6 +4755,9 @@ icon = ExtResource("7_rwjyk")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("7_rwjyk")
+hover = ExtResource("16_f8e6d")
 
 [node name="Jaeger" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4727,6 +4765,9 @@ icon = ExtResource("8_oqx12")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("8_oqx12")
+hover = ExtResource("18_a1mn3")
 
 [node name="Items" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4734,8 +4775,11 @@ icon = ExtResource("9_6flb8")
 flat = true
 clip_text = true
 icon_alignment = 1
+script = ExtResource("5_45lv0")
+base = ExtResource("9_6flb8")
+hover = ExtResource("20_d6mi7")
 
-[node name="Items2" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Settings" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
 icon = ExtResource("10_iw8gn")
 flat = true
@@ -4768,7 +4812,7 @@ custom_minimum_size = Vector2(512, 518.43)
 layout_mode = 2
 
 [node name="Control" type="Control" parent="MainContainer/MainBody/DescriptionBox"]
-custom_minimum_size = Vector2(512, 836.005)
+custom_minimum_size = Vector2(512, 173.076)
 layout_mode = 2
 script = ExtResource("11_jhxhj")
 backupResource = SubResource("Resource_r318x")
@@ -4878,6 +4922,13 @@ visible = false
 theme = SubResource("Theme_hi5oy")
 script = ExtResource("16_8okyb")
 
+[node name="TextureRect" type="TextureRect" parent="Window"]
+custom_minimum_size = Vector2(515, 267)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("28_0500x")
+expand_mode = 2
+
 [node name="ColumnContainer" type="HBoxContainer" parent="Window"]
 offset_right = 40.0
 offset_bottom = 40.0
@@ -4947,7 +4998,7 @@ max_value = 255.0
 [node name="ColorRect" type="ColorRect" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer"]
 custom_minimum_size = Vector2(30, 10)
 layout_mode = 2
-color = Color(0.45098, 0.615686, 0.643137, 1)
+color = Color(0, 0, 0, 1)
 script = ExtResource("16_ctjih")
 
 [node name="Background Image" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
@@ -4955,7 +5006,7 @@ layout_mode = 2
 setting_variable = "background"
 setting_label = "Background Theme"
 option_enabled = true
-options = Array[String](["Woods", "Factory", "The Lab", "Unheard"])
+options = Array[String](["Woods", "Factory", "The Lab", "\"\"\"uNHEARD\"\"\""])
 
 [node name="Dev Notes" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
 layout_mode = 2
@@ -4983,5 +5034,5 @@ Items = Array[ExtResource("10_2172y")]([SubResource("Resource_wmgqi"), SubResour
 [connection signal="pressed" from="MainContainer/TradersContainer/Ragman" to="MainContainer/MainBody/TaskBox/Control" method="_on_ragman_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Jaeger" to="MainContainer/MainBody/TaskBox/Control" method="_on_jaeger_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Items" to="MainContainer/MainBody/TaskBox/Control" method="_on_items_pressed"]
-[connection signal="pressed" from="MainContainer/TradersContainer/Items2" to="Window" method="toggle_visible"]
+[connection signal="pressed" from="MainContainer/TradersContainer/Settings" to="Window" method="toggle_visible"]
 [connection signal="close_requested" from="Window" to="Window" method="toggle_visible"]

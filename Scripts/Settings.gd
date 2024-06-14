@@ -12,9 +12,9 @@ signal apply_settings
 
 var volume: int = 100
 var hover_color: HoverColors = HoverColors.RED
-var custom_color_r: int = 0
-var custom_color_g: int = 0
-var custom_color_b: int = 0
+var custom_color_r: int
+var custom_color_g: int
+var custom_color_b: int
 var background: int = 0
 var dev_notes: bool = false
 
@@ -28,10 +28,14 @@ var Hover2Color:= {
 	HoverColors.CUSTOM: custom_color }
 #add preloaded images here eventually
 var Background2Image:= {
-	0: 0,
-	1: 0,
-	2: 0,
-	3: 0 }
+	#0: preload("res://VFX/Woods.png"),
+	#1: preload("res://VFX/Factory.png"),
+	#2: preload("res://VFX/Labs.png"),
+	#3: preload("res://VFX/Unheard.png") }
+	0: preload("res://VFX/woodsnew.png"),
+	1: preload("res://VFX/factorynew.png"),
+	2: preload("res://VFX/labsnew.png"),
+	3: preload("res://VFX/unheardnew.png") }
 
 func _ready():
 	load_settings()
@@ -62,14 +66,13 @@ func load_settings():
 		loaded_data = data
 		volume = loaded_data[0]
 		hover_color = loaded_data[1]
-		custom_color.r = loaded_data[2]
-		custom_color.g = loaded_data[3]
-		custom_color.b = loaded_data[4]
+		custom_color_r = loaded_data[2]
+		custom_color_g = loaded_data[3]
+		custom_color_b = loaded_data[4]
 		custom_color = Color8(custom_color_r,custom_color_g,custom_color_b)
 		background = loaded_data[5]
 		dev_notes = loaded_data[6]
 
 func update():
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index(&"Master"), linear_to_db(volume/100))
 	load_settings()
 	apply_settings.emit()

@@ -23,9 +23,10 @@ func _ready():
 func onMouseEntered():
 	Utility.hover.emit(assigned_task)
 	if not task_done:
-		label.add_theme_color_override("font_color", Settings.Hover2Color[Settings.hover_color])
+		if Settings.hover_color == Settings.HoverColors.CUSTOM:
+			label.add_theme_color_override("font_color", Color8(Settings.custom_color_r,Settings.custom_color_g,Settings.custom_color_b))
+		else: label.add_theme_color_override("font_color", Settings.Hover2Color[Settings.hover_color])
 	if Settings.volume > 0: hover.play()
-	print(hover.get_volume_db())
 
 func onMouseExited():
 	if not task_done:

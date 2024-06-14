@@ -1,9 +1,20 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://6fc2c3twkqn5"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://6fc2c3twkqn5"]
 
 [ext_resource type="FontFile" uid="uid://ca7i2juxfkj6s" path="res://VFX/bender.regular.otf" id="1_mpc5j"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7cg5r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwdvu"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.717647)
+corner_detail = 6
+
 [resource]
 default_font_size = 25
+Button/styles/focus = SubResource("StyleBoxEmpty_7cg5r")
 Label/colors/font_color = Color(1, 1, 1, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 3
@@ -19,3 +30,4 @@ VScrollBar/icons/decrement_pressed = null
 VScrollBar/icons/increment = null
 VScrollBar/icons/increment_highlight = null
 VScrollBar/icons/increment_pressed = null
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_vwdvu")
