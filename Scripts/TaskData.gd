@@ -22,6 +22,7 @@ var reference_list:= {}
 }
 
 func _ready() -> void:
+	print("The Bunker - Part 1".to_snake_case())  # the_bunker_-_part_1
 	generate_and_append(PraporTasks)
 	generate_and_append(TherapistTasks)
 	generate_and_append(SkierTasks)
@@ -37,9 +38,10 @@ func generate_and_append(list: Array[TaskResource]):
 			p.displayed_task_name = p.task_name + " - " + p.task_part
 		else:
 			p.displayed_task_name = p.task_name
-			var link: String = p.displayed_task_name.replace(" ","_")
-			p.link = link
+		var link: String = p.displayed_task_name.replace(" ","_")
+		p.link = link
 		#print(p.task_id)
 		#print(p.displayed_task_name)
+		print(p.link)
 		reference_list[p.task_id] = p
 
