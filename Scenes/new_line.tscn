@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://drnpkac28u2mg"]
+[gd_scene load_steps=4 format=3 uid="uid://drnpkac28u2mg"]
 
 [ext_resource type="Script" path="res://Scripts/new_line.gd" id="1_sanyq"]
 [ext_resource type="AudioStream" uid="uid://c32gpe1clc1nu" path="res://SFX/Hover.wav" id="2_i5xh0"]
+[ext_resource type="AudioStream" uid="uid://7vgvyid34o8j" path="res://SFX/click.wav" id="4_m2fb3"]
 
-[node name="ListLine" type="MarginContainer" node_paths=PackedStringArray("label", "hover", "complete", "undo", "button")]
+[node name="ListLine" type="MarginContainer" node_paths=PackedStringArray("label", "hover", "undo", "button")]
 offset_right = 188.0
 offset_bottom = 40.0
 mouse_filter = 2
@@ -13,8 +14,7 @@ theme_override_constants/margin_right = 5
 script = ExtResource("1_sanyq")
 label = NodePath("Label")
 hover = NodePath("Hover")
-complete = NodePath("Complete")
-undo = NodePath("Undo")
+undo = NodePath("Click")
 button = NodePath("Button")
 
 [node name="Label" type="Label" parent="."]
@@ -24,10 +24,8 @@ text = "dfgds"
 [node name="Hover" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_i5xh0")
 
-[node name="Complete" type="AudioStreamPlayer" parent="."]
-volume_db = -4.0
-
-[node name="Undo" type="AudioStreamPlayer" parent="."]
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_m2fb3")
 volume_db = -4.0
 
 [node name="Button" type="Button" parent="."]

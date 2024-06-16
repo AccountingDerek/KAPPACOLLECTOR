@@ -37,25 +37,33 @@ func cycle(trader: Tasks.traders) -> void:
 
 
 func _on_prapor_pressed():
+	%Click.play()
 	cycle(Tasks.traders.PRAPOR)
 
 func _on_therapist_pressed():
+	%Click.play()
 	cycle(Tasks.traders.THERAPIST)
 
 func _on_skier_pressed():
+	%Click.play()
 	cycle(Tasks.traders.SKIER)
 
 func _on_peacekeeper_pressed():
+	%Click.play()
 	cycle(Tasks.traders.PEACEKEEPER)
 
 func _on_mechanic_pressed():
+	%Click.play()
 	cycle(Tasks.traders.MECHANIC)
 
 func _on_ragman_pressed():
+	%Click.play()
 	cycle(Tasks.traders.RAGMAN)
 
 func _on_jaeger_pressed():
+	%Click.play()
 	cycle(Tasks.traders.JAEGER)
 
 func _on_items_pressed():
+	%Click.play()
 	cycle(Tasks.traders.ITEMS)

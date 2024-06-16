@@ -1,4 +1,4 @@
-[gd_scene load_steps=317 format=3 uid="uid://baelcd5jeu4is"]
+[gd_scene load_steps=325 format=3 uid="uid://baelcd5jeu4is"]
 
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
 [ext_resource type="Script" path="res://Scripts/TaskData.gd" id="1_t7o52"]
@@ -6,31 +6,42 @@
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="2_e0ssb"]
 [ext_resource type="Texture2D" uid="uid://otp1blkm1wkl" path="res://Icons/Prapor_Portrait.png" id="2_gns63"]
 [ext_resource type="Texture2D" uid="uid://duo05283rga87" path="res://Icons/Therapist_Portrait.png" id="3_r7pwn"]
+[ext_resource type="PackedScene" uid="uid://ko2gkm2upmtm" path="res://Scenes/x_bar.tscn" id="4_ijpiy"]
 [ext_resource type="Texture2D" uid="uid://b1k74opx5xmbq" path="res://Icons/Skier_Portrait.png" id="4_kq56s"]
 [ext_resource type="Script" path="res://Scripts/TraderButton.gd" id="5_45lv0"]
 [ext_resource type="Texture2D" uid="uid://5lbrsi30p1kf" path="res://Icons/Peacekeeper_Portrait.png" id="5_i0ijl"]
 [ext_resource type="Texture2D" uid="uid://kx6als4ehb5y" path="res://Icons/Mechanic_Portrait.png" id="6_6fxj7"]
 [ext_resource type="Texture2D" uid="uid://bmkh1ty14p4to" path="res://Icons/Prapor_Alt_Portrait.png" id="6_cdllc"]
 [ext_resource type="Texture2D" uid="uid://k6mtjw2joevu" path="res://Icons/Ragman_Portrait.png" id="7_rwjyk"]
+[ext_resource type="Texture2D" uid="uid://b1qpbpq8b6fkk" path="res://Icons/Prapor_Hover.png" id="7_x8aeh"]
 [ext_resource type="Texture2D" uid="uid://6sfq5ck6y6ny" path="res://Icons/Jaeger_Portrait.png" id="8_oqx12"]
 [ext_resource type="Texture2D" uid="uid://ce7pewwfyuv6q" path="res://Icons/Therapist_Alt_Portrait.png" id="8_ppv5k"]
 [ext_resource type="Texture2D" uid="uid://bl3copdd2c7g7" path="res://Icons/items.png" id="9_6flb8"]
 [ext_resource type="Script" path="res://Scripts/Task.gd" id="10_2172y"]
 [ext_resource type="Script" path="res://Scripts/TaskBox.gd" id="10_ab0s5"]
+[ext_resource type="Texture2D" uid="uid://cyibtkh5gr1bs" path="res://Icons/Therapist_Hover.png" id="10_fs3l2"]
 [ext_resource type="Texture2D" uid="uid://dhu61i1glj2qf" path="res://Icons/setings.png" id="10_iw8gn"]
 [ext_resource type="Texture2D" uid="uid://c3hk2gs2us2ch" path="res://Icons/Skier_Alt_Portrait.png" id="10_k4n8y"]
 [ext_resource type="Texture2D" uid="uid://b2gnnrgnkoh3f" path="res://Icons/stop fucking around.png" id="11_fa5r0"]
 [ext_resource type="Script" path="res://Scripts/DescriptionBox.gd" id="11_jhxhj"]
 [ext_resource type="Texture2D" uid="uid://d3fi7ggwxkwgl" path="res://Icons/Peacekeeper_Alt_Portrait.png" id="12_2kesq"]
+[ext_resource type="Texture2D" uid="uid://d1wgyrj870c5q" path="res://Icons/Skier_Hover.png" id="13_ocub0"]
 [ext_resource type="Texture2D" uid="uid://d3sg53m5dg3cd" path="res://Icons/Mechanic_Alt_Portrait.png" id="14_xm8pn"]
 [ext_resource type="FontFile" uid="uid://ca7i2juxfkj6s" path="res://VFX/bender.regular.otf" id="15_h5a2j"]
 [ext_resource type="PackedScene" uid="uid://b8as7e1yitaib" path="res://Scenes/setting.tscn" id="15_r71hq"]
+[ext_resource type="Texture2D" uid="uid://b4imx4s3o77xl" path="res://Icons/Peacekeeper_Hover.png" id="16_2o862"]
 [ext_resource type="Script" path="res://Scripts/SettingsWindow.gd" id="16_8okyb"]
 [ext_resource type="Script" path="res://Scripts/settingscolorrect.gd" id="16_ctjih"]
 [ext_resource type="Texture2D" uid="uid://cdjekgblyhmvd" path="res://Icons/Ragman_Alt_Portrait.png" id="16_f8e6d"]
 [ext_resource type="Texture2D" uid="uid://bfvmlbsnqxn58" path="res://Icons/Jaeger_Alt_Portrait.png" id="18_a1mn3"]
-[ext_resource type="Texture2D" uid="uid://bj5qr83vv0aav" path="res://Icons/itemsgood.png" id="20_d6mi7"]
-[ext_resource type="Texture2D" uid="uid://dgsq7hsxs1if5" path="res://VFX/HOG.jpg" id="28_0500x"]
+[ext_resource type="Texture2D" uid="uid://fo1xemc81f4u" path="res://Icons/Mechanic_Hover.png" id="19_fj7a3"]
+[ext_resource type="Texture2D" uid="uid://cmtb30jjksjvi" path="res://Icons/Ragman_Hover.png" id="22_1caam"]
+[ext_resource type="Texture2D" uid="uid://dyxeotp0lw88e" path="res://Icons/Jaeger_Hover.png" id="25_2vwol"]
+[ext_resource type="Texture2D" uid="uid://c5sbkpe3i4fik" path="res://Icons/Items_Hover.png" id="28_vqijf"]
+[ext_resource type="Texture2D" uid="uid://b2lcp7ipa7net" path="res://Icons/Items_Complete.png" id="29_u787p"]
+[ext_resource type="AudioStream" uid="uid://c32gpe1clc1nu" path="res://SFX/Hover.wav" id="41_13itv"]
+[ext_resource type="AudioStream" uid="uid://o5f342ofqsvc" path="res://SFX/complete.mp3" id="41_utsgh"]
+[ext_resource type="AudioStream" uid="uid://7vgvyid34o8j" path="res://SFX/click.wav" id="42_gvx60"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64maq"]
 
@@ -54,7 +65,39 @@ to = Array[int]([189])
 link = ""
 additional_info = ""
 
-[sub_resource type="Image" id="Image_ivum6"]
+[sub_resource type="Image" id="Image_23gnh"]
+data = {
+"data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 49, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 90, 255, 255, 255, 77, 255, 255, 255, 49, 255, 255, 255, 9, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 77, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 76, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 89, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 8, 255, 255, 255, 48, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 89, 255, 255, 255, 76, 255, 255, 255, 48, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_dw07n"]
+image = SubResource("Image_23gnh")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qk1g"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3ts8"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 21.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_detail = 5
+
+[sub_resource type="Image" id="Image_0kway"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 153, 178, 178, 178, 166, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 166, 178, 178, 178, 151, 255, 255, 255, 0, 255, 255, 255, 0, 178, 178, 178, 166, 178, 178, 178, 217, 178, 178, 178, 179, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 175, 175, 175, 19, 178, 178, 178, 179, 178, 178, 178, 217, 178, 178, 178, 165, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 179, 179, 179, 180, 175, 175, 175, 19, 175, 175, 175, 19, 179, 179, 179, 180, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 181, 178, 178, 178, 181, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 165, 178, 178, 178, 165, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -64,88 +107,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_tanj7"]
-image = SubResource("Image_ivum6")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56tmi"]
-content_margin_left = 8.0
-content_margin_top = 4.0
-content_margin_right = 21.0
-content_margin_bottom = 4.0
-bg_color = Color(0.1, 0.1, 0.1, 0.3)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6jymu"]
-content_margin_left = 21.0
-content_margin_top = 4.0
-content_margin_right = 8.0
-content_margin_bottom = 4.0
-bg_color = Color(0.1, 0.1, 0.1, 0.3)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbe0v"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(1, 1, 1, 0.75)
-draw_center = false
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-expand_margin_left = 2.0
-expand_margin_top = 2.0
-expand_margin_right = 2.0
-expand_margin_bottom = 2.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdy7x"]
-content_margin_left = 8.0
-content_margin_top = 4.0
-content_margin_right = 21.0
-content_margin_bottom = 4.0
-bg_color = Color(0.225, 0.225, 0.225, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4w7qo"]
-content_margin_left = 21.0
-content_margin_top = 4.0
-content_margin_right = 8.0
-content_margin_bottom = 4.0
-bg_color = Color(0.225, 0.225, 0.225, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3ts8"]
-content_margin_left = 8.0
-content_margin_top = 4.0
-content_margin_right = 21.0
-content_margin_bottom = 4.0
-bg_color = Color(0.1, 0.1, 0.1, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+image = SubResource("Image_0kway")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uk0kt"]
 content_margin_left = 21.0
@@ -159,39 +121,22 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htrcl"]
-content_margin_left = 8.0
-content_margin_top = 4.0
-content_margin_right = 21.0
-content_margin_bottom = 4.0
-bg_color = Color(0, 0, 0, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r05tw"]
-content_margin_left = 21.0
-content_margin_top = 4.0
-content_margin_right = 8.0
-content_margin_bottom = 4.0
-bg_color = Color(0, 0, 0, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+[sub_resource type="ImageTexture" id="ImageTexture_x8emv"]
 
 [sub_resource type="Theme" id="Theme_hi5oy"]
 default_font = ExtResource("15_h5a2j")
 default_font_size = 20
 Button/fonts/font = ExtResource("15_h5a2j")
+HSlider/icons/grabber_disabled = SubResource("ImageTexture_dw07n")
+HSlider/styles/slider = SubResource("StyleBoxFlat_3qk1g")
 Label/colors/font_color = Color(1, 1, 1, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 3
 Label/font_sizes/font_size = 16
 Label/fonts/font = ExtResource("15_h5a2j")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_j3ts8")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_j3ts8")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_j3ts8")
 OptionButton/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 OptionButton/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
 OptionButton/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
@@ -206,19 +151,20 @@ OptionButton/constants/outline_size = 0
 OptionButton/font_sizes/font_size = 16
 OptionButton/fonts/font = ExtResource("15_h5a2j")
 OptionButton/icons/arrow = SubResource("ImageTexture_tanj7")
-OptionButton/styles/disabled = SubResource("StyleBoxFlat_56tmi")
-OptionButton/styles/disabled_mirrored = SubResource("StyleBoxFlat_6jymu")
-OptionButton/styles/focus = SubResource("StyleBoxFlat_rbe0v")
-OptionButton/styles/hover = SubResource("StyleBoxFlat_mdy7x")
-OptionButton/styles/hover_mirrored = SubResource("StyleBoxFlat_4w7qo")
+OptionButton/styles/disabled = SubResource("StyleBoxFlat_j3ts8")
+OptionButton/styles/disabled_mirrored = SubResource("StyleBoxFlat_j3ts8")
+OptionButton/styles/focus = SubResource("StyleBoxFlat_j3ts8")
+OptionButton/styles/hover = SubResource("StyleBoxFlat_j3ts8")
+OptionButton/styles/hover_mirrored = SubResource("StyleBoxFlat_j3ts8")
 OptionButton/styles/normal = SubResource("StyleBoxFlat_j3ts8")
 OptionButton/styles/normal_mirrored = SubResource("StyleBoxFlat_uk0kt")
-OptionButton/styles/pressed = SubResource("StyleBoxFlat_htrcl")
-OptionButton/styles/pressed_mirrored = SubResource("StyleBoxFlat_r05tw")
+OptionButton/styles/pressed = SubResource("StyleBoxFlat_j3ts8")
+OptionButton/styles/pressed_mirrored = SubResource("StyleBoxFlat_j3ts8")
 RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
 RichTextLabel/constants/outline_size = 3
 RichTextLabel/font_sizes/normal_font_size = 20
 RichTextLabel/fonts/normal_font = ExtResource("15_h5a2j")
+SpinBox/icons/updown = SubResource("ImageTexture_x8emv")
 VScrollBar/icons/decrement = null
 VScrollBar/icons/decrement_highlight = null
 VScrollBar/icons/decrement_pressed = null
@@ -240,7 +186,7 @@ description = "• Find the Utyos machine gun on Ground Zero
 • Eliminate 5 enemies on Ground Zero"
 from = Array[int]([])
 to = Array[int]([1])
-link = ""
+link = "Shooting_Cans"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_r0ilu"]
@@ -256,7 +202,7 @@ description = "• Eliminate 5 Scavs
 • Hand in 5 MP-133 Shotguns"
 from = Array[int]([0])
 to = Array[int]([2, 3])
-link = ""
+link = "Debut"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fcqn5"]
@@ -272,7 +218,7 @@ description = "• Find the wine bottle inside the liquor store on Ground Zero
 • Hand the quest item over to Prapor"
 from = Array[int]([1])
 to = Array[int]([4])
-link = ""
+link = "Luxurious_Life"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_7p1tt"]
@@ -288,7 +234,7 @@ description = "• Eliminate 5 Scavs
 • Hand in 5 MP-133 Shotguns"
 from = Array[int]([1])
 to = Array[int]([])
-link = ""
+link = "Search_Mission"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_24rga"]
@@ -304,7 +250,7 @@ description = "• Find the Bronze Pocket Watch on Customs
 • Hand the quest item over to Prapor"
 from = Array[int]([2])
 to = Array[int]([5, 6])
-link = ""
+link = "Background_Check"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_0ooys"]
@@ -319,7 +265,7 @@ task_part = ""
 description = "• Eliminate 15 Scavs on Woods"
 from = Array[int]([4])
 to = Array[int]([])
-link = ""
+link = "Shootout_Picnic"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fg0e8"]
@@ -336,7 +282,7 @@ description = "• Obtain Secure Folder 0022 in Big Red on Customs
 • Survive and Extract"
 from = Array[int]([4])
 to = Array[int]([7])
-link = ""
+link = "Delivery_from_the_Past"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_dy4sn"]
@@ -352,7 +298,7 @@ description = "• Mark all four fuel tanks with MS2000 Markers on Customs
 • Survive and Extract"
 from = Array[int]([6])
 to = Array[int]([8, 10])
-link = ""
+link = "BP_Depot"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ovdoy"]
@@ -369,7 +315,7 @@ description = "• Find the Underground Bunker on Reserve
 • Survive and Extract"
 from = Array[int]([7])
 to = Array[int]([9])
-link = ""
+link = "The_Bunker_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_jnenm"]
@@ -389,7 +335,7 @@ description = "• Find the hermetic door leading to White Bishop
 • Survive and Extract"
 from = Array[int]([8])
 to = Array[int]([12])
-link = ""
+link = "The_Bunker_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_6iyn8"]
@@ -1527,7 +1473,7 @@ additional_info = "DEV NOTE: Who up Chumming their PMC– [EXTREMELY LOUD INCORR
 [sub_resource type="Resource" id="Resource_s7186"]
 script = ExtResource("10_2172y")
 task_id = 80
-trader = 0
+trader = 2
 mutual_exclusives = Array[int]([])
 post_choice = false
 post_choice_mutual_exclusives = Array[int]([])
@@ -1758,7 +1704,7 @@ additional_info = ""
 [sub_resource type="Resource" id="Resource_oclra"]
 script = ExtResource("10_2172y")
 task_id = 94
-trader = 0
+trader = 3
 mutual_exclusives = Array[int]([])
 post_choice = false
 post_choice_mutual_exclusives = Array[int]([])
@@ -3841,7 +3787,7 @@ additional_info = ""
 [sub_resource type="Resource" id="Resource_jbocw"]
 script = ExtResource("10_2172y")
 task_id = 210
-trader = 0
+trader = 6
 mutual_exclusives = Array[int]([])
 post_choice = false
 post_choice_mutual_exclusives = Array[int]([])
@@ -4676,24 +4622,34 @@ link = ""
 additional_info = "DEV NOTE: I want one of these in real life"
 
 [node name="MainScreen" type="Node2D"]
+texture_filter = 1
 
 [node name="Background" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(1152, 648)
+custom_minimum_size = Vector2(1152, 650)
+offset_top = 25.0
 offset_right = 1152.0
-offset_bottom = 648.0
+offset_bottom = 673.0
 texture = ExtResource("1_yypv0")
 expand_mode = 2
 script = ExtResource("2_e0ssb")
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
-offset_top = -1.0
-offset_right = 1052.0
-offset_bottom = 127.0
+offset_top = -4.0
+offset_right = 1152.0
+offset_bottom = 675.0
 theme = ExtResource("1_bdga5")
+theme_override_constants/separation = 0
 alignment = 1
+
+[node name="X Bar" parent="MainContainer" instance=ExtResource("4_ijpiy")]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
 
 [node name="TradersContainer" type="HBoxContainer" parent="MainContainer"]
 layout_mode = 2
+size_flags_vertical = 0
 theme = SubResource("Theme_5gcnr")
 theme_override_constants/separation = 0
 
@@ -4707,7 +4663,8 @@ clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
 base = ExtResource("2_gns63")
-hover = ExtResource("6_cdllc")
+hover = ExtResource("7_x8aeh")
+complete = ExtResource("6_cdllc")
 
 [node name="Therapist" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4716,8 +4673,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 1
 base = ExtResource("3_r7pwn")
-hover = ExtResource("8_ppv5k")
+hover = ExtResource("10_fs3l2")
+complete = ExtResource("8_ppv5k")
 
 [node name="Skier" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4726,8 +4685,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 2
 base = ExtResource("4_kq56s")
-hover = ExtResource("10_k4n8y")
+hover = ExtResource("13_ocub0")
+complete = ExtResource("10_k4n8y")
 
 [node name="Peacekeeper" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4736,8 +4697,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 3
 base = ExtResource("5_i0ijl")
-hover = ExtResource("12_2kesq")
+hover = ExtResource("16_2o862")
+complete = ExtResource("12_2kesq")
 
 [node name="Mechanic" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4746,8 +4709,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 4
 base = ExtResource("6_6fxj7")
-hover = ExtResource("14_xm8pn")
+hover = ExtResource("19_fj7a3")
+complete = ExtResource("14_xm8pn")
 
 [node name="Ragman" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4756,8 +4721,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 5
 base = ExtResource("7_rwjyk")
-hover = ExtResource("16_f8e6d")
+hover = ExtResource("22_1caam")
+complete = ExtResource("16_f8e6d")
 
 [node name="Jaeger" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4766,8 +4733,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 6
 base = ExtResource("8_oqx12")
-hover = ExtResource("18_a1mn3")
+hover = ExtResource("25_2vwol")
+complete = ExtResource("18_a1mn3")
 
 [node name="Items" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4776,8 +4745,10 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+trader = 7
 base = ExtResource("9_6flb8")
-hover = ExtResource("20_d6mi7")
+hover = ExtResource("28_vqijf")
+complete = ExtResource("29_u787p")
 
 [node name="Settings" type="Button" parent="MainContainer/TradersContainer"]
 layout_mode = 2
@@ -4808,11 +4779,11 @@ offset_right = 640.0
 offset_bottom = 516.0
 
 [node name="DescriptionBox" type="ScrollContainer" parent="MainContainer/MainBody"]
-custom_minimum_size = Vector2(512, 518.43)
+custom_minimum_size = Vector2(512, 517)
 layout_mode = 2
 
 [node name="Control" type="Control" parent="MainContainer/MainBody/DescriptionBox"]
-custom_minimum_size = Vector2(512, 173.076)
+custom_minimum_size = Vector2(512, 170.226)
 layout_mode = 2
 script = ExtResource("11_jhxhj")
 backupResource = SubResource("Resource_r318x")
@@ -4832,7 +4803,7 @@ layout_mode = 0
 offset_left = 22.0
 offset_top = 163.0
 offset_right = 492.0
-offset_bottom = 671.0
+offset_bottom = 513.0
 
 [node name="Quest Name" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
@@ -4907,8 +4878,12 @@ clip_text = true
 
 [node name="LinkButton" type="LinkButton" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+action_mode = 0
+text = "WIKI LINK"
+uri = "https://escapefromtarkov.fandom.com/wiki/Living_High_is_Not_a_Crime_-_Part_1"
 
 [node name="DEVNOTE" type="RichTextLabel" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/default_color = Color(1, 0, 0, 1)
 text = "DEV NOTE: Technically speaking, you need to complete Postman Pat Part 2 "
@@ -4917,33 +4892,52 @@ fit_content = true
 [node name="Window" type="Window" parent="."]
 title = "SETTINGS"
 initial_position = 1
-size = Vector2i(515, 267)
+size = Vector2i(515, 377)
 visible = false
+unresizable = true
+borderless = true
 theme = SubResource("Theme_hi5oy")
 script = ExtResource("16_8okyb")
 
 [node name="TextureRect" type="TextureRect" parent="Window"]
 custom_minimum_size = Vector2(515, 267)
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("28_0500x")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 expand_mode = 2
 
-[node name="ColumnContainer" type="HBoxContainer" parent="Window"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="VBoxContainer" type="VBoxContainer" parent="Window"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Window/ColumnContainer"]
+[node name="X Bar" parent="Window/VBoxContainer" instance=ExtResource("4_ijpiy")]
+texture_filter = 1
+custom_minimum_size = Vector2(460.535, 25)
+layout_mode = 2
+settings = true
+
+[node name="ColumnContainer" type="HBoxContainer" parent="Window/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/VBoxContainer/ColumnContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 3
 theme_override_constants/margin_top = 3
 theme_override_constants/margin_right = 3
 theme_override_constants/margin_bottom = 3
 
-[node name="Column1" type="VBoxContainer" parent="Window/ColumnContainer/MarginContainer"]
+[node name="Column1" type="VBoxContainer" parent="Window/VBoxContainer/ColumnContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="Volume" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
+[node name="Volume" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
 layout_mode = 2
 setting_variable = "volume"
 setting_label = "SFX Volume"
@@ -4952,20 +4946,20 @@ number_enabled = true
 max_value = 100.0
 step = 5.0
 
-[node name="Hover Text Color" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
+[node name="Hover Text Color" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
 layout_mode = 2
 setting_variable = "hover_color"
 setting_label = "Hovered Text Color"
 option_enabled = true
 options = Array[String](["Red", "Green", "Blue", "Pink", "Custom"])
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Window/ColumnContainer/MarginContainer/Column1"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1/HBoxContainer"]
 layout_mode = 2
 
-[node name="Custom R" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
+[node name="Custom R" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
 custom_minimum_size = Vector2(470, 0)
 layout_mode = 2
 setting_variable = "custom_color_r"
@@ -4975,7 +4969,7 @@ slider_enabled = true
 number_enabled = true
 max_value = 255.0
 
-[node name="Custom G" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
+[node name="Custom G" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
 custom_minimum_size = Vector2(470, 0)
 layout_mode = 2
 setting_variable = "custom_color_g"
@@ -4985,7 +4979,7 @@ slider_enabled = true
 number_enabled = true
 max_value = 255.0
 
-[node name="Custom B" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
+[node name="Custom B" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1/HBoxContainer/VBoxContainer" instance=ExtResource("15_r71hq")]
 custom_minimum_size = Vector2(470, 0)
 layout_mode = 2
 setting_variable = "custom_color_b"
@@ -4995,24 +4989,39 @@ slider_enabled = true
 number_enabled = true
 max_value = 255.0
 
-[node name="ColorRect" type="ColorRect" parent="Window/ColumnContainer/MarginContainer/Column1/HBoxContainer"]
+[node name="ColorRect" type="ColorRect" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1/HBoxContainer"]
 custom_minimum_size = Vector2(30, 10)
 layout_mode = 2
 color = Color(0, 0, 0, 1)
 script = ExtResource("16_ctjih")
 
-[node name="Background Image" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
+[node name="Background Image" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
 layout_mode = 2
 setting_variable = "background"
 setting_label = "Background Theme"
 option_enabled = true
 options = Array[String](["Woods", "Factory", "The Lab", "\"\"\"uNHEARD\"\"\""])
 
-[node name="Dev Notes" parent="Window/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
+[node name="Dev Notes" parent="Window/VBoxContainer/ColumnContainer/MarginContainer/Column1" instance=ExtResource("15_r71hq")]
 layout_mode = 2
 setting_variable = "dev_notes"
 setting_label = "Enable Dev Notes"
 check_enabled = true
+
+[node name="RESET" type="Button" parent="Window"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 19
+text = "RESET! RESET! RESET! RESET! RESET! RESET! RESET! RESET!"
+clip_text = true
 
 [node name="TaskData" type="Node" parent="."]
 unique_name_in_owner = true
@@ -5026,6 +5035,29 @@ RagmanTasks = Array[ExtResource("10_2172y")]([SubResource("Resource_n4q5p"), Sub
 JaegerTasks = Array[ExtResource("10_2172y")]([SubResource("Resource_0om15"), SubResource("Resource_aimwf"), SubResource("Resource_vpdl3"), SubResource("Resource_7ylls"), SubResource("Resource_11olp"), SubResource("Resource_evcr3"), SubResource("Resource_c3eda"), SubResource("Resource_3mk6x"), SubResource("Resource_guuri"), SubResource("Resource_d7gr8"), SubResource("Resource_i6cs1"), SubResource("Resource_ss7c3"), SubResource("Resource_antc8"), SubResource("Resource_rkeb3"), SubResource("Resource_ty0g3"), SubResource("Resource_d0nq3"), SubResource("Resource_fi88n"), SubResource("Resource_5vhg4"), SubResource("Resource_krfts"), SubResource("Resource_dlsed"), SubResource("Resource_ke6sf"), SubResource("Resource_vnola"), SubResource("Resource_jbocw"), SubResource("Resource_fw6hf"), SubResource("Resource_8md82"), SubResource("Resource_4gnlg"), SubResource("Resource_37c2r"), SubResource("Resource_riku8"), SubResource("Resource_l5x27"), SubResource("Resource_eyj4q"), SubResource("Resource_0ohou"), SubResource("Resource_0o7f3"), SubResource("Resource_8db5w"), SubResource("Resource_joq26"), SubResource("Resource_stc7h"), SubResource("Resource_c07a2"), SubResource("Resource_04254"), SubResource("Resource_r6n1j"), SubResource("Resource_gtwpk"), SubResource("Resource_vqw6y"), SubResource("Resource_dtrx4")])
 Items = Array[ExtResource("10_2172y")]([SubResource("Resource_wmgqi"), SubResource("Resource_1wpbe"), SubResource("Resource_mcmap"), SubResource("Resource_7k5qk"), SubResource("Resource_0lghv"), SubResource("Resource_rya4o"), SubResource("Resource_6v8we"), SubResource("Resource_61wdb"), SubResource("Resource_autdq"), SubResource("Resource_fjdjs"), SubResource("Resource_g88or"), SubResource("Resource_ygx55"), SubResource("Resource_ua1ct"), SubResource("Resource_p5fj6"), SubResource("Resource_ncbtf"), SubResource("Resource_s0tyd"), SubResource("Resource_s8b2u"), SubResource("Resource_67qpo"), SubResource("Resource_wuem6"), SubResource("Resource_64oyu"), SubResource("Resource_45agh"), SubResource("Resource_vp8su"), SubResource("Resource_85rx3"), SubResource("Resource_72rbd"), SubResource("Resource_sl18a"), SubResource("Resource_qkoqv"), SubResource("Resource_yni0q"), SubResource("Resource_4scwa"), SubResource("Resource_ye47y"), SubResource("Resource_ekf7g"), SubResource("Resource_ukj3p"), SubResource("Resource_y0xlm"), SubResource("Resource_bq3wm"), SubResource("Resource_8yafu"), SubResource("Resource_lkyn8"), SubResource("Resource_jreqc")])
 
+[node name="CompletionAward" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("41_utsgh")
+
+[node name="Hover" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("41_13itv")
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("42_gvx60")
+volume_db = -4.0
+
+[node name="SecretTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.0
+one_shot = true
+
+[node name="InputTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.25
+one_shot = true
+
 [connection signal="pressed" from="MainContainer/TradersContainer/Prapor" to="MainContainer/MainBody/TaskBox/Control" method="_on_prapor_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Therapist" to="MainContainer/MainBody/TaskBox/Control" method="_on_therapist_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Skier" to="MainContainer/MainBody/TaskBox/Control" method="_on_skier_pressed"]
@@ -5035,4 +5067,7 @@ Items = Array[ExtResource("10_2172y")]([SubResource("Resource_wmgqi"), SubResour
 [connection signal="pressed" from="MainContainer/TradersContainer/Jaeger" to="MainContainer/MainBody/TaskBox/Control" method="_on_jaeger_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Items" to="MainContainer/MainBody/TaskBox/Control" method="_on_items_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Settings" to="Window" method="toggle_visible"]
+[connection signal="pressed" from="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/LinkButton" to="MainContainer/MainBody/DescriptionBox/Control" method="_on_link_button_pressed"]
 [connection signal="close_requested" from="Window" to="Window" method="toggle_visible"]
+[connection signal="pressed" from="Window/RESET" to="Window" method="reset_button"]
+[connection signal="timeout" from="SecretTimer" to="Background" method="_on_secret_timer_timeout"]

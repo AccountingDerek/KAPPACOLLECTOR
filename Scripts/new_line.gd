@@ -1,7 +1,6 @@
 extends MarginContainer
 @export var label: Label
 @export var hover: AudioStreamPlayer
-@export var complete: AudioStreamPlayer
 @export var undo: AudioStreamPlayer
 @export var button: Button
 var assigned_task: Tasks.tasks
@@ -17,6 +16,7 @@ func _ready():
 	button.connect("pressed", logic)
 	Settings.apply_settings.connect(update)
 	Utility.update.connect(update)
+	Utility.reset.connect(reset)
 	task_done = SaveData.TaskCompletion[assigned_task]
 	update()
 
@@ -40,7 +40,6 @@ func logic():
 	#check to see if this is an undo
 	if task_done:
 		task_done = false
-		undo.play()
 		update()
 		Utility.update.emit()
 		return
@@ -69,11 +68,13 @@ func logic():
 			task_done = true
 		else:
 			task_done = false
+	undo.play()
 	update()
 	Utility.update.emit()
 
 func update():
 	hover.set_volume_db((Settings.volume/2)-50)
+	undo.set_volume_db((Settings.volume/2)-50)
 	if task_done:
 		SaveData.TaskCompletion[assigned_task] = true
 		label.add_theme_color_override("font_color", Color8(0,0,0))
@@ -90,3 +91,7 @@ func check_from() -> bool:
 		return true
 	else:
 		return false
+
+func reset():
+	task_done = false
+	update()

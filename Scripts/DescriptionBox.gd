@@ -1,4 +1,5 @@
 extends Control
+const prefix: String = "https://escapefromtarkov.fandom.com/wiki/"
 @onready var vbox = $VBoxContainer
 @onready var quest_name: Label = $"VBoxContainer/Quest Name"
 @onready var quest_part: Label = $"VBoxContainer/Quest Part"
@@ -43,8 +44,13 @@ func switch_description(task: Tasks.tasks):
 	requirements.clear()
 	requirements.add_text(data.description)
 	previous.text = generate_from_resources(data.from, true)
+	link.uri = prefix + data.link
+	print(link.uri)
 	next.text = generate_from_resources(data.to, false)
 	note.clear()
+	if data.additional_info == "":
+		note.hide()
+	else: note.show()
 	note.add_text(data.additional_info)
 	link.uri = "placeholder"
 
@@ -79,4 +85,8 @@ func apply_settings() -> void:
 	note.visible = Settings.dev_notes
 
 func _process(delta):
-	self.custom_minimum_size.y = vbox.position.y + vbox.size.y
+	self.custom_minimum_size.y = maxi(vbox.size.y + 167, 517)
+
+
+func _on_link_button_pressed():
+	print("zoo wee mama")

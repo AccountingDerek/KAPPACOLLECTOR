@@ -46,7 +46,6 @@ func save_settings():
 	var save_data: Array[int] = [volume, hover_color, custom_color_r, custom_color_b, custom_color_g, background, dev_notes]
 	var json_string = JSON.stringify(save_data)
 	save_list.store_line(json_string)
-	print(save_data)
 	apply_settings.emit()
 
 func load_settings():

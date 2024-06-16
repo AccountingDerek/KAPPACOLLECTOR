@@ -293,7 +293,8 @@ Tasks.tasks.PressPass: false,
 Tasks.tasks.Axel: false,
 Tasks.tasks.BEARBuddy: false,
 }
+
 func reset():
 	for i in TaskCompletion.size():
 		TaskCompletion[i] = false
-	Utility.update.emit()
+	Utility.reset.emit()

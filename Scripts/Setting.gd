@@ -141,7 +141,6 @@ func load_variable() -> void:
 		queue_free()
 	
 	var value: Variant = Settings.get(setting_variable)
-	print(str(setting_variable) + " " + str(value))
 	slider.value = value
 	number_box.value = value
 	option_button.selected = value

@@ -37,4 +37,9 @@ func generate_and_append(list: Array[TaskResource]):
 			p.displayed_task_name = p.task_name + " - " + p.task_part
 		else:
 			p.displayed_task_name = p.task_name
+			var link: String = p.displayed_task_name.replace(" ","_")
+			p.link = link
+		#print(p.task_id)
+		#print(p.displayed_task_name)
 		reference_list[p.task_id] = p
+
