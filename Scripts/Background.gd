@@ -37,9 +37,8 @@ func secret():
 			secret_string = ""
 
 func _input(event):
-	if event is InputEventKey and %InputTimer.is_stopped():
+	if event is InputEventKey and event.pressed:
 		secret_string += event.as_text()
-		%InputTimer.start()
 		%SecretTimer.start()
 		print(secret_string)
 		secret()
