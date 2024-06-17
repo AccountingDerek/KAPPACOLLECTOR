@@ -11,16 +11,6 @@ enum traders{
 	ITEMS
 }
 
-var istradercomplete:= {
-	traders.PRAPOR : false,
-	traders.THERAPIST : false,
-	traders.SKIER : false,
-	traders.PEACEKEEPER : false,
-	traders.MECHANIC : false,
-	traders.RAGMAN : false,
-	traders.JAEGER : false,
-	traders.ITEMS : false,
-}
 enum tasks {
 	ShootingCans,
 	Debut,
@@ -292,5 +282,3 @@ enum tasks {
 	Axel,
 	BEARBuddy,
 }
-
-var decision_tasks:= [tasks.BigCustomer, tasks.Chem4, tasks.Curiosity, tasks.SecurePerimeter, tasks.Supply, tasks.KindaSabotage, tasks.WoodsKeeper, tasks.Coll3, tasks.Sadist, tasks.Terragroup]

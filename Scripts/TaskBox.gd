@@ -9,8 +9,6 @@ func _ready():
 	Utility.screen_switch.connect(cycle)
 
 func cycle(trader: Tasks.traders) -> void:
-	print("cum")
-	print(Tasks.traders.keys()[trader])
 	## kill all lines
 	for i in vbox.get_children():
 		i.queue_free()

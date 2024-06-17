@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://drnpkac28u2mg"]
+[gd_scene load_steps=5 format=3 uid="uid://drnpkac28u2mg"]
 
 [ext_resource type="Script" path="res://Scripts/new_line.gd" id="1_sanyq"]
 [ext_resource type="AudioStream" uid="uid://c32gpe1clc1nu" path="res://SFX/Hover.wav" id="2_i5xh0"]
+[ext_resource type="FontFile" uid="uid://ca7i2juxfkj6s" path="res://VFX/bender.regular.otf" id="2_llgd5"]
 [ext_resource type="AudioStream" uid="uid://7vgvyid34o8j" path="res://SFX/click.wav" id="4_m2fb3"]
 
 [node name="ListLine" type="MarginContainer" node_paths=PackedStringArray("label", "hover", "undo", "button")]
@@ -19,7 +20,13 @@ button = NodePath("Button")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
-text = "dfgds"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_llgd5")
+text = "Banana"
 
 [node name="Hover" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_i5xh0")

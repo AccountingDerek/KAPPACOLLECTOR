@@ -1,12 +1,14 @@
 extends Button
+@export var control: Control
 @export var trader: Tasks.traders
+var current_base: Texture2D
 @export var base: Texture2D
 @export var hover: Texture2D
 @export var complete: Texture2D
+
 var trader_completion: bool = false
 var start_switch: bool = false
-@onready var hover_sfx = $"../../../Hover"
-@onready var click = $"../../../Click"
+
 
 func _ready():
 	mouse_entered.connect(enter)
@@ -16,11 +18,13 @@ func _ready():
 	update()
 
 func update() -> void:
-	if trader == $"../../MainBody/TaskBox/Control".mode:
+	if trader == control.mode:
 		if trader_completion:
 			for i in %TaskData.reference_list.size():
 				var data: TaskResource = %TaskData.reference_list[i]
 				if data.trader == trader:
+					if data.mutual_exclusives != []:
+						continue
 					if not SaveData.TaskCompletion[data.task_id]:
 						trader_completion = false
 						break
@@ -28,18 +32,26 @@ func update() -> void:
 			for i in %TaskData.reference_list.size():
 				var data: TaskResource = %TaskData.reference_list[i]
 				if data.trader == trader:
+					if data.mutual_exclusives != []:
+						continue
 					if not SaveData.TaskCompletion[data.task_id]:
 						trader_completion = false
 						break
 					else:
 						trader_completion = true
-	if not start_switch and trader_completion:
+	if not start_switch and trader_completion and $"../../MainBody/TaskBox/Control".mode == trader:
 		%CompletionAward.play()
+	if trader_completion:
+		current_base = complete
+		icon = current_base
+	else:
+		current_base = base
+		icon = current_base
 	start_switch = false
 
 func enter() -> void:
-	hover_sfx.play()
+	Utility.hover_sound.emit()
 	icon = hover
 	
 func exit() -> void:
-	icon = base
+	icon = current_base

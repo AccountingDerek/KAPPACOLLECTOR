@@ -11,9 +11,9 @@ var post_choice: bool = false
 var post_choice_mutual_exclusives: Array[Tasks.tasks]
 
 func _ready():
-	button.connect("mouse_entered",onMouseEntered)
-	button.connect("mouse_exited",onMouseExited)
-	button.connect("pressed", logic)
+	button.mouse_entered.connect(onMouseEntered)
+	button.mouse_exited.connect(onMouseExited)
+	button.pressed.connect(logic)
 	Settings.apply_settings.connect(update)
 	Utility.update.connect(update)
 	Utility.reset.connect(reset)

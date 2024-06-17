@@ -1,4 +1,4 @@
-[gd_scene load_steps=325 format=3 uid="uid://baelcd5jeu4is"]
+[gd_scene load_steps=324 format=3 uid="uid://baelcd5jeu4is"]
 
 [ext_resource type="Texture2D" uid="uid://btl1si56cuk5m" path="res://VFX/labsnew.png" id="1_3hfuy"]
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
@@ -50,22 +50,7 @@ Button/styles/normal = SubResource("StyleBoxFlat_64maq")
 
 [sub_resource type="Theme" id="Theme_1vy41"]
 
-[sub_resource type="Resource" id="Resource_r318x"]
-script = ExtResource("10_2172y")
-task_id = 188
-trader = 5
-mutual_exclusives = Array[int]([])
-post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
-task_name = "Living High is not a Crime"
-task_part = "Part 1"
-description = "• Find 2 Bronze Lions in raid\\n• Find 2 Horse Figurines in raid\\n• Find 2 Cat Figurines in raid\\n• Find 1 Roler in raid\\n• Find 1 Golden Egg in rain\\n• Hand these illustrious items over to Ragman"
-from = Array[int]([171, 187])
-to = Array[int]([189])
-link = ""
-additional_info = ""
-
-[sub_resource type="Image" id="Image_8nq5c"]
+[sub_resource type="Image" id="Image_hdpw7"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 49, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 90, 255, 255, 255, 77, 255, 255, 255, 49, 255, 255, 255, 9, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 77, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 76, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 89, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 8, 255, 255, 255, 48, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 89, 255, 255, 255, 76, 255, 255, 255, 48, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -75,7 +60,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_dw07n"]
-image = SubResource("Image_8nq5c")
+image = SubResource("Image_hdpw7")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qk1g"]
 content_margin_left = 4.0
@@ -97,7 +82,7 @@ content_margin_bottom = 4.0
 bg_color = Color(0, 0, 0, 0.6)
 corner_detail = 5
 
-[sub_resource type="Image" id="Image_bw5tp"]
+[sub_resource type="Image" id="Image_npsxt"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 153, 178, 178, 178, 166, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 166, 178, 178, 178, 151, 255, 255, 255, 0, 255, 255, 255, 0, 178, 178, 178, 166, 178, 178, 178, 217, 178, 178, 178, 179, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 175, 175, 175, 19, 178, 178, 178, 179, 178, 178, 178, 217, 178, 178, 178, 165, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 179, 179, 179, 180, 175, 175, 175, 19, 175, 175, 175, 19, 179, 179, 179, 180, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 181, 178, 178, 178, 181, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 165, 178, 178, 178, 165, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -107,7 +92,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_tanj7"]
-image = SubResource("Image_bw5tp")
+image = SubResource("Image_npsxt")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uk0kt"]
 content_margin_left = 21.0
@@ -4624,7 +4609,7 @@ additional_info = "DEV NOTE: I want one of these in real life"
 [node name="MainScreen" type="Node2D"]
 texture_filter = 1
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." node_paths=PackedStringArray("settings_texture")]
 custom_minimum_size = Vector2(1152, 650)
 offset_top = 25.0
 offset_right = 1152.0
@@ -4632,6 +4617,7 @@ offset_bottom = 673.0
 texture = ExtResource("1_3hfuy")
 expand_mode = 2
 script = ExtResource("2_e0ssb")
+settings_texture = NodePath("../Window/TextureRect")
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
 offset_top = -4.0
@@ -4653,7 +4639,7 @@ size_flags_vertical = 0
 theme = SubResource("Theme_5gcnr")
 theme_override_constants/separation = 0
 
-[node name="Prapor" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Prapor" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_1vy41")
@@ -4662,89 +4648,97 @@ flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 base = ExtResource("2_gns63")
 hover = ExtResource("7_x8aeh")
 complete = ExtResource("6_cdllc")
 
-[node name="Therapist" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Therapist" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("3_r7pwn")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 1
 base = ExtResource("3_r7pwn")
 hover = ExtResource("10_fs3l2")
 complete = ExtResource("8_ppv5k")
 
-[node name="Skier" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Skier" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("4_kq56s")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 2
 base = ExtResource("4_kq56s")
 hover = ExtResource("13_ocub0")
 complete = ExtResource("10_k4n8y")
 
-[node name="Peacekeeper" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Peacekeeper" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("5_i0ijl")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 3
 base = ExtResource("5_i0ijl")
 hover = ExtResource("16_2o862")
 complete = ExtResource("12_2kesq")
 
-[node name="Mechanic" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Mechanic" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("6_6fxj7")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 4
 base = ExtResource("6_6fxj7")
 hover = ExtResource("19_fj7a3")
 complete = ExtResource("14_xm8pn")
 
-[node name="Ragman" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Ragman" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("7_rwjyk")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 5
 base = ExtResource("7_rwjyk")
 hover = ExtResource("22_1caam")
 complete = ExtResource("16_f8e6d")
 
-[node name="Jaeger" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Jaeger" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("8_oqx12")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 6
 base = ExtResource("8_oqx12")
 hover = ExtResource("25_2vwol")
 complete = ExtResource("18_a1mn3")
 
-[node name="Items" type="Button" parent="MainContainer/TradersContainer"]
+[node name="Items" type="Button" parent="MainContainer/TradersContainer" node_paths=PackedStringArray("control")]
 layout_mode = 2
 icon = ExtResource("9_6flb8")
 flat = true
 clip_text = true
 icon_alignment = 1
 script = ExtResource("5_45lv0")
+control = NodePath("../../MainBody/TaskBox/Control")
 trader = 7
 base = ExtResource("9_6flb8")
 hover = ExtResource("28_vqijf")
@@ -4789,11 +4783,19 @@ size_flags_horizontal = 3
 custom_minimum_size = Vector2(512, 517)
 layout_mode = 2
 
-[node name="Control" type="Control" parent="MainContainer/MainBody/DescriptionBox"]
+[node name="Control" type="Control" parent="MainContainer/MainBody/DescriptionBox" node_paths=PackedStringArray("vbox", "quest_name", "quest_part", "requirements", "pevio", "nexus", "link", "note", "toggled")]
 custom_minimum_size = Vector2(512, 170.226)
 layout_mode = 2
 script = ExtResource("11_jhxhj")
-backupResource = SubResource("Resource_r318x")
+vbox = NodePath("VBoxContainer")
+quest_name = NodePath("VBoxContainer/Quest Name")
+quest_part = NodePath("VBoxContainer/Quest Part")
+requirements = NodePath("VBoxContainer/Requirements")
+pevio = NodePath("VBoxContainer/Pevio/Previous Container")
+nexus = NodePath("VBoxContainer/Nexus/Next Container")
+link = NodePath("VBoxContainer/LinkButton")
+note = NodePath("VBoxContainer/DEVNOTE")
+toggled = [NodePath("VBoxContainer/Quest Part"), NodePath("VBoxContainer/Requirements Header"), NodePath("VBoxContainer/Requirements"), NodePath("VBoxContainer/Space2"), NodePath("VBoxContainer/Previous Header"), NodePath("VBoxContainer/Pevio"), NodePath("VBoxContainer/Space3"), NodePath("VBoxContainer/Next Header"), NodePath("VBoxContainer/Nexus"), NodePath("VBoxContainer/Space4")]
 
 [node name="Icon" type="TextureRect" parent="MainContainer/MainBody/DescriptionBox/Control"]
 layout_mode = 0
@@ -4966,6 +4968,8 @@ title = "SETTINGS"
 initial_position = 1
 size = Vector2i(515, 377)
 visible = false
+wrap_controls = true
+transient = true
 unresizable = true
 borderless = true
 theme = SubResource("Theme_hi5oy")
@@ -5138,6 +5142,7 @@ one_shot = true
 [connection signal="pressed" from="MainContainer/TradersContainer/Ragman" to="MainContainer/MainBody/TaskBox/Control" method="_on_ragman_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Jaeger" to="MainContainer/MainBody/TaskBox/Control" method="_on_jaeger_pressed"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Items" to="MainContainer/MainBody/TaskBox/Control" method="_on_items_pressed"]
+[connection signal="pressed" from="MainContainer/TradersContainer/Settings" to="Background" method="click"]
 [connection signal="pressed" from="MainContainer/TradersContainer/Settings" to="Window" method="toggle_visible"]
 [connection signal="pressed" from="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/LinkButton" to="MainContainer/MainBody/DescriptionBox/Control" method="_on_link_button_pressed"]
 [connection signal="close_requested" from="Window" to="Window" method="toggle_visible"]

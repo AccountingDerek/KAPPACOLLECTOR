@@ -67,7 +67,7 @@ func update() -> void:
 	
 	load_variable()
 	
-	connect_signals()
+	#connect_signals()
 
 func update_control_settings() -> void:
 	if Engine.is_editor_hint():
@@ -112,21 +112,21 @@ func _update_label() -> void:
 	if label:
 		label.text = setting_label
 
-func connect_signals() -> void:
-	if Engine.is_editor_hint():
-		return
-	
-	if slider_enabled:
-		slider.value_changed.connect(set_variable)
-	
-	if number_enabled:
-		number_box.value_changed.connect(set_variable)
-	
-	if check_enabled:
-		check_button.toggled.connect(set_variable)
-	
-	if option_enabled:
-		option_button.item_selected.connect(set_variable)
+#func connect_signals() -> void:
+	#if Engine.is_editor_hint():
+		#return
+	#
+	#if slider_enabled:
+		#slider.value_changed.connect(set_variable)
+	#
+	#if number_enabled:
+		#number_box.value_changed.connect(set_variable)
+	#
+	#if check_enabled:
+		#check_button.toggled.connect(set_variable)
+	#
+	#if option_enabled:
+		#option_button.item_selected.connect(set_variable)
 
 func load_variable() -> void:
 	if Engine.is_editor_hint():
