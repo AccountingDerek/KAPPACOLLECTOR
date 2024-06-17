@@ -10,6 +10,7 @@ const prefix: String = "https://escapefromtarkov.fandom.com/wiki/"
 @onready var note: RichTextLabel = $VBoxContainer/DEVNOTE
 @export var backupResource: TaskResource
 @onready var data: TaskResource
+
 func _ready():
 	hide()
 	Utility.hover.connect(switch_description)
@@ -23,29 +24,33 @@ func switch_description(task: Tasks.tasks):
 		$"VBoxContainer/Requirements Header".hide()
 		$VBoxContainer/Space2.hide()
 		$"VBoxContainer/Previous Header".hide()
-		$VBoxContainer/Previous.hide()
+		$VBoxContainer/Pevio.hide()
 		$VBoxContainer/Space3.hide()
 		$"VBoxContainer/Next Header".hide()
-		$VBoxContainer/Next.hide()
+		$VBoxContainer/Nexus.hide()
 		$VBoxContainer/Space4.hide()
 	else:
 		$"VBoxContainer/Quest Part".show()
 		$"VBoxContainer/Requirements Header".show()
 		$VBoxContainer/Space2.show()
 		$"VBoxContainer/Previous Header".show()
-		$VBoxContainer/Previous.show()
+		$VBoxContainer/Pevio.show()
 		$VBoxContainer/Space3.show()
 		$"VBoxContainer/Next Header".show()
-		$VBoxContainer/Next.show()
+		$VBoxContainer/Nexus.show()
 		$VBoxContainer/Space4.show()
 	show()
 	quest_name.text = data.task_name
 	quest_part.text = data.task_part
 	requirements.clear()
 	requirements.add_text(data.description)
-	previous.text = generate_from_resources(data.from, true)
+	for i in $"VBoxContainer/Pevio/Previous Container".get_children():
+		i.queue_free()
+	for i in $"VBoxContainer/Nexus/Next Container".get_children():
+		i.queue_free()
+	generate_from_resources(data.from, true)
+	generate_from_resources(data.to, false)
 	link.uri = prefix + data.link
-	next.text = generate_from_resources(data.to, false)
 	note.clear()
 	if data.additional_info == "":
 		note.hide()
@@ -56,22 +61,45 @@ func update() -> void:
 	note.visible = Settings.dev_notes
 	pass
 
-func generate_from_resources(array: Array[Tasks.tasks], from: bool) -> String:
-	var result: String = ""
+func generate_from_resources(array: Array[Tasks.tasks], from: bool):
 	if data.post_choice == true and from == true:
-		for i in data.post_choice_mutual_exclusives:
-			result += "• " + str(%TaskData.reference_list[i].displayed_task_name)+" OR\n"
-		result = result.left(-3)
+		for i in data.post_choice_mutual_exclusives.size():
+			var desc_but:= preload("res://Scenes/description_button.tscn").instantiate()
+			desc_but.id = data.post_choice_mutual_exclusives[i]
+			desc_but.trader = %TaskData.reference_list[data.post_choice_mutual_exclusives[i]].trader
+			desc_but.displayed_text = %TaskData.reference_list[data.post_choice_mutual_exclusives[i]].displayed_task_name
+			desc_but.data = data
+			if i == data.post_choice_mutual_exclusives.size() -1:
+				desc_but.override = true
+			if from:
+				$"VBoxContainer/Pevio/Previous Container".add_child(desc_but)
+			else:
+				$"VBoxContainer/Nexus/Next Container".add_child(desc_but)
+			
 		for i in array:
-			result += "• " + str(%TaskData.reference_list[i].displayed_task_name)+"\n"
-		return result
+			var desc_but:= preload("res://Scenes/description_button.tscn").instantiate()
+			desc_but.id = i
+			desc_but.trader = %TaskData.reference_list[i].trader
+			desc_but.displayed_text = %TaskData.reference_list[i].displayed_task_name
+			desc_but.data = data
+			if from:
+				$"VBoxContainer/Pevio/Previous Container".add_child(desc_but)
+			else:
+				$"VBoxContainer/Nexus/Next Container".add_child(desc_but)
 	else:
 		if array.size() == 0:
 			return "-"
 		else:
 			for i in array:
-				result += "• " + str(%TaskData.reference_list[i].displayed_task_name)+"\n"
-		return result
+				var desc_but: Button = preload("res://Scenes/description_button.tscn").instantiate()
+				desc_but.id = i
+				desc_but.trader = %TaskData.reference_list[i].trader
+				desc_but.displayed_text = %TaskData.reference_list[i].displayed_task_name
+				desc_but.data = data
+				if from:
+					$"VBoxContainer/Pevio/Previous Container".add_child(desc_but)
+				else:
+					$"VBoxContainer/Nexus/Next Container".add_child(desc_but)
 
 func find_resource(task: Tasks.tasks) -> TaskResource:
 	for i in %TaskData.MasterTaskList:

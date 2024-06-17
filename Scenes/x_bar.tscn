@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://ko2gkm2upmtm"]
 
-[ext_resource type="Script" path="res://Scenes/Top_Bar.gd" id="1_3l8qs"]
+[ext_resource type="Script" path="res://Scripts/Top_Bar.gd" id="1_3l8qs"]
 [ext_resource type="Texture2D" uid="uid://frbf40si3546" path="res://Icons/minimize.png" id="1_okw7x"]
 [ext_resource type="Texture2D" uid="uid://bsclowtorgkjk" path="res://Icons/deadskul.png" id="2_4gfnh"]
 [ext_resource type="Texture2D" uid="uid://daos0pw62skr5" path="res://Icons/x.png" id="2_6ag32"]
-[ext_resource type="Script" path="res://Scenes/draggabletexturerect.gd" id="2_k70a2"]
+[ext_resource type="Script" path="res://Scripts/draggabletexturerect.gd" id="2_k70a2"]
 [ext_resource type="AudioStream" uid="uid://c32gpe1clc1nu" path="res://SFX/Hover.wav" id="6_ywnmq"]
 [ext_resource type="AudioStream" uid="uid://7vgvyid34o8j" path="res://SFX/click.wav" id="7_h2hyo"]
 

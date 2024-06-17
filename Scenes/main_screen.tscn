@@ -1,8 +1,8 @@
 [gd_scene load_steps=325 format=3 uid="uid://baelcd5jeu4is"]
 
+[ext_resource type="Texture2D" uid="uid://btl1si56cuk5m" path="res://VFX/labsnew.png" id="1_3hfuy"]
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
 [ext_resource type="Script" path="res://Scripts/TaskData.gd" id="1_t7o52"]
-[ext_resource type="Texture2D" uid="uid://cvw0tnusca8hp" path="res://VFX/unheardnew.png" id="1_yypv0"]
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="2_e0ssb"]
 [ext_resource type="Texture2D" uid="uid://otp1blkm1wkl" path="res://Icons/Prapor_Portrait.png" id="2_gns63"]
 [ext_resource type="Texture2D" uid="uid://duo05283rga87" path="res://Icons/Therapist_Portrait.png" id="3_r7pwn"]
@@ -65,7 +65,7 @@ to = Array[int]([189])
 link = ""
 additional_info = ""
 
-[sub_resource type="Image" id="Image_63t61"]
+[sub_resource type="Image" id="Image_8nq5c"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 49, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 90, 255, 255, 255, 77, 255, 255, 255, 49, 255, 255, 255, 9, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 77, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 76, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 89, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 8, 255, 255, 255, 48, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 89, 255, 255, 255, 76, 255, 255, 255, 48, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -75,7 +75,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_dw07n"]
-image = SubResource("Image_63t61")
+image = SubResource("Image_8nq5c")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qk1g"]
 content_margin_left = 4.0
@@ -97,7 +97,7 @@ content_margin_bottom = 4.0
 bg_color = Color(0, 0, 0, 0.6)
 corner_detail = 5
 
-[sub_resource type="Image" id="Image_ddoyo"]
+[sub_resource type="Image" id="Image_bw5tp"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 153, 178, 178, 178, 166, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 166, 178, 178, 178, 151, 255, 255, 255, 0, 255, 255, 255, 0, 178, 178, 178, 166, 178, 178, 178, 217, 178, 178, 178, 179, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 175, 175, 175, 19, 178, 178, 178, 179, 178, 178, 178, 217, 178, 178, 178, 165, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 179, 179, 179, 180, 175, 175, 175, 19, 175, 175, 175, 19, 179, 179, 179, 180, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 181, 178, 178, 178, 181, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 165, 178, 178, 178, 165, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -107,7 +107,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_tanj7"]
-image = SubResource("Image_ddoyo")
+image = SubResource("Image_bw5tp")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uk0kt"]
 content_margin_left = 21.0
@@ -4629,7 +4629,7 @@ custom_minimum_size = Vector2(1152, 650)
 offset_top = 25.0
 offset_right = 1152.0
 offset_bottom = 673.0
-texture = ExtResource("1_yypv0")
+texture = ExtResource("1_3hfuy")
 expand_mode = 2
 script = ExtResource("2_e0ssb")
 
@@ -4769,14 +4769,21 @@ layout_mode = 2
 custom_minimum_size = Vector2(640, 517)
 layout_mode = 2
 script = ExtResource("10_ab0s5")
-vbox = NodePath("VBoxContainer")
+vbox = NodePath("HBoxContainer/VBoxContainer")
 data = NodePath("../../../../TaskData")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainBody/TaskBox/Control"]
-custom_minimum_size = Vector2(640, 516)
+[node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainBody/TaskBox/Control"]
 layout_mode = 2
 offset_right = 640.0
-offset_bottom = 516.0
+offset_bottom = 28.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer/MainBody/TaskBox/Control/HBoxContainer"]
+custom_minimum_size = Vector2(390, 516)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainBody/TaskBox/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="DescriptionBox" type="ScrollContainer" parent="MainContainer/MainBody"]
 custom_minimum_size = Vector2(512, 517)
@@ -4807,16 +4814,24 @@ offset_bottom = 513.0
 
 [node name="Quest Name" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 8
 theme_override_font_sizes/font_size = 25
 text = "Living High is not a Crime"
 clip_text = true
 
 [node name="Quest Part" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 8
 theme_override_font_sizes/font_size = 17
 text = "Part 1"
 clip_text = true
@@ -4830,15 +4845,23 @@ clip_text = true
 
 [node name="Requirements Header" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "Requirements:"
 clip_text = true
 
 [node name="Requirements" type="RichTextLabel" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 8
 theme_override_constants/outline_size = 5
 text = "• 2 Bronze Lions
 • 2 Horse Figurines
@@ -4856,19 +4879,25 @@ clip_text = true
 
 [node name="Previous Header" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "Previous:"
 clip_text = true
 
-[node name="Previous" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
+[node name="Pevio" type="HBoxContainer" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 20
-text = "• The Blood of War - Part 1"
-clip_text = true
+
+[node name="Previous Container" type="VBoxContainer" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/Pevio"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/Pevio"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Space3" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
@@ -4879,19 +4908,25 @@ clip_text = true
 
 [node name="Next Header" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
 theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 8
 theme_override_font_sizes/font_size = 20
 text = "Leads To:"
 clip_text = true
 
-[node name="Next" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
+[node name="Nexus" type="HBoxContainer" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 20
-text = "• Living High is not a Crime - Part 2"
-clip_text = true
+
+[node name="Next Container" type="VBoxContainer" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/Nexus"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer/Nexus"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Space4" type="Label" parent="MainContainer/MainBody/DescriptionBox/Control/VBoxContainer"]
 layout_mode = 2
@@ -4917,7 +4952,11 @@ uri = "https://escapefromtarkov.fandom.com/wiki/Living_High_is_Not_a_Crime_-_Par
 visible = false
 layout_mode = 2
 theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 8
 theme_override_constants/outline_size = 5
 text = "DEV NOTE: Technically speaking, you need to complete Postman Pat Part 2 "
 fit_content = true

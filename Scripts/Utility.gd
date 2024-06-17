@@ -3,6 +3,7 @@ extends Node
 var secret_string = ""
 signal secret(secret: String)
 signal screen_switch(trader: Tasks.traders)
+signal click
 signal update
 signal completion
 signal reset

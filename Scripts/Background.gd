@@ -4,6 +4,7 @@ extends TextureRect
 var secret_string: String = ""
 
 func _ready():
+	Utility.click.connect(func():%Click.play())
 	Settings.apply_settings.connect(change_bg)
 	Utility.update.connect(update)
 	change_bg()
