@@ -1,0 +1,441 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=29 format=3 uid="uid://cl1o2s2rq1ck8"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_xic07"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_ay7ht"]
+
+[sub_resource type="Resource" id="Resource_n4q5p"]
+script = ExtResource("1_xic07")
+task_id = 166
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Only Business"
+task_part = ""
+description = "• Reach Loyalty II with Ragman"
+from = Array[int]([])
+to = Array[int]([167, 168])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_j2dyl"]
+script = ExtResource("1_xic07")
+task_id = 167
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Make ULTRA Great Again"
+task_part = ""
+description = "• Eliminate 25 Scavs on Interchange"
+from = Array[int]([166])
+to = Array[int]([171, 177])
+link = ""
+additional_info = "DEV NOTE: This name is kind of lame, actually. Very sad!"
+
+[sub_resource type="Resource" id="Resource_tde4i"]
+script = ExtResource("1_xic07")
+task_id = 168
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Big Sale"
+task_part = ""
+description = "• Locate the AVOKADO store on Interchange
+• Locate the KOSTIN store on Interchange
+• Locate the tRend store on Interchange
+• Locate the DINO CLOTHES store on Interchange
+• Locate the TOP BRAND store on Interchange
+• Survive and Extract"
+from = Array[int]([166])
+to = Array[int]([171, 177])
+link = ""
+additional_info = "DEV NOTE: I hope you guys like Interchange."
+
+[sub_resource type="Resource" id="Resource_0dlf7"]
+script = ExtResource("1_xic07")
+task_id = 171
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Blood of War"
+task_part = "Part 1"
+description = "• Mark all three fuel trucks on Interchange with MS2000 Markers
+• Survive and Extract"
+from = Array[int]([167, 168])
+to = Array[int]([181, 191, 188, 169, 172])
+link = ""
+additional_info = "DEV NOTE: For some reason, A Fuel Matter and Inventory Check were in the list *before* this quest. I have no idea how or why this happened, but it's probably got something to do with the current president of the united states of america."
+
+[sub_resource type="Resource" id="Resource_ouyc0"]
+script = ExtResource("1_xic07")
+task_id = 181
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Blood of War"
+task_part = "Part 2"
+description = "• Find 4 Fuel Conditioners in raid
+• Turn the fuckers in. Shocker!"
+from = Array[int]([171, 180])
+to = Array[int]([182])
+link = ""
+additional_info = "DEV NOTE: Ok, almost all of the questlines have been pretty decently streamlined so far, but Ragman's tree is so fucking convoluted that I have to throw all that shit out in the name of visual cohesion. I'm so sorry."
+
+[sub_resource type="Resource" id="Resource_outje"]
+script = ExtResource("1_xic07")
+task_id = 182
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Blood of War"
+task_part = "Part 3"
+description = "• Find and Mark all 3 Fuel Stashes on Woods with MS2000 Markets
+• Survive and Extract
+• Boy, you use a *lot* of those markers, huh?"
+from = Array[int]([181])
+to = Array[int]([189])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_3an8c"]
+script = ExtResource("1_xic07")
+task_id = 169
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "A Fuel Matter"
+task_part = ""
+description = "• Mark both groups of fuel tanks on Reserve with MS2000 Markers
+• Survive and Extract"
+from = Array[int]([171])
+to = Array[int]([170])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_agmhp"]
+script = ExtResource("1_xic07")
+task_id = 170
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Inventory Check"
+task_part = ""
+description = "• Locate both arsenals in Black Pawn on Reserve
+• Locate the duty room in Black Pawn on Reserve
+• Locate both arsenals in White Pawn on Reserve
+• Survive and Extract"
+from = Array[int]([169])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_iyx3x"]
+script = ExtResource("1_xic07")
+task_id = 172
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Dressed to Kill"
+task_part = ""
+description = "• Find 2 Cowboy Hats in raid
+• Find 2 Ushankas in raid
+• Hand the hats over to Ragman"
+from = Array[int]([171, 173])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Why don't we wear hats anymore? It's a real shame."
+
+[sub_resource type="Resource" id="Resource_2sjmn"]
+script = ExtResource("1_xic07")
+task_id = 173
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gratitude"
+task_part = ""
+description = "• Stash a Ghost balaclava in the sawmill pier on Woods
+• Stash a Shemagh in the sawmill pier on Woods
+• Stash some RayBench sunglasses in the sawmill pier on Woods
+• Stash a pair of round glasses in the sawmill pier on Woods"
+from = Array[int]([172, 178])
+to = Array[int]([174, 176])
+link = ""
+additional_info = "DEV NOTE: I fucking hate the Beatles."
+
+[sub_resource type="Resource" id="Resource_4lmtv"]
+script = ExtResource("1_xic07")
+task_id = 174
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Hot Delivery"
+task_part = ""
+description = "• Stash 2 Comtac2 Headsets in the specified place
+• Stash 2 6B47 Helmets in the specified place
+• Stash 2 Gzhels in the specified place"
+from = Array[int]([173])
+to = Array[int]([175])
+link = ""
+additional_info = "DEV NOTE: If you read \"specified place\" it means I was too lazy to write it all down. go check the wiki."
+
+[sub_resource type="Resource" id="Resource_2f3il"]
+script = ExtResource("1_xic07")
+task_id = 175
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Scavenger"
+task_part = ""
+description = "• Reach Search Level 9"
+from = Array[int]([174])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_f1kjl"]
+script = ExtResource("1_xic07")
+task_id = 176
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Sales Night"
+task_part = ""
+description = "• Survive and Extract on Interchange 7 Times
+• Why? Because fuck you, that's why."
+from = Array[int]([173])
+to = Array[int]([186, 212])
+link = ""
+additional_info = "DEV NOTE: \"Hey, do this thing. ok now do it 3 gorillion more times\" That's how all the tasks in this game sound to my friends who dont play Tarkov. fuck this task and fuck the designer who came up with it."
+
+[sub_resource type="Resource" id="Resource_j1vfv"]
+script = ExtResource("1_xic07")
+task_id = 177
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Database"
+task_part = "Part 1"
+description = "• Find the Goshan Cargo Manifests on Interchange
+• Find the OLI Cargo Manifests on Interchange
+• Find the IDEA Cargo Manifests on Interchange
+• Hand the manifests over to Ragman"
+from = Array[int]([167, 168])
+to = Array[int]([178])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ho1li"]
+script = ExtResource("1_xic07")
+task_id = 178
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Database"
+task_part = "Part 2"
+description = "• Find the OLI cargo route documents on Interchange
+• Hand the documents over to Ragman"
+from = Array[int]([177])
+to = Array[int]([180, 179, 173])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6vnjm"]
+script = ExtResource("1_xic07")
+task_id = 179
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Minibus"
+task_part = ""
+description = "• Find and Mark all 3 Minibuses on Interchange with MS2000 Markers
+• Survive and Extract"
+from = Array[int]([178])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ioe73"]
+script = ExtResource("1_xic07")
+task_id = 180
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Sew it Good"
+task_part = "Part 1"
+description = "• Find 1 Shmaska in raid
+• Find 1 Pilgrim in raid
+• Hand the gear over to Ragman"
+from = Array[int]([178])
+to = Array[int]([183, 181])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6nco2"]
+script = ExtResource("1_xic07")
+task_id = 183
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Sew it Good"
+task_part = "Part 2"
+description = "• Find 2 Gzhels, one above 50% and the other below
+• Hand the body armor over to Ragman"
+from = Array[int]([180])
+to = Array[int]([187, 184])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ytjci"]
+script = ExtResource("1_xic07")
+task_id = 187
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Sew it Good"
+task_part = "Part 3"
+description = "• Find 2 6B13 assault armors in raid
+• Hand the body armor over to Ragman"
+from = Array[int]([183])
+to = Array[int]([190, 188])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_eak0b"]
+script = ExtResource("1_xic07")
+task_id = 190
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Sew it Good"
+task_part = "Part 4"
+description = "• Find 2 TV-109+TV-106 Rigs in raid
+• Find 2 Blackrock rigs in raid
+• Hand the rigs over to Ragman"
+from = Array[int]([187])
+to = Array[int]([191])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fecog"]
+script = ExtResource("1_xic07")
+task_id = 188
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Living High is Not a Crime"
+task_part = "Part 1"
+description = "• Find 2 Bronze Lions in raid
+• Find 2 Horse Figurines in raid
+• Find 2 Cat Figurines in raid
+• Find 1 Roler in raid
+• Find 1 Golden Egg in rain
+• Hand these illustrious items over to Ragman"
+from = Array[int]([171, 187])
+to = Array[int]([189])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_yixsg"]
+script = ExtResource("1_xic07")
+task_id = 189
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Living High is Not a Crime"
+task_part = "Part 2"
+description = "• Find 3 Antique Teapots in raid
+• Find 2 Antique Vases in raid
+• Find an Axel Figurine in raid
+• Find 2 Raven Figurines in raid
+• Hand these even more illustrious items over to Ragman"
+from = Array[int]([188, 182])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_upwe8"]
+script = ExtResource("1_xic07")
+task_id = 184
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Key to Success"
+task_part = ""
+description = "• Find both parts of the Clothes Design Handbook on Interchange
+• Hand the literature over to Ragman"
+from = Array[int]([183])
+to = Array[int]([185, 191])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_3dn0r"]
+script = ExtResource("1_xic07")
+task_id = 186
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Supervisor"
+task_part = ""
+description = "• Obtain the Goshan cash register key
+• Hand the key over to Ragman"
+from = Array[int]([176, 184])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_e8fph"]
+script = ExtResource("1_xic07")
+task_id = 185
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "No Fuss Needed"
+task_part = ""
+description = "• Reach Loyalty III with Therapist"
+from = Array[int]([184])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_nptis"]
+script = ExtResource("1_xic07")
+task_id = 191
+trader = 5
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Charisma Brings Success"
+task_part = ""
+description = "• Reach Charisma Level 10"
+from = Array[int]([190])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[resource]
+script = ExtResource("2_ay7ht")
+TaskDataArray = Array[ExtResource("1_xic07")]([SubResource("Resource_n4q5p"), SubResource("Resource_j2dyl"), SubResource("Resource_tde4i"), SubResource("Resource_0dlf7"), SubResource("Resource_ouyc0"), SubResource("Resource_outje"), SubResource("Resource_3an8c"), SubResource("Resource_agmhp"), SubResource("Resource_iyx3x"), SubResource("Resource_2sjmn"), SubResource("Resource_4lmtv"), SubResource("Resource_2f3il"), SubResource("Resource_f1kjl"), SubResource("Resource_j1vfv"), SubResource("Resource_ho1li"), SubResource("Resource_6vnjm"), SubResource("Resource_ioe73"), SubResource("Resource_6nco2"), SubResource("Resource_ytjci"), SubResource("Resource_eak0b"), SubResource("Resource_fecog"), SubResource("Resource_yixsg"), SubResource("Resource_upwe8"), SubResource("Resource_3dn0r"), SubResource("Resource_e8fph"), SubResource("Resource_nptis")])

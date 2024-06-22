@@ -1,0 +1,654 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=44 format=3 uid="uid://cqci31r2pdqhs"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_qbebq"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_2pbh5"]
+
+[sub_resource type="Resource" id="Resource_0om15"]
+script = ExtResource("1_qbebq")
+task_id = 192
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Acquaintance"
+task_part = ""
+description = "• Find 3 Iskras in raid
+• Find 2 Packs of Instant Noodles in raid
+• Find 2 Cans of Beef Stew in raid
+• Deliver unto Jaeger his meals most delectable"
+from = Array[int]([122])
+to = Array[int]([193, 226, 218])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_aimwf"]
+script = ExtResource("1_qbebq")
+task_id = 226
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Shady Business"
+task_part = ""
+description = "• Find 3 Flash Drives in raid
+• Hand the flash drives over to Jaeger"
+from = Array[int]([66, 192])
+to = Array[int]([203])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_vpdl3"]
+script = ExtResource("1_qbebq")
+task_id = 203
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Ambulance"
+task_part = ""
+description = "• Find a Portable Defibrillator in raid
+• Find 2 CMS Kits
+• Hand the medical equipment over to Jaeger"
+from = Array[int]([226])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_7ylls"]
+script = ExtResource("1_qbebq")
+task_id = 193
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Unprotected but Dangerous"
+description = "• Eliminate 5 Scavs while not wearing body armor on Woods"
+from = Array[int]([192])
+to = Array[int]([194])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_11olp"]
+script = ExtResource("1_qbebq")
+task_id = 194
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Thrifty"
+description = "• Stash an Iskra and Water Bottle in ZB-014
+• Stash an Iskra and Water Bottle in ZB-016"
+from = Array[int]([193])
+to = Array[int]([195, 232])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_evcr3"]
+script = ExtResource("1_qbebq")
+task_id = 232
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Delicious Sausage"
+task_part = ""
+description = "• Find a Salty Dog Sausage in raid
+• Hand the Sausage over to Jaeger
+• Scout the Shestyorochka store at Nikitskaya street\\n• Scout the Sparja store at Primorsky ave
+• Scout the Sparja store in Pinewood hotel
+• Scout the Goshan store in Concordia"
+from = Array[int]([194])
+to = Array[int]([205])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_c3eda"]
+script = ExtResource("1_qbebq")
+task_id = 205
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Reserve"
+task_part = ""
+description = "• Find the Food Storage location on Reserve
+• Survive and Extract"
+from = Array[int]([232])
+to = Array[int]([228])
+link = ""
+additional_info = "DEV NOTE: Reserve"
+
+[sub_resource type="Resource" id="Resource_3mk6x"]
+script = ExtResource("1_qbebq")
+task_id = 228
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Pest Control"
+task_part = ""
+description = "• Eliminate 10 Scavs in the Barracks of Reserve"
+from = Array[int]([205])
+to = Array[int]([216])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_guuri"]
+script = ExtResource("1_qbebq")
+task_id = 195
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Zhivchik"
+description = "• Survive 5 minutes of dehydration on any map other than Factory
+• Survive and Extract"
+from = Array[int]([194])
+to = Array[int]([196])
+link = ""
+additional_info = "DEV NOTE: Drink Mayo in the scav bunker extract on Woods. Bring an extra Salewa and an Aquamari"
+
+[sub_resource type="Resource" id="Resource_d7gr8"]
+script = ExtResource("1_qbebq")
+task_id = 196
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Wounded Beast"
+description = "• Eliminate 3 Scavs while suffering from the Pain effect"
+from = Array[int]([195])
+to = Array[int]([197])
+link = ""
+additional_info = "DEV NOTE: If you're having trouble, remember that there are 2 different Pain effects; the status effect and what happens when you get hit! Both effects count for this quest."
+
+[sub_resource type="Resource" id="Resource_i6cs1"]
+script = ExtResource("1_qbebq")
+task_id = 197
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Tough Guy"
+description = "• Eliminate 3 Scavs on Woods in a single raid without using any medicine"
+from = Array[int]([196])
+to = Array[int]([198, 229, 201, 204])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ss7c3"]
+script = ExtResource("1_qbebq")
+task_id = 229
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Hermit"
+task_part = ""
+description = "• Obtain the message from Jaeger's friend on Lighthouse
+• Hand the message over to Jaeger"
+from = Array[int]([197])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Touhou Hijack lol"
+
+[sub_resource type="Resource" id="Resource_antc8"]
+script = ExtResource("1_qbebq")
+task_id = 198
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Courtesy Visit"
+task_part = ""
+description = "• Find the Chairman's house on Shoreline
+• Find the Fisherman's house on Shoreline
+• Find the Priest's house on Shoreline
+• Survive and Extract"
+from = Array[int]([197])
+to = Array[int]([199])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_rkeb3"]
+script = ExtResource("1_qbebq")
+task_id = 199
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Nostalgia"
+task_part = ""
+description = "• Find Jaeger's Photo Album in the Resort on Shoreline
+• Hand the album over to Jaeger"
+from = Array[int]([198])
+to = Array[int]([209])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ty0g3"]
+script = ExtResource("1_qbebq")
+task_id = 209
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Fishing Place"
+task_part = ""
+description = "• Find 2 Labs Access Cards in raid
+• Hand the cards over to Jaeger"
+from = Array[int]([199])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_d0nq3"]
+script = ExtResource("1_qbebq")
+task_id = 201
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Eagle-Owl"
+description = "• Eliminate 6 Scavs between 21:00 and 04:00 without using any NVGs or thermals (except Factory)"
+from = Array[int]([197])
+to = Array[int]([202])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fi88n"]
+script = ExtResource("1_qbebq")
+task_id = 202
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Combat Medic"
+description = "• Reach Vitality Level 5"
+from = Array[int]([201])
+to = Array[int]([200])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_5vhg4"]
+script = ExtResource("1_qbebq")
+task_id = 200
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Survivalist Path"
+task_part = "Junkie"
+description = "• Eliminate 15 Scavs on Woods while under any stimulant effect"
+from = Array[int]([202])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_krfts"]
+script = ExtResource("1_qbebq")
+task_id = 204
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Secured Perimeter"
+description = "• Eliminate 6 PMCs in the Office area on Factory"
+from = Array[int]([220, 197])
+to = Array[int]([210, 211, 213, 206, 217])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dlsed"]
+script = ExtResource("1_qbebq")
+task_id = 206
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Forest Cleaning"
+description = "• Eliminate 30 Scavs"
+from = Array[int]([204])
+to = Array[int]([207, 215, 208, 230, 212])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ke6sf"]
+script = ExtResource("1_qbebq")
+task_id = 207
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Controller"
+description = "• Eliminate 2 PMCs while they are stunned"
+from = Array[int]([206])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_vnola"]
+script = ExtResource("1_qbebq")
+task_id = 208
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Evil Watchman"
+description = "• Eliminate 5 PMCs in Dorms on Customs"
+from = Array[int]([206])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_jbocw"]
+script = ExtResource("1_qbebq")
+task_id = 210
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Trophy"
+description = "• Eliminate Reshala
+• Find the Golden TT in raid
+• Hand the pistol over to Jaeger"
+from = Array[int]([204])
+to = Array[int]([231])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fw6hf"]
+script = ExtResource("1_qbebq")
+task_id = 211
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Justice"
+description = "• Eliminate 3 of Reshala's Guards"
+from = Array[int]([204])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_8md82"]
+script = ExtResource("1_qbebq")
+task_id = 212
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Sellout"
+description = "• Eliminate Killa
+• Find Killa's Helmet in Raid
+• Hand the helmet over to Jaeger"
+from = Array[int]([176, 204])
+to = Array[int]([231])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_4gnlg"]
+script = ExtResource("1_qbebq")
+task_id = 213
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = true
+post_choice_mutual_exclusives = Array[int]([43, 82])
+task_name = "The Huntsman Path"
+task_part = "Woods Keeper"
+description = "• Eliminate Shturman
+• Find 1 Stash Key in raid
+• Hand the key over to Jaeger"
+from = Array[int]([204])
+to = Array[int]([214, 231])
+link = ""
+additional_info = "DEV NOTE: Yerman Yaggy"
+
+[sub_resource type="Resource" id="Resource_37c2r"]
+script = ExtResource("1_qbebq")
+task_id = 214
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Hunting Trip"
+task_part = ""
+description = "• Eliminate Shturman with a headshot from 75+ meters while using an M700 with the TAC30"
+from = Array[int]([213])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_riku8"]
+script = ExtResource("1_qbebq")
+task_id = 215
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Factory Chief"
+description = "• Eliminate Tagilla
+• Find 1 Boss Cap in raid
+• Hand the hat over to Jaeger"
+from = Array[int]([148, 206])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_l5x27"]
+script = ExtResource("1_qbebq")
+task_id = 216
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Eraser - Part 1"
+description = "• Eliminate Glukhar"
+from = Array[int]([228])
+to = Array[int]([217])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_eyj4q"]
+script = ExtResource("1_qbebq")
+task_id = 217
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Eraser - Part 2"
+description = "• Eliminate 6 Raiders"
+from = Array[int]([216, 204])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_0ohou"]
+script = ExtResource("1_qbebq")
+task_id = 230
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Outcasts"
+description = "• Eliminate 10 Rogues"
+from = Array[int]([206])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Rogues tend to spawn on Lighthouse, in case you were unaware."
+
+[sub_resource type="Resource" id="Resource_0o7f3"]
+script = ExtResource("1_qbebq")
+task_id = 227
+trader = 6
+mutual_exclusives = Array[int]([55])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Huntsman Path"
+task_part = "Sadist"
+description = "• Eliminate Sanitar
+COMPLETING THIS QUEST LOCKS OFF \"Colleagues\""
+from = Array[int]([54, 83, 162])
+to = Array[int]([112])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_8db5w"]
+script = ExtResource("1_qbebq")
+task_id = 231
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Stray Dogs"
+task_part = ""
+description = "• Eliminate the Gooners
+• Find their Goon Cave"
+from = Array[int]([210, 212, 213])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: I had to."
+
+[sub_resource type="Resource" id="Resource_joq26"]
+script = ExtResource("1_qbebq")
+task_id = 218
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 1"
+description = "• Eliminate 5 Scavs while using a bolt-action rifle with iron sights from over 40 meters away"
+from = Array[int]([192])
+to = Array[int]([219])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_stc7h"]
+script = ExtResource("1_qbebq")
+task_id = 219
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 2"
+description = "• Hit 3 leg shots while using a bolt-action rifle with iron sights from over 40 meters away
+• Hit 3 headshots while using a bolt-action rifle with iron sights from over 40 meters away"
+from = Array[int]([218])
+to = Array[int]([220])
+link = ""
+additional_info = "DEV NOTE: you kinda get why Jaeger tasks have a reputation with this quest"
+
+[sub_resource type="Resource" id="Resource_c07a2"]
+script = ExtResource("1_qbebq")
+task_id = 220
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 3"
+description = "• Eliminate 3 PMCs with bolt-action rifles from less than 25 meters"
+from = Array[int]([219])
+to = Array[int]([221])
+link = ""
+additional_info = "DEV NOTE: Factory"
+
+[sub_resource type="Resource" id="Resource_04254"]
+script = ExtResource("1_qbebq")
+task_id = 221
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 4"
+description = "• Eliminate 5 PMCs with bolt-action rifles from over 80 meters away"
+from = Array[int]([220])
+to = Array[int]([222])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_r6n1j"]
+script = ExtResource("1_qbebq")
+task_id = 222
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 5"
+description = "• Eliminate 8 Scavs on Customs with bolt-action rifles between 21:00 and 05:00"
+from = Array[int]([221])
+to = Array[int]([223])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_gtwpk"]
+script = ExtResource("1_qbebq")
+task_id = 223
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 6"
+description = "• Eliminate 5 Sniper Scavs with bolt-action rifles"
+from = Array[int]([222])
+to = Array[int]([224])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_vqw6y"]
+script = ExtResource("1_qbebq")
+task_id = 224
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 7"
+description = "• Eliminate 5 PMCs with suppressed bolt-action rifles from at least 45 meters"
+from = Array[int]([223])
+to = Array[int]([225])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dtrx4"]
+script = ExtResource("1_qbebq")
+task_id = 225
+trader = 6
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Tarkov Shooter"
+task_part = "Part 8"
+description = "• Do not die
+• Eliminate 3 PMCs with headshots while using a bolt-action rifle"
+from = Array[int]([224])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: This is unrelated to the quest, but I'm now done with every kappa quest in this stupid fucking list. holy shit man that was awful"
+
+[resource]
+script = ExtResource("2_2pbh5")
+TaskDataArray = Array[ExtResource("1_qbebq")]([SubResource("Resource_0om15"), SubResource("Resource_aimwf"), SubResource("Resource_vpdl3"), SubResource("Resource_7ylls"), SubResource("Resource_11olp"), SubResource("Resource_evcr3"), SubResource("Resource_c3eda"), SubResource("Resource_3mk6x"), SubResource("Resource_guuri"), SubResource("Resource_d7gr8"), SubResource("Resource_i6cs1"), SubResource("Resource_ss7c3"), SubResource("Resource_antc8"), SubResource("Resource_rkeb3"), SubResource("Resource_ty0g3"), SubResource("Resource_d0nq3"), SubResource("Resource_fi88n"), SubResource("Resource_5vhg4"), SubResource("Resource_krfts"), SubResource("Resource_dlsed"), SubResource("Resource_ke6sf"), SubResource("Resource_vnola"), SubResource("Resource_jbocw"), SubResource("Resource_fw6hf"), SubResource("Resource_8md82"), SubResource("Resource_4gnlg"), SubResource("Resource_37c2r"), SubResource("Resource_riku8"), SubResource("Resource_l5x27"), SubResource("Resource_eyj4q"), SubResource("Resource_0ohou"), SubResource("Resource_0o7f3"), SubResource("Resource_8db5w"), SubResource("Resource_joq26"), SubResource("Resource_stc7h"), SubResource("Resource_c07a2"), SubResource("Resource_04254"), SubResource("Resource_r6n1j"), SubResource("Resource_gtwpk"), SubResource("Resource_vqw6y"), SubResource("Resource_dtrx4")])

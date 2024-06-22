@@ -1,0 +1,868 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=48 format=3 uid="uid://cmvrfhaego20c"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_2djl3"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_71hne"]
+
+[sub_resource type="Resource" id="Resource_12uj6"]
+script = ExtResource("1_2djl3")
+task_id = 121
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Saving the Mole"
+task_part = ""
+description = "• Find the group of USEC PMCs at the Terragroup Complex on Ground Zero
+• Find the Scientist
+• Access the Scientist’s lab
+• Find the scientist’s hard drive
+• Turn that sucker in to Mechanic"
+from = Array[int]([])
+to = Array[int]([123, 122])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_rre8w"]
+script = ExtResource("1_2djl3")
+task_id = 122
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Introduction"
+task_part = ""
+description = "• Find Jaeger's camp on Woods
+• Find the encrypted message on Woods
+• Hand the message over to Mechanic"
+from = Array[int]([121])
+to = Array[int]([192])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6x48r"]
+script = ExtResource("1_2djl3")
+task_id = 123
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 1"
+description = "Modify an MP-133 with the following parameters:
+• Laser Designator
+• Extended Magazine
+• >47 Ergo
+• <850 Sum Recoil"
+from = Array[int]([121])
+to = Array[int]([124, 125, 153])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_v4mp7"]
+script = ExtResource("1_2djl3")
+task_id = 124
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 2"
+description = "Modify an AKS-74u with the following parameters:
+• B-11 Handguard
+• 60rnd Magazine
+• 6 Slots Maximum
+• >58 Ergo
+• <550m Sum Recoil
+• >=100m Sighting Range"
+from = Array[int]([123])
+to = Array[int]([125, 145])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_oovbk"]
+script = ExtResource("1_2djl3")
+task_id = 125
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 3"
+description = "Modify an MP5 with the following parameters:
+• 50rnd Magazine
+• Suppressed
+• Flashlight
+• >45 Ergo
+• <210 Sum Recoil
+• >200m Sighting Range
+• 4kg Maximum Weight"
+from = Array[int]([123])
+to = Array[int]([126, 146])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_j8dw7"]
+script = ExtResource("1_2djl3")
+task_id = 126
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 4"
+description = "Modify an OP-SKS with the following parameters:
+• Extended Magazine
+• Scope
+• Suppressed
+• >35 Ergo
+• <350 Sum Recoil"
+from = Array[int]([124, 125])
+to = Array[int]([127])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_b3j0r"]
+script = ExtResource("1_2djl3")
+task_id = 127
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 5"
+description = "Modify an M870 with the following parameters:
+• MOE Handguard
+• Laser/Light
+• Foregrip
+• >60 Ergo
+• <500 Sum Recoil"
+from = Array[int]([126])
+to = Array[int]([128])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ccvql"]
+script = ExtResource("1_2djl3")
+task_id = 128
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 6"
+description = "Modify an AKM with the following parameters:
+• Suppressed
+• Shift Foregrip
+• 30rnd Magpul Magazine
+• >40 Ergo
+• <400 Sum Recoil
+• >=800m Sighting Range"
+from = Array[int]([127])
+to = Array[int]([129])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_0pqny"]
+script = ExtResource("1_2djl3")
+task_id = 129
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 7"
+description = "Modify an M4A1 with the following parameters:
+• Suppressed
+• 60rnd Magazine
+• >47 Ergo
+• <300 Sum Recoil
+• >=800 Sighting Range
+• 3.8kg Max Weight"
+from = Array[int]([128])
+to = Array[int]([130])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_evpqh"]
+script = ExtResource("1_2djl3")
+task_id = 130
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 8"
+description = "Modify an AKS-74N with the following parameters:
+• Full Zenit Furniture
+• AK-12 Magazine
+• Klesch-2lKS
+• 10 Slots Maximum
+• >65 Ergo
+• <275 Sum Recoil"
+from = Array[int]([129])
+to = Array[int]([131])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_w01gp"]
+script = ExtResource("1_2djl3")
+task_id = 131
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 9"
+description = "Modify a P226 with the following parameters:
+• Stainless Elite Slide and Grip
+• Extended Magazine
+• Flashlight
+• >=80 Ergo
+• <=610 Sum Recoil"
+from = Array[int]([130])
+to = Array[int]([132])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_13oyq"]
+script = ExtResource("1_2djl3")
+task_id = 132
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 10"
+description = "Modify an AK-105 with the following parameters:
+• Suppressed
+• 60rnd Magazine
+• 8 Slots Maximum
+• >38 Ergo
+• <500 Sum Recoil
+• 4.8kg Max Weight
+• >800m Sighting Range"
+from = Array[int]([131])
+to = Array[int]([133])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6xh0k"]
+script = ExtResource("1_2djl3")
+task_id = 133
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 11"
+description = "Modify a 9x19 Vector with the following parameters:
+• Mk.5 Modular Rail
+• SFG grip
+• Iron Sights or Optic
+• Suppressed
+• 33rnd Magazine
+• >50 Ergo
+• <230 Sum Recoil
+• >=300m Sighting Range"
+from = Array[int]([132])
+to = Array[int]([134])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_8ctol"]
+script = ExtResource("1_2djl3")
+task_id = 134
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 12"
+description = "Modify a SIG MPX with the following parameters:
+• TD2001 Pistol Grip
+• Annihilator Flash Hider
+• LAS/TAC 2 Flashlight
+• >52 Ergo
+• <225 Sum Recoil
+• >=300m Sighting Range
+• 3.999kg Max Weight"
+from = Array[int]([133])
+to = Array[int]([135])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ds2d8"]
+script = ExtResource("1_2djl3")
+task_id = 135
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 13"
+description = "Modify an RSASS with the following parameters:
+• Suppressed
+• >26 Ergo
+• <300 Sum Recoil
+• >1500m Sighting Range
+• 6.7kg Max Weight"
+from = Array[int]([134])
+to = Array[int]([136])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_7s5l3"]
+script = ExtResource("1_2djl3")
+task_id = 136
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 14"
+description = "Modify an HK416A5 with the following parameters:
+• All Attachments are Tan
+• SOCOM56 Suppressor
+• RVG Grip
+• EOTech Optic
+• MOE Pistol Grip
+• UBR GEN2 Stock
+• LA-58/PEQ Tactical Device
+• 30rnd Mag
+• >60 Ergo
+• <300 Sum Recoil
+• 4kg Max Weight"
+from = Array[int]([135])
+to = Array[int]([137])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_3x1oc"]
+script = ExtResource("1_2djl3")
+task_id = 137
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 15"
+description = "Modify an AS VAL with the following parameters:
+• GL-SHOCK Stock
+• AN/PEQ-15 Tactical Device
+• NSPU-M Scope
+• 30rnd Magazine
+• >33 Ergo
+• <220 Sum Recoil"
+from = Array[int]([136])
+to = Array[int]([138])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_f026q"]
+script = ExtResource("1_2djl3")
+task_id = 138
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 16"
+description = "Modify a DVL-10 with the following parameters:
+• Scope
+• Multi-Laser Device
+• >40 Ergo
+• <450 Sum Recoil
+• >2000m Sighting Range
+• 6.7kg Max Weight"
+from = Array[int]([137])
+to = Array[int]([139])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_yf6wy"]
+script = ExtResource("1_2djl3")
+task_id = 139
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 17"
+description = "Modify an AK-102 with the following parameters:
+• CRD Device
+• AFG OD Tactical Grip
+• Klesch-2U Flashlight
+• RPK-16 Buffer Tube
+• Circle 10 Magazine
+• >70 Ergo
+• <250 Sum Recoil
+• >=800m Sighting Range"
+from = Array[int]([138])
+to = Array[int]([140])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_o2tut"]
+script = ExtResource("1_2djl3")
+task_id = 140
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 18"
+description = "Modify an AKMN with the following parameters:
+• Black Magpul Furniture + Foregrip
+• Rotor 43 Suppressor
+• EOTech Hybrid Sight
+• >50 Ergo
+• <350 Sum Recoil
+• >500m Sighting Range
+• 5kg Max Weight"
+from = Array[int]([139])
+to = Array[int]([141])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_onmwr"]
+script = ExtResource("1_2djl3")
+task_id = 141
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 19"
+description = "Modify an SVDS with the following parameters:
+• Black UBR GEN2 Stock
+• SAG MK1 Chassis
+• Black MOE Pistol Grip
+• 3-24x42 FFP Scope
+• Suppressed
+• >15 Ergo
+• <500 Sum Recoil"
+from = Array[int]([140])
+to = Array[int]([142])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_03ms5"]
+script = ExtResource("1_2djl3")
+task_id = 142
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 20"
+description = "Modify an M1A with the following parameters:
+• M8 Mount
+• ATACR 7-35x56 Scope
+• T-1 Sight
+• LS321 Tactical Device
+• 20rnd Magazine
+• >20 Ergo
+• <400 Sum Recoil
+• 7.3kg Max Weight"
+from = Array[int]([141])
+to = Array[int]([143])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_uwbqn"]
+script = ExtResource("1_2djl3")
+task_id = 143
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 21"
+description = "Modify an M700 and M1911 with the following parameters:
+M700:
+• MOD*X Furniture
+• Scope
+• Suppressed
+• >35 Ergo
+• <500 Sum Recoil
+• >1500 Sighting Range
+• 6kg Max Weight
+M1911:
+• #423 Grip
+• Anarchy Outdoors Muzzle Brake
+• Tactical Device
+• >200m Sighting Range"
+from = Array[int]([142])
+to = Array[int]([144])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_hqf1l"]
+script = ExtResource("1_2djl3")
+task_id = 144
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gunsmith"
+task_part = "Part 22"
+description = "Modify an M4A1 with the following parameters:
+• NT-4 (FDE) Suppressor
+• MK10 Handguard
+• REAP-IR Thermal Scope
+• 60rnd Magazine
+• >40 Ergo
+• <270 Sum Recoil
+• 5kg Max Weight"
+from = Array[int]([143])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_2uaxm"]
+script = ExtResource("1_2djl3")
+task_id = 145
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Signal"
+task_part = "Part 1"
+description = "• Find both Signal sources
+• Survive and Extract"
+from = Array[int]([124])
+to = Array[int]([147, 146])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_k4tsd"]
+script = ExtResource("1_2djl3")
+task_id = 146
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Insider"
+task_part = ""
+description = "• Reach Loyalty III with Prapor"
+from = Array[int]([125, 145])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_3ipnx"]
+script = ExtResource("1_2djl3")
+task_id = 147
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Signal"
+task_part = "Part 2"
+description = "• Find 3 CPUs in raid
+• Find 3 Rechargeable Batteries in raid
+• Find 3 PCBs in raid
+• Find 3 GPhones in raid
+• Hand all specified items over to Mechanic"
+from = Array[int]([145])
+to = Array[int]([151, 148])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_xihti"]
+script = ExtResource("1_2djl3")
+task_id = 148
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Scout"
+task_part = ""
+description = "• Locate all 4 Extracts on Factory
+• Survive and Extract"
+from = Array[int]([147])
+to = Array[int]([150, 215])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_05j4p"]
+script = ExtResource("1_2djl3")
+task_id = 150
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Back Door"
+task_part = ""
+description = "• Find the unpowered secret entrance on Reserve
+• Survive and Extract through that entrance"
+from = Array[int]([148])
+to = Array[int]([149])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_twald"]
+script = ExtResource("1_2djl3")
+task_id = 149
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Surplus Goods"
+task_part = ""
+description = "• Find the MBT System on Reserve
+• Hand the system over to Mechanic"
+from = Array[int]([150])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_yjgqm"]
+script = ExtResource("1_2djl3")
+task_id = 151
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Signal"
+task_part = "Part 3"
+description = "• Find the unpowered secret entrance on Reserve
+• Survive and Extract through that entrance"
+from = Array[int]([147])
+to = Array[int]([152])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6y67g"]
+script = ExtResource("1_2djl3")
+task_id = 152
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Signal"
+task_part = "Part 4"
+description = "• Reach Memory Level 4"
+from = Array[int]([151])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_f31q1"]
+script = ExtResource("1_2djl3")
+task_id = 153
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Farming"
+task_part = "Part 1"
+description = "• Fix both Control Boards with Toolsets on Factory
+• Survive and Extract"
+from = Array[int]([123])
+to = Array[int]([154])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_2kfgi"]
+script = ExtResource("1_2djl3")
+task_id = 154
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Farming"
+task_part = "Part 2"
+description = "• Find 2 Power Cords in raid
+• Find 4 T-Shaped Plugs in raid
+• Find 2 PCBs in raid
+• Hand all specified items over to Mechanic"
+from = Array[int]([153])
+to = Array[int]([156, 155, 165])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_234dg"]
+script = ExtResource("1_2djl3")
+task_id = 156
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Farming"
+task_part = "Part 3"
+description = "• Find the package of GPUs on Customs
+• Hand the Package over to Mechanic"
+from = Array[int]([154])
+to = Array[int]([157, 163, 159])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_oo86f"]
+script = ExtResource("1_2djl3")
+task_id = 155
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Bad Habit"
+task_part = ""
+description = "• Find 5 Marlboro cigarettes in raid
+• Find 5 Strike cigarettes in raid
+• Find 5 Wilston cigarettes in raid
+• Hand the cigarettes over to Mechanic"
+from = Array[int]([154])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dgtql"]
+script = ExtResource("1_2djl3")
+task_id = 157
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Farming"
+task_part = "Part 4"
+description = "• Find 3 GPUs in raid
+• Find 15 CPU Fans in raid
+• Hand the specified items over to Mechanic
+• Yet again, weep."
+from = Array[int]([156])
+to = Array[int]([160, 161, 164])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6jgym"]
+script = ExtResource("1_2djl3")
+task_id = 158
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Psycho Sniper"
+task_part = ""
+description = "• Reach Sniper Rifles Level 10
+• Eliminate 10 PMCs with Bolt-Action Rifles without dying"
+from = Array[int]([109])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_y2ukd"]
+script = ExtResource("1_2djl3")
+task_id = 159
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "A Shooter Born In Heaven"
+task_part = ""
+description = "• Eliminate 5 PMCs (35 total) with Bolt-Action Headshots on Woods, Reserve, Shoreline, Customs, Lighthouse, Streets of Tarkov, and Interchange"
+from = Array[int]([156])
+to = Array[int]([])
+link = ""
+additional_info = "Yet another quest with a raw-ass name. Who is making these?"
+
+[sub_resource type="Resource" id="Resource_mnvco"]
+script = ExtResource("1_2djl3")
+task_id = 160
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Fertilizers"
+task_part = ""
+description = "• Find 5 Bundles of Wire in raid
+• Find 5 Capacitors in raid
+• Hand the specified items over to Mechanic"
+from = Array[int]([157])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_jkjwk"]
+script = ExtResource("1_2djl3")
+task_id = 161
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Import"
+task_part = ""
+description = "• Find 1 RFID Reader in raid
+• Find 1 VPX Storage Module in raid
+• Hand the specified items over to Mechanic"
+from = Array[int]([157])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_i1trb"]
+script = ExtResource("1_2djl3")
+task_id = 162
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Chemistry Closet"
+task_part = ""
+description = "• Locate Sanitar's Office in the Health Resort
+• Survive and Extract"
+from = Array[int]([53, 22])
+to = Array[int]([227, 55])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6uj4g"]
+script = ExtResource("1_2djl3")
+task_id = 163
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Corporate Secrets"
+task_part = ""
+description = "• Find the data in the offices of Buildings 1 and 2 on Lighthouse
+• Hand the data over to Mechanic"
+from = Array[int]([156])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_oml3x"]
+script = ExtResource("1_2djl3")
+task_id = 164
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Energy Crisis"
+task_part = ""
+description = "• Find and Mark the fuel tanks on Lighthouse with an MS2000 Marker
+• Find and Mark the three tanker trucks on Lighthouse with MS2000 Markers"
+from = Array[int]([157])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_baxpl"]
+script = ExtResource("1_2djl3")
+task_id = 165
+trader = 4
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Broadcast"
+task_part = "Part 1"
+description = "• Locate the hidden recording studio on Lighthouse
+• Place a Signal Jammer inside the studio"
+from = Array[int]([154])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[resource]
+script = ExtResource("2_71hne")
+TaskDataArray = Array[ExtResource("1_2djl3")]([SubResource("Resource_12uj6"), SubResource("Resource_rre8w"), SubResource("Resource_6x48r"), SubResource("Resource_v4mp7"), SubResource("Resource_oovbk"), SubResource("Resource_j8dw7"), SubResource("Resource_b3j0r"), SubResource("Resource_ccvql"), SubResource("Resource_0pqny"), SubResource("Resource_evpqh"), SubResource("Resource_w01gp"), SubResource("Resource_13oyq"), SubResource("Resource_6xh0k"), SubResource("Resource_8ctol"), SubResource("Resource_ds2d8"), SubResource("Resource_7s5l3"), SubResource("Resource_3x1oc"), SubResource("Resource_f026q"), SubResource("Resource_yf6wy"), SubResource("Resource_o2tut"), SubResource("Resource_onmwr"), SubResource("Resource_03ms5"), SubResource("Resource_uwbqn"), SubResource("Resource_hqf1l"), SubResource("Resource_2uaxm"), SubResource("Resource_k4tsd"), SubResource("Resource_3ipnx"), SubResource("Resource_xihti"), SubResource("Resource_05j4p"), SubResource("Resource_twald"), SubResource("Resource_yjgqm"), SubResource("Resource_6y67g"), SubResource("Resource_f31q1"), SubResource("Resource_2kfgi"), SubResource("Resource_234dg"), SubResource("Resource_oo86f"), SubResource("Resource_dgtql"), SubResource("Resource_6jgym"), SubResource("Resource_y2ukd"), SubResource("Resource_mnvco"), SubResource("Resource_jkjwk"), SubResource("Resource_i1trb"), SubResource("Resource_6uj4g"), SubResource("Resource_oml3x"), SubResource("Resource_baxpl")])

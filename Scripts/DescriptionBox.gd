@@ -84,12 +84,6 @@ func generate_from_resources(array: Array[Tasks.tasks], from: bool):
 		else:
 			create_buttons(array, from)
 
-func find_resource(task: Tasks.tasks) -> TaskResource:
-	for i in %TaskData.MasterTaskList:
-		if i.task_id == task:
-			return i
-	return
-
 func apply_settings() -> void:
 	note.visible = Settings.dev_notes
 

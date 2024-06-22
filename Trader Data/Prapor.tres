@@ -1,0 +1,542 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=36 format=3 uid="uid://cqnhl16x58f72"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_chqm7"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_6un4n"]
+
+[sub_resource type="Resource" id="Resource_pip1k"]
+script = ExtResource("1_chqm7")
+task_id = 0
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Shooting Cans"
+task_part = ""
+description = "• Find the Utyos machine gun on Ground Zero
+• Find the AGS grenade launcher on Ground Zero
+• Eliminate 5 enemies on Ground Zero"
+from = Array[int]([])
+to = Array[int]([1])
+link = "Shooting_Cans"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_r0ilu"]
+script = ExtResource("1_chqm7")
+task_id = 1
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Debut"
+task_part = ""
+description = "• Eliminate 5 Scavs
+• Hand in 5 MP-133 Shotguns"
+from = Array[int]([0])
+to = Array[int]([2, 3])
+link = "Debut"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fcqn5"]
+script = ExtResource("1_chqm7")
+task_id = 2
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Luxurious Life"
+task_part = ""
+description = "• Find the wine bottle inside the liquor store on Ground Zero
+• Hand the quest item over to Prapor"
+from = Array[int]([1])
+to = Array[int]([4])
+link = "Luxurious_Life"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_7p1tt"]
+script = ExtResource("1_chqm7")
+task_id = 3
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Search Mission"
+task_part = ""
+description = "• Eliminate 5 Scavs
+• Hand in 5 MP-133 Shotguns"
+from = Array[int]([1])
+to = Array[int]([])
+link = "Search_Mission"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_24rga"]
+script = ExtResource("1_chqm7")
+task_id = 4
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Background Check"
+task_part = ""
+description = "• Find the Bronze Pocket Watch on Customs
+• Hand the quest item over to Prapor"
+from = Array[int]([2])
+to = Array[int]([5, 6])
+link = "Background_Check"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_0ooys"]
+script = ExtResource("1_chqm7")
+task_id = 5
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Shootout Picnic"
+task_part = ""
+description = "• Eliminate 15 Scavs on Woods"
+from = Array[int]([4])
+to = Array[int]([])
+link = "Shootout_Picnic"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fg0e8"]
+script = ExtResource("1_chqm7")
+task_id = 6
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Delivery from the Past"
+task_part = ""
+description = "• Obtain Secure Folder 0022 in Big Red on Customs
+• Stash the folder in the Factory break room
+• Survive and Extract"
+from = Array[int]([4])
+to = Array[int]([7])
+link = "Delivery_from_the_Past"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dy4sn"]
+script = ExtResource("1_chqm7")
+task_id = 7
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "BP Depot"
+task_part = ""
+description = "• Mark all four fuel tanks with MS2000 Markers on Customs
+• Survive and Extract"
+from = Array[int]([6])
+to = Array[int]([8, 10])
+link = "BP_Depot"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ovdoy"]
+script = ExtResource("1_chqm7")
+task_id = 8
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Bunker"
+task_part = "Part 1"
+description = "• Find the Underground Bunker on Reserve
+• Find the control room in the bunker
+• Survive and Extract"
+from = Array[int]([7])
+to = Array[int]([9])
+link = "The_Bunker_-_Part_1"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_jnenm"]
+script = ExtResource("1_chqm7")
+task_id = 9
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Bunker"
+task_part = "Part 2"
+description = "• Find the hermetic door leading to White Bishop
+• Find one of the hermetic doors leading to Black Bishop
+• Find one of the hermetic doors leading to Black Pawn
+• Find one of the hermetic doors leading to White Pawn
+• Find one of the hermetic doors leading to White King
+• Survive and Extract"
+from = Array[int]([8])
+to = Array[int]([12])
+link = "The_Bunker_-_Part_2"
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_6iyn8"]
+script = ExtResource("1_chqm7")
+task_id = 12
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "No Place for Renegades"
+task_part = ""
+description = "• Eliminate 5 Raiders in the Command Bunker on Reserve"
+from = Array[int]([9])
+to = Array[int]([13])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_lb2cd"]
+script = ExtResource("1_chqm7")
+task_id = 13
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Documents"
+task_part = ""
+description = "• Find Documents №1-3 on Reserve
+• Hand the quest items over to Prapor"
+from = Array[int]([12])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_r6h2r"]
+script = ExtResource("1_chqm7")
+task_id = 10
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Bad Rep Evidence"
+task_part = ""
+description = "• Obtain Secure Folder 0031 in the Bunkhouse next to Big Skeleton on Customs
+• Hand the folder over to Prapor"
+from = Array[int]([7])
+to = Array[int]([11])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_satdp"]
+script = ExtResource("1_chqm7")
+task_id = 11
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Ice Cream Cones"
+task_part = ""
+description = "• Obtain Secure Folder 0031 in the Bunkhouse next to Big Skeleton on Customs
+• Hand the folder over to Prapor"
+from = Array[int]([10])
+to = Array[int]([14, 15])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_5eu0c"]
+script = ExtResource("1_chqm7")
+task_id = 14
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Postman Pat"
+task_part = "Part 1"
+description = "• Obtain the letter on the messenger's body on Factory
+• Survive and Extract
+• Hand the quest item over to Therapist"
+from = Array[int]([11, 56])
+to = Array[int]([56])
+link = ""
+additional_info = "DEV NOTE: Technically speaking, you need to complete Part 2 before you complete this one. This is frustrating for both of us, but I think we can get through it together."
+
+[sub_resource type="Resource" id="Resource_71bp5"]
+script = ExtResource("1_chqm7")
+task_id = 15
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Shaking up the Teller"
+task_part = ""
+description = "• Obtain the Bank Case in Room 203 in 3-Story Dorms on Customs
+• Hand the quest item over to Prapor"
+from = Array[int]([11])
+to = Array[int]([16, 25, 22])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_l84nw"]
+script = ExtResource("1_chqm7")
+task_id = 16
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 1"
+description = "• Eliminate 15 Scavs with an AKM series weapon on Shoreline"
+from = Array[int]([15])
+to = Array[int]([17])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_1xl54"]
+script = ExtResource("1_chqm7")
+task_id = 17
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 2"
+description = "• Eliminate 15 Scavs with a suppressed weapon on Reserve
+• Find 7 Half-Masks in raid
+• Hand the Half-Masks over to Prapor"
+from = Array[int]([16])
+to = Array[int]([18, 30])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_brnvd"]
+script = ExtResource("1_chqm7")
+task_id = 18
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 3"
+description = "• Eliminate 25 Scavs with an AKS-74U series weapon on Customs"
+from = Array[int]([17])
+to = Array[int]([19])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_5hrmy"]
+script = ExtResource("1_chqm7")
+task_id = 19
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 4"
+description = "• Eliminate 10 Scavs while using a 12ga shotgun on Lighthouse
+• Eliminate 10 PMCs while wearing a Balaclava and Scav Vest on Lighthouse
+• Find 5 Brown Scav Knives in raid
+• Hand the Knives over to Prapor"
+from = Array[int]([18])
+to = Array[int]([20])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ikyu4"]
+script = ExtResource("1_chqm7")
+task_id = 20
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 5"
+description = "• Find 1 AK-74N in raid\\n• Find 1 Colt M4A1 in raid
+• Find 2 PM pistols in raid
+• Hand the weapons over to Prapor
+• Eliminate 10 PMCs while wearing a PACA and 6B47 helmet"
+from = Array[int]([19])
+to = Array[int]([21])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_xtup8"]
+script = ExtResource("1_chqm7")
+task_id = 21
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Punisher"
+task_part = "Part 6"
+description = "• Eliminate 15 PMCs with an SVDS rifle (excluding Factory)
+• Find 7 Bear Dogtags and 7 USEC Dogtags in raid
+• Hand all the Dogtags over to Prapor"
+from = Array[int]([20])
+to = Array[int]([29])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_tx6vk"]
+script = ExtResource("1_chqm7")
+task_id = 22
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Anesthesia"
+task_part = ""
+description = "• Mark all 3 trading posts with an MS2000 Marker on Shoreline
+• Survive and Extract"
+from = Array[int]([15])
+to = Array[int]([83, 111, 162])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_nfm1h"]
+script = ExtResource("1_chqm7")
+task_id = 23
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Grenadier"
+task_part = ""
+description = "• Eliminate 8 PMCs with Hand Grenades"
+from = Array[int]([])
+to = Array[int]([24])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_jacts"]
+script = ExtResource("1_chqm7")
+task_id = 24
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Test Drive"
+task_part = "Part 1"
+description = "• Eliminate 5 PMCs from over 60 meters away with an M1A utilizing a Hybrid 46 Suppressor and Schmidt and Bender PM II 1-8x24 scope"
+from = Array[int]([23])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_w470t"]
+script = ExtResource("1_chqm7")
+task_id = 25
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Perfect Mediator"
+task_part = ""
+description = "• Reach Max Loyalty with every trader (Other than Fence and the fat bastard)"
+from = Array[int]([15])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_imvql"]
+script = ExtResource("1_chqm7")
+task_id = 26
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Polikhim Hobo"
+task_part = ""
+description = "• Eliminate 25 Scavs on Customs"
+from = Array[int]([68])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_oec6i"]
+script = ExtResource("1_chqm7")
+task_id = 27
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Regulated Materials"
+task_part = ""
+description = "• Find 1 6-STEN-140-M Battery in raid
+• Find 5 OFZ 30x160mm Shells in raid
+• Hand the specified items over to Sidorovi- oh uh Prapor whoops haha"
+from = Array[int]([26])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ibxqu"]
+script = ExtResource("1_chqm7")
+task_id = 28
+trader = 0
+mutual_exclusives = Array[int]([57, 71])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Big Customer"
+task_part = ""
+description = "• Mark the Van inside Chemical on Customs
+• Survive and Extract
+COMPLETING THIS QUEST LOCKS OFF \"OUT OF CURIOSITY\" AND \"CHEMICAL - PART 4\""
+from = Array[int]([70])
+to = Array[int]([84])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_hwcyb"]
+script = ExtResource("1_chqm7")
+task_id = 29
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Intimidator"
+task_part = ""
+description = "• Eliminate 40 Scavs with headshots"
+from = Array[int]([21])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_lvie6"]
+script = ExtResource("1_chqm7")
+task_id = 30
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Easy Job"
+task_part = "Part 1"
+description = "• Locate and Mark the Helicopter in the Water Treatment Plant on Lighthouse
+• Survive and Extract"
+from = Array[int]([17])
+to = Array[int]([32])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_vsmqm"]
+script = ExtResource("1_chqm7")
+task_id = 31
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Easy Job"
+task_part = "Part 2"
+description = "• Eliminate 20 Enemies at the Water Treatment Plant territory"
+from = Array[int]([30])
+to = Array[int]([32])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_7k3ms"]
+script = ExtResource("1_chqm7")
+task_id = 32
+trader = 0
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Reconnaissance"
+task_part = ""
+description = "• Find the ladders atop all 3 Buildings in the Water Treatment Plant on Lighthouse
+• Survive and Extract"
+from = Array[int]([30])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[resource]
+script = ExtResource("2_6un4n")
+TaskDataArray = Array[ExtResource("1_chqm7")]([SubResource("Resource_pip1k"), SubResource("Resource_r0ilu"), SubResource("Resource_fcqn5"), SubResource("Resource_7p1tt"), SubResource("Resource_24rga"), SubResource("Resource_0ooys"), SubResource("Resource_fg0e8"), SubResource("Resource_dy4sn"), SubResource("Resource_ovdoy"), SubResource("Resource_jnenm"), SubResource("Resource_6iyn8"), SubResource("Resource_lb2cd"), SubResource("Resource_r6h2r"), SubResource("Resource_satdp"), SubResource("Resource_5eu0c"), SubResource("Resource_71bp5"), SubResource("Resource_l84nw"), SubResource("Resource_1xl54"), SubResource("Resource_brnvd"), SubResource("Resource_5hrmy"), SubResource("Resource_ikyu4"), SubResource("Resource_xtup8"), SubResource("Resource_tx6vk"), SubResource("Resource_nfm1h"), SubResource("Resource_jacts"), SubResource("Resource_w470t"), SubResource("Resource_imvql"), SubResource("Resource_oec6i"), SubResource("Resource_ibxqu"), SubResource("Resource_hwcyb"), SubResource("Resource_lvie6"), SubResource("Resource_vsmqm"), SubResource("Resource_7k3ms")])

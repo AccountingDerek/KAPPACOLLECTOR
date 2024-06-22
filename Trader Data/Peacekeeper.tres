@@ -1,0 +1,567 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=37 format=3 uid="uid://872eexuc6kpj"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_f728b"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_ggtgn"]
+
+[sub_resource type="Resource" id="Resource_qbsrv"]
+script = ExtResource("1_f728b")
+task_id = 87
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Fishing Gear"
+task_part = ""
+description = "• Stash an SV-98 and a Multitool at the Boat on Shoreline
+• Survive and Extract"
+from = Array[int]([75])
+to = Array[int]([88, 111])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_aplk3"]
+script = ExtResource("1_f728b")
+task_id = 88
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Tigr Safari"
+task_part = ""
+description = "• Find and Mark all 3 Tigr vehicles with MS2000 Markers on Customs
+• Survive and Extract"
+from = Array[int]([87])
+to = Array[int]([89])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fr464"]
+script = ExtResource("1_f728b")
+task_id = 89
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Scrap Metal"
+task_part = ""
+description = "• Find and Mark all 3 Tanks with MS2000 Markers on Shoreline
+• Survive and Extract"
+from = Array[int]([88])
+to = Array[int]([90])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dvlbe"]
+script = ExtResource("1_f728b")
+task_id = 90
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Eagle Eye"
+task_part = ""
+description = "• Find the SAS Disks from both crashed UAVs on Shoreline
+• Hand the disks over to Peacekeeper"
+from = Array[int]([89])
+to = Array[int]([91])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_1xhay"]
+script = ExtResource("1_f728b")
+task_id = 91
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Humanitarian Supplies"
+task_part = ""
+description = "• Find and Mark both trucks with MS2000 Markers on Shoreline
+• Find 5 MREs
+• Hand the MREs over to Peacekeeper
+• Eliminate 15 Scavs while wearing the UNTAR Gear on Shoreline
+• Survive and Extract"
+from = Array[int]([90])
+to = Array[int]([92, 94, 116, 120])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_wguv5"]
+script = ExtResource("1_f728b")
+task_id = 92
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Cult"
+task_part = "Part 1"
+description = "• Find the Missing Informant in the Sunken Village on Shoreline
+• Survive and Extract"
+from = Array[int]([91])
+to = Array[int]([93])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_bqi8t"]
+script = ExtResource("1_f728b")
+task_id = 93
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Cult"
+task_part = "Part 2"
+description = "• Mark both Cultist Circles on Woods with MS2000 Markers
+• Mark the Cultist Circle on Shoreline with a MS2000 Marker
+• Check Dorms 314 key price
+• weep.
+• Mark Dorms 314 with an MS2000 Marker"
+from = Array[int]([92])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_oclra"]
+script = ExtResource("1_f728b")
+task_id = 94
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 1"
+description = "• Headshot 7 Scavs on Shoreline with a 12ga Shotgun"
+from = Array[int]([91])
+to = Array[int]([95, 119])
+link = ""
+additional_info = "DEV NOTE: This task is really, really fun if you go night and use FTX slugs in a suppressed MP-153. I killed Sanitar this way, and so can you!"
+
+[sub_resource type="Resource" id="Resource_rmnbl"]
+script = ExtResource("1_f728b")
+task_id = 95
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 2"
+description = "• Mark the Helicopter and Safe Road at Resort on Shoreline with MS2000 Markers
+• Survive and Extract
+"
+from = Array[int]([94])
+to = Array[int]([96])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fi3xd"]
+script = ExtResource("1_f728b")
+task_id = 96
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 3"
+description = "• Find 1 Small WD-40 in raid
+• Find 2 Clin bottles in raid
+• Find 2 Corrugated Hoses in raid
+• Find 2 Ox bleach bottles in raid
+• Hand the specified items over to Peacekeeper"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "I LOVE MY LAVATORY UNIT!!!!!!!!!!"
+
+[sub_resource type="Resource" id="Resource_lryo0"]
+script = ExtResource("1_f728b")
+task_id = 97
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 4"
+description = "• Locate the Generators in the East and West wings of Resort on Shoreline
+• Survive and Extract"
+from = Array[int]([96])
+to = Array[int]([98])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_r2vd0"]
+script = ExtResource("1_f728b")
+task_id = 98
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 5"
+description = "• Find the Sanitarium Key in the Bunker behind Resort on Shoreline
+• Hand the key over to Peacekeeper"
+from = Array[int]([97])
+to = Array[int]([99])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_i5njf"]
+script = ExtResource("1_f728b")
+task_id = 99
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 6"
+description = "• Hand $8000 over to Peacekeeper"
+from = Array[int]([98])
+to = Array[int]([100])
+link = ""
+additional_info = "DEV NOTE: Engaging Quest Design! Thank you Battlestate"
+
+[sub_resource type="Resource" id="Resource_4iw1b"]
+script = ExtResource("1_f728b")
+task_id = 100
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Spa Tour"
+task_part = "Part 7"
+description = "• Find 4 Morphine Pens in raid
+• Find 2 Alkaline cleaners in raid
+• Find 2 Corrugated Hoses in raid
+• Find 2 Propane Tanks in raid
+• Hand the specified items over to Peacekeeper"
+from = Array[int]([99])
+to = Array[int]([104, 101])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_onqjj"]
+script = ExtResource("1_f728b")
+task_id = 101
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Cargo X"
+task_part = "Part 1"
+description = "• Find the data in the computer room in East Wing Resort on Shoreline
+• Hand the data over to Peacekeeper
+"
+from = Array[int]([100])
+to = Array[int]([102])
+link = ""
+additional_info = "DEV NOTE: \"Cargo X\" is, again, an unreasonably cool name for a quest"
+
+[sub_resource type="Resource" id="Resource_0fmk6"]
+script = ExtResource("1_f728b")
+task_id = 102
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Cargo X"
+task_part = "Part 2"
+description = "• Obtain Secure Folder 0018 in Resort on Shoreline
+• Hand the folder over to Peacekeeper"
+from = Array[int]([101])
+to = Array[int]([103])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_2v4c3"]
+script = ExtResource("1_f728b")
+task_id = 103
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Cargo X"
+task_part = "Part 3"
+description = "• Find the hidden Terragroup Cargo on Shoreline
+• Survive and Extract"
+from = Array[int]([102])
+to = Array[int]([117])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_c6vcq"]
+script = ExtResource("1_f728b")
+task_id = 117
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Cargo X"
+task_part = "Part 4"
+description = "• Find and Mark the Terragroup container on the Shores of Lighthouse with an MS2000 Marker
+• Survive and Extract"
+from = Array[int]([103])
+to = Array[int]([118])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_vcb4f"]
+script = ExtResource("1_f728b")
+task_id = 118
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Insomnia"
+task_part = ""
+description = "• Eliminate 30 PMCs between 22:00 and 06:00 on any map other than Factory and The Lab"
+from = Array[int]([117])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_053c1"]
+script = ExtResource("1_f728b")
+task_id = 104
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 1"
+description = "• Eliminate 10 Scavs with a Suppressed AR-15 on Shoreline"
+from = Array[int]([100])
+to = Array[int]([105])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_4yeae"]
+script = ExtResource("1_f728b")
+task_id = 105
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 2"
+description = "• Find and Mark the Fisherman's Dwelling with a MS2000 Marker on Shoreline
+• Survive and Extract"
+from = Array[int]([104])
+to = Array[int]([106])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_rd7ok"]
+script = ExtResource("1_f728b")
+task_id = 106
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 3"
+description = "• Find Artyom's Car on Shoreline
+• Survive and Extract"
+from = Array[int]([105])
+to = Array[int]([107])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_mfbxu"]
+script = ExtResource("1_f728b")
+task_id = 107
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 5"
+description = "• Find the Resort's Tenant List on Shoreline
+• Hand the list over to Peacekeeper"
+from = Array[int]([106])
+to = Array[int]([108])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_dwxak"]
+script = ExtResource("1_f728b")
+task_id = 108
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 5"
+description = "• Find information on Artyom's work on Shoreline
+• Hand the information over to Peacekeeper"
+from = Array[int]([107])
+to = Array[int]([109])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_g64d2"]
+script = ExtResource("1_f728b")
+task_id = 109
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Wet Job"
+task_part = "Part 6"
+description = "• Reach Sniper Rifles Level 7"
+from = Array[int]([108])
+to = Array[int]([158, 110])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_r6xlo"]
+script = ExtResource("1_f728b")
+task_id = 110
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "The Guide"
+task_part = ""
+description = "• Survive and Extract from every map in the game (excluding Ground Zero) without dying"
+from = Array[int]([109])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ijep5"]
+script = ExtResource("1_f728b")
+task_id = 111
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Samples"
+task_part = ""
+description = "• Find a M.U.L.E. stimulant in raid
+• Find an \"Obdolbos\" cocktail in raid
+• Find a Meldonin stimulant in raid
+• Find an AHF1-M stimulant in raid
+• Find a P22 Stimulant in raid
+• Find an L1 stimulant in raid
+• Find a 3-(b-tg) stimulant in raid
+• Hand over all the stimulants to Peacekeeper"
+from = Array[int]([87])
+to = Array[int]([112])
+link = ""
+additional_info = "DEV NOTE: I DESERVE MY BLACK CARD WIN. I AM SO GRATEFUL FOR MY BLACK CARD WIN. THIS IS MY DESTINY. THIS IS MY REALITY. I DESERVE MY BLACK CARD WIN. I ACCEPT MY BLACK CARD WIN. IT'S TIME FOR MY BLACK CARD WIN."
+
+[sub_resource type="Resource" id="Resource_w04yk"]
+script = ExtResource("1_f728b")
+task_id = 112
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = true
+post_choice_mutual_exclusives = Array[int]([227, 55])
+task_name = "Terragroup Employee"
+task_part = ""
+description = "• Find Sanitar's workplace in The Lab
+• Find information about Sanitar's work in The Lab
+• Hand the information over to Peacekeeper"
+from = Array[int]([111])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ug24b"]
+script = ExtResource("1_f728b")
+task_id = 113
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Lend-Lease"
+task_part = "Part 2"
+description = "• Find 2 Virtex Processors in raid
+• Find 1 CODFM in raid
+• Hand the tech items over to Peacekeeper"
+from = Array[int]([76])
+to = Array[int]([114])
+link = ""
+additional_info = "DEV NOTE: Just go loot the stone chalet on Lighthouse."
+
+[sub_resource type="Resource" id="Resource_k8lw0"]
+script = ExtResource("1_f728b")
+task_id = 114
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Peacekeeping Mission"
+task_part = ""
+description = "• Eliminate 12 Scavs (60 total) with an M4 while wearing Blueberry Gear on Woods, Customs, Interchange, Shoreline, and Streets of Tarkov"
+from = Array[int]([113])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Guess what's called \"Blueberry2\" in the code? yeah, that's right, Psycho Sniper!"
+
+[sub_resource type="Resource" id="Resource_gkxeh"]
+script = ExtResource("1_f728b")
+task_id = 116
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Revision"
+task_part = "Reserve"
+description = "• Find and Mark the four BMP-2s on Reserve with MS2000 Markers
+• Find and Mark the first LAV III on Reserve with an MS2000 Marker
+• Find the second LAV III and the T-90 on Reserve"
+from = Array[int]([91])
+to = Array[int]([115])
+link = ""
+additional_info = "DEV NOTE: I really hate Reserve."
+
+[sub_resource type="Resource" id="Resource_2qk2q"]
+script = ExtResource("1_f728b")
+task_id = 115
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Classified Technologies"
+task_part = ""
+description = "• Find the T-90M Controller Package on Reserve
+• Hand the package over to Peacekeeper"
+from = Array[int]([116])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_feeoq"]
+script = ExtResource("1_f728b")
+task_id = 119
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Overpopulation"
+task_part = ""
+description = "• Eliminate 12 Scavs at the Cottages on Lighthouse"
+from = Array[int]([94])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_g5ovm"]
+script = ExtResource("1_f728b")
+task_id = 120
+trader = 3
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Revision"
+task_part = "Lighthouse"
+description = "• Find and Mark the two BRDMs on Lighthouse with MS2000 Markers
+• Find and Mark the two Strykers on Lighthouse with MS2000 Markers"
+from = Array[int]([91])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[resource]
+script = ExtResource("2_ggtgn")
+TaskDataArray = Array[ExtResource("1_f728b")]([SubResource("Resource_qbsrv"), SubResource("Resource_aplk3"), SubResource("Resource_fr464"), SubResource("Resource_dvlbe"), SubResource("Resource_1xhay"), SubResource("Resource_wguv5"), SubResource("Resource_bqi8t"), SubResource("Resource_oclra"), SubResource("Resource_rmnbl"), SubResource("Resource_fi3xd"), SubResource("Resource_lryo0"), SubResource("Resource_r2vd0"), SubResource("Resource_i5njf"), SubResource("Resource_4iw1b"), SubResource("Resource_onqjj"), SubResource("Resource_0fmk6"), SubResource("Resource_2v4c3"), SubResource("Resource_c6vcq"), SubResource("Resource_vcb4f"), SubResource("Resource_053c1"), SubResource("Resource_4yeae"), SubResource("Resource_rd7ok"), SubResource("Resource_mfbxu"), SubResource("Resource_dwxak"), SubResource("Resource_g64d2"), SubResource("Resource_r6xlo"), SubResource("Resource_ijep5"), SubResource("Resource_w04yk"), SubResource("Resource_ug24b"), SubResource("Resource_k8lw0"), SubResource("Resource_gkxeh"), SubResource("Resource_2qk2q"), SubResource("Resource_feeoq"), SubResource("Resource_g5ovm")])

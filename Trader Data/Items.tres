@@ -1,0 +1,548 @@
+[gd_resource type="Resource" script_class="TraderData" load_steps=39 format=3 uid="uid://dm6u2sp50772j"]
+
+[ext_resource type="Script" path="res://Scripts/Task.gd" id="1_3di1b"]
+[ext_resource type="Script" path="res://Scripts/TraderData.gd" id="2_8fbqc"]
+
+[sub_resource type="Resource" id="Resource_wmgqi"]
+script = ExtResource("1_3di1b")
+task_id = 233
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Old firesteel"
+task_part = ""
+description = "A strange thing classified as a firesteel is an ancient device for making fire. Another antique item."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_1wpbe"]
+script = ExtResource("1_3di1b")
+task_id = 234
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Antique axe"
+task_part = ""
+description = "An antique axe with a damaged handle that belonged to the ancient clan of hatchlings called WYCC."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_mcmap"]
+script = ExtResource("1_3di1b")
+task_id = 235
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Battered antique book"
+task_part = ""
+description = "An old, battered antique book. Will definitely be of interest to collectors of old and rare things. Wait, is that a sock used as a bookmark?"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: haha... get it?? *Collectors* of old and rare things??? Classic..."
+
+[sub_resource type="Resource" id="Resource_7k5qk"]
+script = ExtResource("1_3di1b")
+task_id = 236
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "#FireKlean gun lube"
+task_part = ""
+description = "The FireKlean gun lube is considered one of the highest quality in the world. Can also be used in some other cases!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: What other cases"
+
+[sub_resource type="Resource" id="Resource_0lghv"]
+script = ExtResource("1_3di1b")
+task_id = 237
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Golden rooster figurine"
+task_part = ""
+description = "A golden rooster on an acrylic platform with an engraved \"ChickenPrism\" logo."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_rya4o"]
+script = ExtResource("1_3di1b")
+task_id = 238
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Silver Badge"
+task_part = ""
+description = "An old silver badge, probably belonged to some sheriff."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: I really hate Jake Gyllenhaal"
+
+[sub_resource type="Resource" id="Resource_6v8we"]
+script = ExtResource("1_3di1b")
+task_id = 239
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Deadlyslob's beard oil"
+task_part = ""
+description = "The \"DeadlySlob's\" brand specialized beard oil with a maple syrop flavor. Fancy and rare!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_61wdb"]
+script = ExtResource("1_3di1b")
+task_id = 240
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Golden 1GPhone smartphone"
+task_part = ""
+description = "A golden GPhone 1G Edition Orange Gold smartphone. There is a small 1G logo on the back side."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Trying to find this item made me want to punch my fucking webcam"
+
+[sub_resource type="Resource" id="Resource_autdq"]
+script = ExtResource("1_3di1b")
+task_id = 241
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Jar of DevilDog mayo"
+task_part = ""
+description = "This \"DevilDog's\" brand mayonnaise is quite famous in Tarkov. Recommended to use with boiled potatoes"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_fjdjs"]
+script = ExtResource("1_3di1b")
+task_id = 242
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Can of sprats"
+task_part = ""
+description = "Delicacy sprats from Alconafter company."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_g88or"]
+script = ExtResource("1_3di1b")
+task_id = 243
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Fake mustache"
+task_part = ""
+description = "Quite a strange item for current events, but, nevertheless, will allow you to get a real tactical look of a 80-90 spec-ops operator. Sequisha style!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ygx55"]
+script = ExtResource("1_3di1b")
+task_id = 244
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Kotton beanie"
+task_part = ""
+description = "A knitted Kotton brand beanie. Warm and faaaaancy."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ua1ct"]
+script = ExtResource("1_3di1b")
+task_id = 245
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Can of Dr. Lupo's coffee beans"
+task_part = ""
+description = "The famous Dr.Lupo's huge coffee beans. They are humongous! The roasting is as hardcore as possible, definitely will hit hard."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_p5fj6"]
+script = ExtResource("1_3di1b")
+task_id = 246
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Pestily plague mask"
+task_part = ""
+description = "A restored mask of the plague doctor Pestily. A rare and terrifying thing used by cultists in Tarkov."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ncbtf"]
+script = ExtResource("1_3di1b")
+task_id = 247
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Raven figurine"
+task_part = ""
+description = "A raven figurine made of rare materials. The word \"Markstrom\" is written on the base."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_s0tyd"]
+script = ExtResource("1_3di1b")
+task_id = 248
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Shroud half-mask"
+task_part = ""
+description = "An extremely stylish half mask with the Shroud logo. All the Tarkov street guys know who he is."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_s8b2u"]
+script = ExtResource("1_3di1b")
+task_id = 249
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Veritas guitar pick"
+task_part = ""
+description = "A high quality 0.5mm thick guitar pick with the Veritas logo."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_67qpo"]
+script = ExtResource("1_3di1b")
+task_id = 250
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "42 Signature Blend English Tea"
+task_part = ""
+description = "A box of 42 Signature Blend English Tea. For real connoisseurs."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: 42 second second second tea"
+
+[sub_resource type="Resource" id="Resource_wuem6"]
+script = ExtResource("1_3di1b")
+task_id = 251
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Smoke balaclava"
+task_part = ""
+description = "The signature balaclava of the famous hip-hop artist of Tarkov - Smoke."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_64oyu"]
+script = ExtResource("1_3di1b")
+task_id = 252
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Armband (Evasion)"
+task_part = ""
+description = "A special identification armband from Evasion, a local esports tournament by Sigma."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_45agh"]
+script = ExtResource("1_3di1b")
+task_id = 253
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Can of RatCola soda"
+task_part = ""
+description = "Limited edition RatCola from the General Sam brand. The secret recipe of this cola still remains a mystery."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: My opinions on General Sam are very strange. He's what got me into Tarkov, and he has a consistent style and quality to all his stuff, but he had a noticeable hand in creating a playstyle so cancerous that it borderline ruins the game."
+
+[sub_resource type="Resource" id="Resource_vp8su"]
+script = ExtResource("1_3di1b")
+task_id = 254
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Loot Lord plushie"
+task_part = ""
+description = "The \"Loot Lord\" plush toy from a famous Tarkov resident - AquaFPS. A very rare collectible!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_85rx3"]
+script = ExtResource("1_3di1b")
+task_id = 255
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "WZ Wallet"
+task_part = ""
+description = "The \"WillerZ\" leather wallet. Same as any simple wallet, but fancier."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_72rbd"]
+script = ExtResource("1_3di1b")
+task_id = 256
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "LVNDMARK's rat poison"
+task_part = ""
+description = "A special agent for the extermination of camper rats and small factory rodents. Contains the special CHAD formula."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: I am a D1 hater for LVNDMARK. I don't even know if he's a weird guy or anything, I'm just infuriated by his existence."
+
+[sub_resource type="Resource" id="Resource_sl18a"]
+script = ExtResource("1_3di1b")
+task_id = 257
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Missam forklift key"
+task_part = ""
+description = "A Missam forklift key. The name of the former owner is written on the ribbon."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_qkoqv"]
+script = ExtResource("1_3di1b")
+task_id = 258
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Video cassette with the Cyborg Killer movie"
+task_part = ""
+description = "A VHS video cassette with a 1990s action movie about a killer cyborg from the future."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_yni0q"]
+script = ExtResource("1_3di1b")
+task_id = 259
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "BakeEzy cook book"
+task_part = ""
+description = "BakeEzy, a book about delicious and healthy food, contains a lot of recipes for various dishes for a business feast as well as for specific boozefest behind dirty garages. Bon appetite!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_4scwa"]
+script = ExtResource("1_3di1b")
+task_id = 260
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "JohnB Liquid DNB glasses"
+task_part = ""
+description = "Ultra-stylish glasses for electronic music lovers from John B."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: God these look so cool"
+
+[sub_resource type="Resource" id="Resource_ye47y"]
+script = ExtResource("1_3di1b")
+task_id = 261
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Glorious E lightweight armored mask"
+task_part = ""
+description = "The \"Glorious E\" face protection mask, reinforced with aramid fibers."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Gloriussy"
+
+[sub_resource type="Resource" id="Resource_ekf7g"]
+script = ExtResource("1_3di1b")
+task_id = 262
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Baddie's red beard"
+task_part = ""
+description = "An artificial red beard from Baddie."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_ukj3p"]
+script = ExtResource("1_3di1b")
+task_id = 263
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "DRD body armor"
+task_part = ""
+description = "A light but durable and reliable body armor. Special edition from the one and only Dr. Disrespect. Ruthless!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_y0xlm"]
+script = ExtResource("1_3di1b")
+task_id = 264
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Gingy keychain"
+task_part = ""
+description = "A key ring with a four-leaf clover keychain."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_bq3wm"]
+script = ExtResource("1_3di1b")
+task_id = 265
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Golden egg"
+task_part = ""
+description = "A golden egg with a \"Meyer\" engraving."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_8yafu"]
+script = ExtResource("1_3di1b")
+task_id = 266
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Press pass (issued for NoiceGuy)"
+task_part = ""
+description = "A press pass issued to the famous journalist and reporter of Tarkov - NoiceGuy."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: Whatever. Go my scarab"
+
+[sub_resource type="Resource" id="Resource_lkyn8"]
+script = ExtResource("1_3di1b")
+task_id = 267
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "Axel parrot figurine"
+task_part = ""
+description = "A figurine of Axel - the Lab Parrot."
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = ""
+
+[sub_resource type="Resource" id="Resource_jreqc"]
+script = ExtResource("1_3di1b")
+task_id = 268
+trader = 7
+mutual_exclusives = Array[int]([])
+post_choice = false
+post_choice_mutual_exclusives = Array[int]([])
+task_name = "BEAR Buddy plush toy"
+task_part = ""
+description = "The \"BEAR Buddy\" toy from a famous Tarkov resident - Annemunition. A very rare collectible!"
+from = Array[int]([])
+to = Array[int]([])
+link = ""
+additional_info = "DEV NOTE: I want one of these in real life"
+
+[resource]
+script = ExtResource("2_8fbqc")
+TaskDataArray = Array[ExtResource("1_3di1b")]([SubResource("Resource_wmgqi"), SubResource("Resource_1wpbe"), SubResource("Resource_mcmap"), SubResource("Resource_7k5qk"), SubResource("Resource_0lghv"), SubResource("Resource_rya4o"), SubResource("Resource_6v8we"), SubResource("Resource_61wdb"), SubResource("Resource_autdq"), SubResource("Resource_fjdjs"), SubResource("Resource_g88or"), SubResource("Resource_ygx55"), SubResource("Resource_ua1ct"), SubResource("Resource_p5fj6"), SubResource("Resource_ncbtf"), SubResource("Resource_s0tyd"), SubResource("Resource_s8b2u"), SubResource("Resource_67qpo"), SubResource("Resource_wuem6"), SubResource("Resource_64oyu"), SubResource("Resource_45agh"), SubResource("Resource_vp8su"), SubResource("Resource_85rx3"), SubResource("Resource_72rbd"), SubResource("Resource_sl18a"), SubResource("Resource_qkoqv"), SubResource("Resource_yni0q"), SubResource("Resource_4scwa"), SubResource("Resource_ye47y"), SubResource("Resource_ekf7g"), SubResource("Resource_ukj3p"), SubResource("Resource_y0xlm"), SubResource("Resource_bq3wm"), SubResource("Resource_8yafu"), SubResource("Resource_lkyn8"), SubResource("Resource_jreqc")])
