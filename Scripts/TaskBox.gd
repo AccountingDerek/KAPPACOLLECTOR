@@ -1,7 +1,6 @@
 extends Control
 
 @export var vbox : VBoxContainer
-@export var data: Node
 var mode: Tasks.traders
 var list: Array[TaskResource]
 
@@ -14,7 +13,7 @@ func cycle(trader: Tasks.traders) -> void:
 		i.queue_free()
 	## Sets the mode and grabs the current list to generate
 	mode = trader
-	list = data.Trader2List[trader]
+	list = TaskData.Trader2List[trader]
 	custom_minimum_size.y = list.size() * 34
 	## Create list.size() lines
 	for i in list:

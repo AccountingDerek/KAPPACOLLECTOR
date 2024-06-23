@@ -10,7 +10,7 @@ signal update
 signal completion
 signal reset
 signal window
-signal hover(task: Tasks.tasks)
+signal hover(task: String)
 var hovering: bool = false
 
 func _ready():
@@ -23,25 +23,21 @@ func save():
 	return save_dict
 
 func save_checklist():
-	var save_list = FileAccess.open("user://checklist.timmy", FileAccess.WRITE)
-	var save_data = save()
-	var json_string = JSON.stringify(save_data)
-	save_list.store_line(json_string)
+	if not FileAccess.file_exists("user://checklist.tres"):
+		FileAccess.open("user://checklist.tres", FileAccess.WRITE_READ)
+	var save_dict:= Save.new()
+	save_dict.save_dict = SaveData.TaskCompletion
+	ResourceSaver.save(save_dict, "user://checklist.tres", ResourceSaver.FLAG_NONE)
 
 func load_checklist():
-	if not FileAccess.file_exists("user://checklist.timmy"):
+	if not FileAccess.file_exists("user://checklist.tres"):
 		return
-	
-	var save_list = FileAccess.open("user://checklist.timmy", FileAccess.READ)
-	while save_list.get_position() < save_list.get_length():
-		var json_string = save_list.get_line()
-		var json = JSON.new()
-		var parse_result = json.parse(json_string)
-		if not parse_result == OK:
-			print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
-			continue
-		var data = json.get_data()
-		var loaded_data:= {}
-		for i in data.keys():
-			loaded_data[int(i)] = data[i]
-		SaveData.TaskCompletion = loaded_data
+	var save_dict:= Save.new()
+	save_dict = ResourceLoader.load("user://checklist.tres")
+	SaveData.TaskCompletion = save_dict.save_dict
+
+func find_id(id: String) -> TaskResource:
+	for i in TaskData.reference_list:
+		if i == id:
+			return TaskData.reference_list[i]
+	return null

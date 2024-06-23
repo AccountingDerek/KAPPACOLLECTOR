@@ -1,8 +1,7 @@
-[gd_scene load_steps=65 format=3 uid="uid://baelcd5jeu4is"]
+[gd_scene load_steps=56 format=3 uid="uid://baelcd5jeu4is"]
 
 [ext_resource type="Texture2D" uid="uid://btl1si56cuk5m" path="res://VFX/labsnew.png" id="1_3hfuy"]
 [ext_resource type="Theme" uid="uid://6fc2c3twkqn5" path="res://VFX/Main_Theme.tres" id="1_bdga5"]
-[ext_resource type="Script" path="res://Scripts/TaskData.gd" id="1_t7o52"]
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="2_e0ssb"]
 [ext_resource type="Texture2D" uid="uid://otp1blkm1wkl" path="res://Icons/Prapor_Portrait.png" id="2_gns63"]
 [ext_resource type="Texture2D" uid="uid://duo05283rga87" path="res://Icons/Therapist_Portrait.png" id="3_r7pwn"]
@@ -38,17 +37,9 @@
 [ext_resource type="Texture2D" uid="uid://dyxeotp0lw88e" path="res://Icons/Jaeger_Hover.png" id="25_2vwol"]
 [ext_resource type="Texture2D" uid="uid://c5sbkpe3i4fik" path="res://Icons/Items_Hover.png" id="28_vqijf"]
 [ext_resource type="Texture2D" uid="uid://b2lcp7ipa7net" path="res://Icons/Items_Complete.png" id="29_u787p"]
-[ext_resource type="Resource" uid="uid://cqnhl16x58f72" path="res://Trader Data/Prapor.tres" id="39_67nev"]
-[ext_resource type="Resource" uid="uid://fas1frkxs7rt" path="res://Trader Data/Therapist.tres" id="40_8lp7w"]
 [ext_resource type="AudioStream" uid="uid://c32gpe1clc1nu" path="res://SFX/Hover.wav" id="41_13itv"]
-[ext_resource type="Resource" uid="uid://c26eu6d3ijg84" path="res://Trader Data/Skier.tres" id="41_el4aa"]
 [ext_resource type="AudioStream" uid="uid://o5f342ofqsvc" path="res://SFX/complete.mp3" id="41_utsgh"]
-[ext_resource type="Resource" uid="uid://872eexuc6kpj" path="res://Trader Data/Peacekeeper.tres" id="42_10gvf"]
 [ext_resource type="AudioStream" uid="uid://7vgvyid34o8j" path="res://SFX/click.wav" id="42_gvx60"]
-[ext_resource type="Resource" uid="uid://cmvrfhaego20c" path="res://Trader Data/Mechanic.tres" id="43_6035v"]
-[ext_resource type="Resource" uid="uid://cl1o2s2rq1ck8" path="res://Trader Data/Ragman.tres" id="44_ugqhr"]
-[ext_resource type="Resource" uid="uid://cqci31r2pdqhs" path="res://Trader Data/Jaeger.tres" id="45_3qg7x"]
-[ext_resource type="Resource" uid="uid://dm6u2sp50772j" path="res://Trader Data/Items.tres" id="46_tyo7y"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64maq"]
 
@@ -57,7 +48,7 @@ Button/styles/normal = SubResource("StyleBoxFlat_64maq")
 
 [sub_resource type="Theme" id="Theme_1vy41"]
 
-[sub_resource type="Image" id="Image_et0cf"]
+[sub_resource type="Image" id="Image_7hye8"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 49, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 90, 255, 255, 255, 77, 255, 255, 255, 49, 255, 255, 255, 9, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 32, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 31, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 77, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 90, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 77, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 76, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 49, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 48, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 9, 255, 255, 255, 90, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 31, 255, 255, 255, 89, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 94, 255, 255, 255, 89, 255, 255, 255, 30, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 8, 255, 255, 255, 48, 255, 255, 255, 77, 255, 255, 255, 90, 255, 255, 255, 89, 255, 255, 255, 76, 255, 255, 255, 48, 255, 255, 255, 8, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -67,7 +58,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_dw07n"]
-image = SubResource("Image_et0cf")
+image = SubResource("Image_7hye8")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qk1g"]
 content_margin_left = 4.0
@@ -89,7 +80,7 @@ content_margin_bottom = 4.0
 bg_color = Color(0, 0, 0, 0.6)
 corner_detail = 5
 
-[sub_resource type="Image" id="Image_kwr20"]
+[sub_resource type="Image" id="Image_swsum"]
 data = {
 "data": PackedByteArray(255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 179, 179, 179, 153, 178, 178, 178, 166, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 166, 178, 178, 178, 151, 255, 255, 255, 0, 255, 255, 255, 0, 178, 178, 178, 166, 178, 178, 178, 217, 178, 178, 178, 179, 184, 184, 184, 18, 255, 255, 255, 0, 255, 255, 255, 0, 175, 175, 175, 19, 178, 178, 178, 179, 178, 178, 178, 217, 178, 178, 178, 165, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 179, 179, 179, 180, 175, 175, 175, 19, 175, 175, 175, 19, 179, 179, 179, 180, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 181, 178, 178, 178, 181, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 177, 177, 177, 179, 178, 178, 178, 217, 178, 178, 178, 217, 177, 177, 177, 179, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 184, 184, 184, 18, 178, 178, 178, 165, 178, 178, 178, 165, 180, 180, 180, 17, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0),
 "format": "RGBA8",
@@ -99,7 +90,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_tanj7"]
-image = SubResource("Image_kwr20")
+image = SubResource("Image_swsum")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uk0kt"]
 content_margin_left = 21.0
@@ -326,12 +317,11 @@ theme_override_constants/separation = 0
 custom_minimum_size = Vector2(640, 517)
 layout_mode = 2
 
-[node name="Control" type="Control" parent="MainContainer/MainBody/TaskBox" node_paths=PackedStringArray("vbox", "data")]
+[node name="Control" type="Control" parent="MainContainer/MainBody/TaskBox" node_paths=PackedStringArray("vbox")]
 custom_minimum_size = Vector2(640, 517)
 layout_mode = 2
 script = ExtResource("10_ab0s5")
 vbox = NodePath("HBoxContainer/VBoxContainer")
-data = NodePath("../../../../TaskData")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MainContainer/MainBody/TaskBox/Control"]
 layout_mode = 2
@@ -534,6 +524,7 @@ fit_content = true
 title = "SETTINGS"
 initial_position = 1
 size = Vector2i(515, 377)
+visible = false
 wrap_controls = true
 transient = true
 unresizable = true
@@ -668,18 +659,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_k2j4j")
 theme_override_styles/focus = SubResource("StyleBoxFlat_6ys7e")
 text = "RESET! RESET! RESET! RESET! RESET! RESET! RESET! RESET!"
 clip_text = true
-
-[node name="TaskData" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_t7o52")
-PraporTasks = ExtResource("39_67nev")
-TherapistTasks = ExtResource("40_8lp7w")
-SkierTasks = ExtResource("41_el4aa")
-PeacekeeperTasks = ExtResource("42_10gvf")
-MechanicTasks = ExtResource("43_6035v")
-RagmanTasks = ExtResource("44_ugqhr")
-JaegerTasks = ExtResource("45_3qg7x")
-Items = ExtResource("46_tyo7y")
 
 [node name="CompletionAward" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

@@ -1,5 +1,4 @@
 extends Node
-@export var task_array: Array[TaskResource]
 enum traders{
 	PRAPOR,
 	THERAPIST,

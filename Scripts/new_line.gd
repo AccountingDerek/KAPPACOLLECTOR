@@ -3,12 +3,12 @@ extends MarginContainer
 @export var hover: AudioStreamPlayer
 @export var undo: AudioStreamPlayer
 @export var button: Button
-var assigned_task: Tasks.tasks
+var assigned_task: String
 @onready var task_done: bool = false
-var from: Array[Tasks.tasks] = []
-var mutual_exclusives: Array[Tasks.tasks]
+var from: Array[String] = []
+var mutual_exclusives: Array[String]
 var post_choice: bool = false
-var post_choice_mutual_exclusives: Array[Tasks.tasks]
+var post_choice_mutual_exclusives: Array[String]
 
 func _ready():
 	button.mouse_entered.connect(onMouseEntered)

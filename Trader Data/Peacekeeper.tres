@@ -5,75 +5,98 @@
 
 [sub_resource type="Resource" id="Resource_qbsrv"]
 script = ExtResource("1_f728b")
-task_id = 87
+task_id = "Fishing"
+task_string = "Fishing"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Fishing Gear"
 task_part = ""
 description = "• Stash an SV-98 and a Multitool at the Boat on Shoreline
 • Survive and Extract"
-from = Array[int]([75])
-to = Array[int]([88, 111])
-link = ""
+from = Array[String](["FFtW2"])
+prev = Array[String](["FFtW2"])
+to = Array[String](["TigrSafari", "Samples"])
+next = Array[String](["TigrSafari", "Samples"])
+link = "Fishing_Gear"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_aplk3"]
 script = ExtResource("1_f728b")
-task_id = 88
+task_id = "TigrSafari"
+task_string = "TigrSafari"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Tigr Safari"
 task_part = ""
 description = "• Find and Mark all 3 Tigr vehicles with MS2000 Markers on Customs
 • Survive and Extract"
-from = Array[int]([87])
-to = Array[int]([89])
-link = ""
+from = Array[String](["Fishing"])
+prev = Array[String](["Fishing"])
+to = Array[String](["ScrapMetal"])
+next = Array[String](["ScrapMetal"])
+link = "Tigr_Safari"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fr464"]
 script = ExtResource("1_f728b")
-task_id = 89
+task_id = "ScrapMetal"
+task_string = "ScrapMetal"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Scrap Metal"
 task_part = ""
 description = "• Find and Mark all 3 Tanks with MS2000 Markers on Shoreline
 • Survive and Extract"
-from = Array[int]([88])
-to = Array[int]([90])
-link = ""
+from = Array[String](["TigrSafari"])
+prev = Array[String](["TigrSafari"])
+to = Array[String](["EagleEye"])
+next = Array[String](["EagleEye"])
+link = "Scrap_Metal"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_dvlbe"]
 script = ExtResource("1_f728b")
-task_id = 90
+task_id = "EagleEye"
+task_string = "EagleEye"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Eagle Eye"
 task_part = ""
 description = "• Find the SAS Disks from both crashed UAVs on Shoreline
 • Hand the disks over to Peacekeeper"
-from = Array[int]([89])
-to = Array[int]([91])
-link = ""
+from = Array[String](["ScrapMetal"])
+prev = Array[String](["ScrapMetal"])
+to = Array[String](["Blueberry1"])
+next = Array[String](["Blueberry1"])
+link = "Eagle_Eye"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_1xhay"]
 script = ExtResource("1_f728b")
-task_id = 91
+task_id = "Blueberry1"
+task_string = "Blueberry1"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Humanitarian Supplies"
 task_part = ""
 description = "• Find and Mark both trucks with MS2000 Markers on Shoreline
@@ -81,34 +104,44 @@ description = "• Find and Mark both trucks with MS2000 Markers on Shoreline
 • Hand the MREs over to Peacekeeper
 • Eliminate 15 Scavs while wearing the UNTAR Gear on Shoreline
 • Survive and Extract"
-from = Array[int]([90])
-to = Array[int]([92, 94, 116, 120])
-link = ""
+from = Array[String](["EagleEye"])
+prev = Array[String](["EagleEye"])
+to = Array[String](["Cult1", "SpaTour1", "RevisReserve", "RevisLighthouse"])
+next = Array[String](["Cult1", "SpaTour1", "RevisReserve", "RevisLighthouse"])
+link = "Humanitarian_Supplies"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_wguv5"]
 script = ExtResource("1_f728b")
-task_id = 92
+task_id = "Cult1"
+task_string = "Cult1"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Cult"
 task_part = "Part 1"
 description = "• Find the Missing Informant in the Sunken Village on Shoreline
 • Survive and Extract"
-from = Array[int]([91])
-to = Array[int]([93])
-link = ""
+from = Array[String](["Blueberry1"])
+prev = Array[String](["Blueberry1"])
+to = Array[String](["Cult2"])
+next = Array[String](["Cult2"])
+link = "The_Cult_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_bqi8t"]
 script = ExtResource("1_f728b")
-task_id = 93
+task_id = "Cult2"
+task_string = "Cult2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Cult"
 task_part = "Part 2"
 description = "• Mark both Cultist Circles on Woods with MS2000 Markers
@@ -116,50 +149,65 @@ description = "• Mark both Cultist Circles on Woods with MS2000 Markers
 • Check Dorms 314 key price
 • weep.
 • Mark Dorms 314 with an MS2000 Marker"
-from = Array[int]([92])
-to = Array[int]([])
-link = ""
+from = Array[String](["Cult1"])
+prev = Array[String](["Cult1"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Cult_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_oclra"]
 script = ExtResource("1_f728b")
-task_id = 94
+task_id = "SpaTour1"
+task_string = "SpaTour1"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 1"
 description = "• Headshot 7 Scavs on Shoreline with a 12ga Shotgun"
-from = Array[int]([91])
-to = Array[int]([95, 119])
-link = ""
+from = Array[String](["Blueberry1"])
+prev = Array[String](["Blueberry1"])
+to = Array[String](["SpaTour2", "Overpopulation"])
+next = Array[String](["SpaTour2", "Overpopulation"])
+link = "Spa_Tour_-_Part_1"
 additional_info = "DEV NOTE: This task is really, really fun if you go night and use FTX slugs in a suppressed MP-153. I killed Sanitar this way, and so can you!"
 
 [sub_resource type="Resource" id="Resource_rmnbl"]
 script = ExtResource("1_f728b")
-task_id = 95
+task_id = "SpaTour2"
+task_string = "SpaTour2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 2"
 description = "• Mark the Helicopter and Safe Road at Resort on Shoreline with MS2000 Markers
 • Survive and Extract
 "
-from = Array[int]([94])
-to = Array[int]([96])
-link = ""
+from = Array[String](["SpaTour1"])
+prev = Array[String](["SpaTour1"])
+to = Array[String](["SpaTour3"])
+next = Array[String](["SpaTour3"])
+link = "Spa_Tour_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fi3xd"]
 script = ExtResource("1_f728b")
-task_id = 96
+task_id = "SpaTour3"
+task_string = "SpaTour3"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 3"
 description = "• Find 1 Small WD-40 in raid
@@ -167,65 +215,85 @@ description = "• Find 1 Small WD-40 in raid
 • Find 2 Corrugated Hoses in raid
 • Find 2 Ox bleach bottles in raid
 • Hand the specified items over to Peacekeeper"
-from = Array[int]([])
-to = Array[int]([])
-link = ""
+from = Array[String]([])
+prev = Array[String]([])
+to = Array[String]([])
+next = Array[String]([])
+link = "Spa_Tour_-_Part_3"
 additional_info = "I LOVE MY LAVATORY UNIT!!!!!!!!!!"
 
 [sub_resource type="Resource" id="Resource_lryo0"]
 script = ExtResource("1_f728b")
-task_id = 97
+task_id = "SpaTour4"
+task_string = "SpaTour4"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 4"
 description = "• Locate the Generators in the East and West wings of Resort on Shoreline
 • Survive and Extract"
-from = Array[int]([96])
-to = Array[int]([98])
-link = ""
+from = Array[String](["SpaTour3"])
+prev = Array[String](["SpaTour3"])
+to = Array[String](["SpaTour5"])
+next = Array[String](["SpaTour5"])
+link = "Spa_Tour_-_Part_4"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_r2vd0"]
 script = ExtResource("1_f728b")
-task_id = 98
+task_id = "SpaTour5"
+task_string = "SpaTour5"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 5"
 description = "• Find the Sanitarium Key in the Bunker behind Resort on Shoreline
 • Hand the key over to Peacekeeper"
-from = Array[int]([97])
-to = Array[int]([99])
-link = ""
+from = Array[String](["SpaTour4"])
+prev = Array[String](["SpaTour4"])
+to = Array[String](["SpaTour6"])
+next = Array[String](["SpaTour6"])
+link = "Spa_Tour_-_Part_5"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_i5njf"]
 script = ExtResource("1_f728b")
-task_id = 99
+task_id = "SpaTour6"
+task_string = "SpaTour6"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 6"
 description = "• Hand $8000 over to Peacekeeper"
-from = Array[int]([98])
-to = Array[int]([100])
-link = ""
+from = Array[String](["SpaTour5"])
+prev = Array[String](["SpaTour5"])
+to = Array[String](["SpaTour7"])
+next = Array[String](["SpaTour7"])
+link = "Spa_Tour_-_Part_6"
 additional_info = "DEV NOTE: Engaging Quest Design! Thank you Battlestate"
 
 [sub_resource type="Resource" id="Resource_4iw1b"]
 script = ExtResource("1_f728b")
-task_id = 100
+task_id = "SpaTour7"
+task_string = "SpaTour7"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Spa Tour"
 task_part = "Part 7"
 description = "• Find 4 Morphine Pens in raid
@@ -233,207 +301,272 @@ description = "• Find 4 Morphine Pens in raid
 • Find 2 Corrugated Hoses in raid
 • Find 2 Propane Tanks in raid
 • Hand the specified items over to Peacekeeper"
-from = Array[int]([99])
-to = Array[int]([104, 101])
-link = ""
+from = Array[String](["SpaTour6"])
+prev = Array[String](["SpaTour6"])
+to = Array[String](["WetJob1", "Cargo1"])
+next = Array[String](["WetJob1", "Cargo1"])
+link = "Spa_Tour_-_Part_7"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_onqjj"]
 script = ExtResource("1_f728b")
-task_id = 101
+task_id = "Cargo1"
+task_string = "Cargo1"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Cargo X"
 task_part = "Part 1"
 description = "• Find the data in the computer room in East Wing Resort on Shoreline
 • Hand the data over to Peacekeeper
 "
-from = Array[int]([100])
-to = Array[int]([102])
-link = ""
+from = Array[String](["SpaTour7"])
+prev = Array[String](["SpaTour7"])
+to = Array[String](["Cargo2"])
+next = Array[String](["Cargo2"])
+link = "Cargo_X_-_Part_1"
 additional_info = "DEV NOTE: \"Cargo X\" is, again, an unreasonably cool name for a quest"
 
 [sub_resource type="Resource" id="Resource_0fmk6"]
 script = ExtResource("1_f728b")
-task_id = 102
+task_id = "Cargo2"
+task_string = "Cargo2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Cargo X"
 task_part = "Part 2"
 description = "• Obtain Secure Folder 0018 in Resort on Shoreline
 • Hand the folder over to Peacekeeper"
-from = Array[int]([101])
-to = Array[int]([103])
-link = ""
+from = Array[String](["Cargo1"])
+prev = Array[String](["Cargo1"])
+to = Array[String](["Cargo3"])
+next = Array[String](["Cargo3"])
+link = "Cargo_X_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_2v4c3"]
 script = ExtResource("1_f728b")
-task_id = 103
+task_id = "Cargo3"
+task_string = "Cargo3"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Cargo X"
 task_part = "Part 3"
 description = "• Find the hidden Terragroup Cargo on Shoreline
 • Survive and Extract"
-from = Array[int]([102])
-to = Array[int]([117])
-link = ""
+from = Array[String](["Cargo2"])
+prev = Array[String](["Cargo2"])
+to = Array[String](["Cargo4"])
+next = Array[String](["Cargo4"])
+link = "Cargo_X_-_Part_3"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_c6vcq"]
 script = ExtResource("1_f728b")
-task_id = 117
+task_id = "Cargo4"
+task_string = "Cargo4"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Cargo X"
 task_part = "Part 4"
 description = "• Find and Mark the Terragroup container on the Shores of Lighthouse with an MS2000 Marker
 • Survive and Extract"
-from = Array[int]([103])
-to = Array[int]([118])
-link = ""
+from = Array[String](["Cargo3"])
+prev = Array[String](["Cargo3"])
+to = Array[String](["Insomnia"])
+next = Array[String](["Insomnia"])
+link = "Cargo_X_-_Part_4"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_vcb4f"]
 script = ExtResource("1_f728b")
-task_id = 118
+task_id = "Insomnia"
+task_string = "Insomnia"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Insomnia"
 task_part = ""
 description = "• Eliminate 30 PMCs between 22:00 and 06:00 on any map other than Factory and The Lab"
-from = Array[int]([117])
-to = Array[int]([])
-link = ""
+from = Array[String](["Cargo4"])
+prev = Array[String](["Cargo4"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Insomnia"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_053c1"]
 script = ExtResource("1_f728b")
-task_id = 104
+task_id = "WetJob1"
+task_string = "WetJob1"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 1"
 description = "• Eliminate 10 Scavs with a Suppressed AR-15 on Shoreline"
-from = Array[int]([100])
-to = Array[int]([105])
-link = ""
+from = Array[String](["SpaTour7"])
+prev = Array[String](["SpaTour7"])
+to = Array[String](["WetJob2"])
+next = Array[String](["WetJob2"])
+link = "Wet_Job_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_4yeae"]
 script = ExtResource("1_f728b")
-task_id = 105
+task_id = "WetJob2"
+task_string = "WetJob2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 2"
 description = "• Find and Mark the Fisherman's Dwelling with a MS2000 Marker on Shoreline
 • Survive and Extract"
-from = Array[int]([104])
-to = Array[int]([106])
-link = ""
+from = Array[String](["WetJob1"])
+prev = Array[String](["WetJob1"])
+to = Array[String](["WetJob3"])
+next = Array[String](["WetJob3"])
+link = "Wet_Job_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_rd7ok"]
 script = ExtResource("1_f728b")
-task_id = 106
+task_id = "WetJob3"
+task_string = "WetJob3"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 3"
 description = "• Find Artyom's Car on Shoreline
 • Survive and Extract"
-from = Array[int]([105])
-to = Array[int]([107])
-link = ""
+from = Array[String](["WetJob2"])
+prev = Array[String](["WetJob2"])
+to = Array[String](["WetJob4"])
+next = Array[String](["WetJob4"])
+link = "Wet_Job_-_Part_3"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_mfbxu"]
 script = ExtResource("1_f728b")
-task_id = 107
+task_id = "WetJob4"
+task_string = "WetJob4"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 5"
 description = "• Find the Resort's Tenant List on Shoreline
 • Hand the list over to Peacekeeper"
-from = Array[int]([106])
-to = Array[int]([108])
-link = ""
+from = Array[String](["WetJob3"])
+prev = Array[String](["WetJob3"])
+to = Array[String](["WetJob5"])
+next = Array[String](["WetJob5"])
+link = "Wet_Job_-_Part_5"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_dwxak"]
 script = ExtResource("1_f728b")
-task_id = 108
+task_id = "WetJob5"
+task_string = "WetJob5"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 5"
 description = "• Find information on Artyom's work on Shoreline
 • Hand the information over to Peacekeeper"
-from = Array[int]([107])
-to = Array[int]([109])
-link = ""
+from = Array[String](["WetJob4"])
+prev = Array[String](["WetJob4"])
+to = Array[String](["WetJob6"])
+next = Array[String](["WetJob6"])
+link = "Wet_Job_-_Part_5"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_g64d2"]
 script = ExtResource("1_f728b")
-task_id = 109
+task_id = "WetJob6"
+task_string = "WetJob6"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Wet Job"
 task_part = "Part 6"
 description = "• Reach Sniper Rifles Level 7"
-from = Array[int]([108])
-to = Array[int]([158, 110])
-link = ""
+from = Array[String](["WetJob5"])
+prev = Array[String](["WetJob5"])
+to = Array[String](["PsychoSniper", "TheGuide"])
+next = Array[String](["PsychoSniper", "TheGuide"])
+link = "Wet_Job_-_Part_6"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_r6xlo"]
 script = ExtResource("1_f728b")
-task_id = 110
+task_id = "TheGuide"
+task_string = "TheGuide"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Guide"
 task_part = ""
 description = "• Survive and Extract from every map in the game (excluding Ground Zero) without dying"
-from = Array[int]([109])
-to = Array[int]([])
-link = ""
+from = Array[String](["WetJob6"])
+prev = Array[String](["WetJob6"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Guide"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ijep5"]
 script = ExtResource("1_f728b")
-task_id = 111
+task_id = "Samples"
+task_string = "Samples"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Samples"
 task_part = ""
 description = "• Find a M.U.L.E. stimulant in raid
@@ -444,122 +577,159 @@ description = "• Find a M.U.L.E. stimulant in raid
 • Find an L1 stimulant in raid
 • Find a 3-(b-tg) stimulant in raid
 • Hand over all the stimulants to Peacekeeper"
-from = Array[int]([87])
-to = Array[int]([112])
-link = ""
+from = Array[String](["Fishing"])
+prev = Array[String](["Fishing"])
+to = Array[String](["Terragroup"])
+next = Array[String](["Terragroup"])
+link = "Samples"
 additional_info = "DEV NOTE: I DESERVE MY BLACK CARD WIN. I AM SO GRATEFUL FOR MY BLACK CARD WIN. THIS IS MY DESTINY. THIS IS MY REALITY. I DESERVE MY BLACK CARD WIN. I ACCEPT MY BLACK CARD WIN. IT'S TIME FOR MY BLACK CARD WIN."
 
 [sub_resource type="Resource" id="Resource_w04yk"]
 script = ExtResource("1_f728b")
-task_id = 112
+task_id = "Terragroup"
+task_string = "Terragroup"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = true
-post_choice_mutual_exclusives = Array[int]([227, 55])
+post_choice_mutual_exclusives = Array[String](["Sadist", "Coll3"])
+pcme = Array[String](["Sadist", "Coll3"])
 task_name = "Terragroup Employee"
 task_part = ""
 description = "• Find Sanitar's workplace in The Lab
 • Find information about Sanitar's work in The Lab
 • Hand the information over to Peacekeeper"
-from = Array[int]([111])
-to = Array[int]([])
-link = ""
+from = Array[String](["Samples"])
+prev = Array[String](["Samples"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Terragroup_Employee"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ug24b"]
 script = ExtResource("1_f728b")
-task_id = 113
+task_id = "LL2"
+task_string = "LL2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Lend-Lease"
 task_part = "Part 2"
 description = "• Find 2 Virtex Processors in raid
 • Find 1 CODFM in raid
 • Hand the tech items over to Peacekeeper"
-from = Array[int]([76])
-to = Array[int]([114])
-link = ""
+from = Array[String](["LL1"])
+prev = Array[String](["LL1"])
+to = Array[String](["Blueberry2"])
+next = Array[String](["Blueberry2"])
+link = "Lend-Lease_-_Part_2"
 additional_info = "DEV NOTE: Just go loot the stone chalet on Lighthouse."
 
 [sub_resource type="Resource" id="Resource_k8lw0"]
 script = ExtResource("1_f728b")
-task_id = 114
+task_id = "Blueberry2"
+task_string = "Blueberry2"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Peacekeeping Mission"
 task_part = ""
 description = "• Eliminate 12 Scavs (60 total) with an M4 while wearing Blueberry Gear on Woods, Customs, Interchange, Shoreline, and Streets of Tarkov"
-from = Array[int]([113])
-to = Array[int]([])
-link = ""
+from = Array[String](["LL2"])
+prev = Array[String](["LL2"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Peacekeeping_Mission"
 additional_info = "DEV NOTE: Guess what's called \"Blueberry2\" in the code? yeah, that's right, Psycho Sniper!"
 
 [sub_resource type="Resource" id="Resource_gkxeh"]
 script = ExtResource("1_f728b")
-task_id = 116
+task_id = "RevisReserve"
+task_string = "RevisReserve"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Revision"
 task_part = "Reserve"
 description = "• Find and Mark the four BMP-2s on Reserve with MS2000 Markers
 • Find and Mark the first LAV III on Reserve with an MS2000 Marker
 • Find the second LAV III and the T-90 on Reserve"
-from = Array[int]([91])
-to = Array[int]([115])
-link = ""
+from = Array[String](["Blueberry1"])
+prev = Array[String](["Blueberry1"])
+to = Array[String](["ClassTech"])
+next = Array[String](["ClassTech"])
+link = "Revision_-_Reserve"
 additional_info = "DEV NOTE: I really hate Reserve."
 
 [sub_resource type="Resource" id="Resource_2qk2q"]
 script = ExtResource("1_f728b")
-task_id = 115
+task_id = "ClassTech"
+task_string = "ClassTech"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Classified Technologies"
 task_part = ""
 description = "• Find the T-90M Controller Package on Reserve
 • Hand the package over to Peacekeeper"
-from = Array[int]([116])
-to = Array[int]([])
-link = ""
+from = Array[String](["RevisReserve"])
+prev = Array[String](["RevisReserve"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Classified_Technologies"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_feeoq"]
 script = ExtResource("1_f728b")
-task_id = 119
+task_id = "Overpopulation"
+task_string = "Overpopulation"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Overpopulation"
 task_part = ""
 description = "• Eliminate 12 Scavs at the Cottages on Lighthouse"
-from = Array[int]([94])
-to = Array[int]([])
-link = ""
+from = Array[String](["SpaTour1"])
+prev = Array[String](["SpaTour1"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Overpopulation"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_g5ovm"]
 script = ExtResource("1_f728b")
-task_id = 120
+task_id = "RevisLighthouse"
+task_string = "RevisLighthouse"
 trader = 3
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Revision"
 task_part = "Lighthouse"
 description = "• Find and Mark the two BRDMs on Lighthouse with MS2000 Markers
 • Find and Mark the two Strykers on Lighthouse with MS2000 Markers"
-from = Array[int]([91])
-to = Array[int]([])
-link = ""
+from = Array[String](["Blueberry1"])
+prev = Array[String](["Blueberry1"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Revision_-_Lighthouse"
 additional_info = ""
 
 [resource]

@@ -5,373 +5,373 @@
 
 [sub_resource type="Resource" id="Resource_ehgna"]
 script = ExtResource("1_etxou")
-task_id = 62
+task_id = "BurningRubber"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Burning Rubber"
 task_part = ""
 description = "• Extract from Ground Zero with the Police Cordon V-Ex extract"
-from = Array[int]([])
-to = Array[int]([63])
-link = ""
+from = Array[String]([])
+to = Array[String](["Supplier"])
+link = "Burning_Rubber"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_tt55a"]
 script = ExtResource("1_etxou")
-task_id = 63
+task_id = "Supplier"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Supplier"
 task_part = ""
 description = "• Hand 1 Module-3M armor found in raid over to Skier
 • Hand 1 TOZ-106 found in raid over to Skier"
-from = Array[int]([62])
-to = Array[int]([64, 65, 74])
-link = ""
+from = Array[String](["BurningRubber"])
+to = Array[String](["Extortion", "Stirrup", "FFtW1"])
+link = "Supplier"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_2cg6b"]
 script = ExtResource("1_etxou")
-task_id = 64
+task_id = "Extortion"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "The Extortionist"
 task_part = ""
 description = "• Find Secure Folder 0048 on Customs
 • Hand the folder over to Skier"
-from = Array[int]([63])
-to = Array[int]([66])
-link = ""
+from = Array[String](["Supplier"])
+to = Array[String](["FlashDrives1"])
+link = "The_Extortionist"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_4c3wx"]
 script = ExtResource("1_etxou")
-task_id = 65
+task_id = "Stirrup"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Stirrup"
 task_part = ""
 description = "• Eliminate 3 PMCs with pistols"
-from = Array[int]([63])
-to = Array[int]([])
-link = ""
+from = Array[String](["Supplier"])
+to = Array[String]([])
+link = "Stirrup"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_cad3t"]
 script = ExtResource("1_etxou")
-task_id = 66
+task_id = "FlashDrives1"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "What's on the Flash Drive?"
 task_part = ""
 description = "• Find 2 Secure Flash Drives in raid
 • Hand the flash drives over to Skier."
-from = Array[int]([64])
-to = Array[int]([67, 226])
-link = ""
+from = Array[String](["Extortion"])
+to = Array[String](["GoldenSwag", "FlashDrives2"])
+link = "What's_on_the_Flash_Drive?"
 additional_info = "DEV NOTE: If someone has insight into how Tarkov’s Loot RNG works, please DM me. No reason why I’m commenting on this quest in particular."
 
 [sub_resource type="Resource" id="Resource_bksvm"]
 script = ExtResource("1_etxou")
-task_id = 67
+task_id = "GoldenSwag"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Golden Swag"
 task_part = ""
 description = "• Find the Golden Zibbo lighter in Dorms 303 on Customs
 • Stash the lighter in the bunkhouse trailer adjacent to Big Red on Customs"
-from = Array[int]([66])
-to = Array[int]([68])
-link = ""
+from = Array[String](["FlashDrives1"])
+to = Array[String](["Chem1", "PolikhimHobo"])
+link = "Golden_Swag"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_vk77e"]
 script = ExtResource("1_etxou")
-task_id = 68
+task_id = "Chem1"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Chemical"
 task_part = "Part 1"
 description = "• Obtain Secure Folder 0013 on Customs
 • Buy the Dorms 220 key off of the flea market
 • Hand both items over to Skier"
-from = Array[int]([67])
-to = Array[int]([69, 26])
-link = ""
+from = Array[String](["GoldenSwag"])
+to = Array[String](["Chem2"])
+link = "Chemical_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_536sc"]
 script = ExtResource("1_etxou")
-task_id = 69
+task_id = "Chem2"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Chemical"
 task_part = "Part 2"
 description = "• Find the Sliderkey and Sealed Terragroup letter in Room 220 of 3 Story Dorms on Customs
 • Hand the quest items over to Skier"
-from = Array[int]([68])
-to = Array[int]([70])
-link = ""
+from = Array[String](["Chem1"])
+to = Array[String](["Chem3"])
+link = "Chemical_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_x8rkw"]
 script = ExtResource("1_etxou")
-task_id = 70
+task_id = "Chem3"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Chemical"
 task_part = "Part 3"
 description = "• Find the chemical syringe in the breach room in Office on Factory
 • Hand the syringe over to Skier"
-from = Array[int]([69])
-to = Array[int]([72, 71, 57, 28])
-link = ""
+from = Array[String](["Chem2"])
+to = Array[String](["Vit1", "Chem4", "Curiosity", "BigCustomer"])
+link = "Chemical_-_Part_3"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ks3n4"]
 script = ExtResource("1_etxou")
-task_id = 71
+task_id = "Chem4"
 trader = 2
-mutual_exclusives = Array[int]([28, 57])
+mutual_exclusives = Array[String](["BigCustomer", "Curiosity"])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Chemical"
 task_part = "Part 4"
 description = "• Mark the Van inside Chemical on Customs
 • Survive and Extract
 COMPLETING THIS QUEST LOCKS OFF \"BIG CUSTOMER\" AND \"OUT OF CURIOSITY\""
-from = Array[int]([70])
-to = Array[int]([84])
-link = ""
+from = Array[String](["Chem3"])
+to = Array[String](["SafeCorridor"])
+link = "Chemical_-_Part_4"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_1go8r"]
 script = ExtResource("1_etxou")
-task_id = 72
+task_id = "Vit1"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Vitamins"
 task_part = "Part 1"
 description = "• Find the first chemical container on Shoreline
 • Find the second and third chemical containers on Interchange
 • Hand the containers over to Skier"
-from = Array[int]([70])
-to = Array[int]([73])
-link = ""
+from = Array[String](["Chem3"])
+to = Array[String](["Vit2"])
+link = "Vitamins_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_lcn88"]
 script = ExtResource("1_etxou")
-task_id = 73
+task_id = "Vit2"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Vitamins"
 task_part = "Part 2"
 description = "• Find 4 Respirators in raid
 • Find 3 Bloodsets in raid
 • Hand the specified items over to Skier"
-from = Array[int]([72])
-to = Array[int]([])
-link = ""
+from = Array[String](["Vit1"])
+to = Array[String]([])
+link = "Vitamins_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_kkp5b"]
 script = ExtResource("1_etxou")
-task_id = 74
+task_id = "FFtW1"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Friend from the West"
 task_part = "Part 1"
 description = "• Eliminate 7 USEC PMCs
 • Find 7 USEC PMC dogtags
 • Hand the dogtags over to Skier"
-from = Array[int]([63])
-to = Array[int]([75])
-link = ""
+from = Array[String](["Supplier"])
+to = Array[String](["FFtW2"])
+link = "Friend_from_the_West_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_gjlrm"]
 script = ExtResource("1_etxou")
-task_id = 75
+task_id = "FFtW2"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Friend from the West"
 task_part = "Part 2"
 description = "• Hand $6000 over to Skier
 • Because Fuck You, that's why"
-from = Array[int]([74])
-to = Array[int]([87, 76, 85, 77])
-link = ""
+from = Array[String](["FFtW1"])
+to = Array[String](["Fishing", "LL1", "LongRoad", "Setup"])
+link = "Friend_from_the_West_-_Part_2"
 additional_info = "DEV NOTE: I really hate these money check quests. Genuinely lazy and shitty quest design. Go make me kill scavs at sawmill or something, at least that pushes me to play the game, yaknow?"
 
 [sub_resource type="Resource" id="Resource_dyebs"]
 script = ExtResource("1_etxou")
-task_id = 76
+task_id = "LL1"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Lend-Lease"
 task_part = "Part 1"
 description = "• Find the first Motor Controller and Gyroscope on Woods
 • Find the second and third Motor Controllers and the second Gyroscope on Shoreline
 • Take a guess."
-from = Array[int]([75])
-to = Array[int]([113])
-link = ""
+from = Array[String](["FFtW2"])
+to = Array[String](["LL2"])
+link = "Lend-Lease_-_Part_1"
 additional_info = "DEV NOTE: Ok, I know that some of these descriptions are kinda gimmicky, but cut me some slack. It’s insanely tedious to manually write all of this shit, so I get to claim “artistic(autistic?) liberty”."
 
 [sub_resource type="Resource" id="Resource_i2guc"]
 script = ExtResource("1_etxou")
-task_id = 77
+task_id = "Setup"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Setup"
 task_part = ""
 description = "• Eliminate 15 PMCs with an MP-series Shotgun (NOT THE SAWED-OFF) while wearing a Ushanka and Scav Vest on Customs"
-from = Array[int]([75])
-to = Array[int]([78])
-link = ""
+from = Array[String](["FFtW2"])
+to = Array[String](["Informed"])
+link = "Setup"
 additional_info = "DEV NOTE: This quest gets 1000x more fun when you move instead of crouching in a bush. Fun Fact!"
 
 [sub_resource type="Resource" id="Resource_m3vrs"]
 script = ExtResource("1_etxou")
-task_id = 78
+task_id = "Informed"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Informed Means Armed"
 task_part = ""
 description = "• Stash a Wifi Camera at the Dock on Woods
 • Stash a Wifi Camera in a roadside bush on Customs
 • Stash a Wifi Camera across from KIBA on Interchange"
-from = Array[int]([77])
-to = Array[int]([79])
-link = ""
+from = Array[String](["Setup"])
+to = Array[String](["Chumming"])
+link = "Informed_Means_Armed"
 additional_info = "DEV NOTE: Ok, seriously. Who makes these quest names? “Informed Means Armed” is too raw of a line to come from Tarkov of all things."
 
 [sub_resource type="Resource" id="Resource_wbktd"]
 script = ExtResource("1_etxou")
-task_id = 79
+task_id = "Chumming"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Chumming"
 task_part = ""
 description = "• Stash 3 Golden Neck Chains (9 total) under the Mattress in Generic on Interchange, the Microwave on floor 3 of Dorms on Customs, and the Middle Wooden Cabin at Sawmill on Woods
 • Eliminate 5 PMCs between 22:00 and 10:00 on Interchange"
-from = Array[int]([78])
-to = Array[int]([80, 81])
-link = ""
+from = Array[String](["Informed"])
+to = Array[String](["Bullshit", "Flint"])
+link = "Chumming"
 additional_info = "DEV NOTE: Who up Chumming their PMC– [EXTREMELY LOUD INCORRECT BUZZER]"
 
 [sub_resource type="Resource" id="Resource_s7186"]
 script = ExtResource("1_etxou")
-task_id = 80
+task_id = "Bullshit"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Bullshit"
 task_part = ""
 description = "• Do not kill any scavs on Customs.
 • Find the False Flash Drive in the trunk of a car on the Bridge on Customs
 • Stash the flash drive, a Roler wristwatch, and an SV-98 opposite the floor 3 stairs of Dorms on Customs"
-from = Array[int]([79])
-to = Array[int]([])
-link = ""
+from = Array[String](["Chumming"])
+to = Array[String]([])
+link = "Bullshit"
 additional_info = "DEV NOTE: At least this quest lets you know how much fun you’ll be having up front."
 
 [sub_resource type="Resource" id="Resource_65sun"]
 script = ExtResource("1_etxou")
-task_id = 81
+task_id = "Flint"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Flint"
 task_part = ""
 description = "• Reach Stress Resistance Level 5"
-from = Array[int]([79])
-to = Array[int]([])
-link = ""
+from = Array[String](["Chumming"])
+to = Array[String]([])
+link = "Flint"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ga7ww"]
 script = ExtResource("1_etxou")
-task_id = 82
+task_id = "KindaSabotage"
 trader = 2
-mutual_exclusives = Array[int]([43])
+mutual_exclusives = Array[String](["Supply"])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Kind of Sabotage"
 task_part = ""
 description = "• Hand Secure Folder 0052 over to Skier
 COMPLETING THIS QUEST LOCKS OFF \"SUPPLY PLANS\""
-from = Array[int]([40])
-to = Array[int]([213])
-link = ""
+from = Array[String](["Pharm"])
+to = Array[String](["WoodsKeeper"])
+link = "Kind_of_Sabotage"
 additional_info = "DEV NOTE: I wish these quests had a slightly more interesting reward to them. I usually just pick whoever I’m hurting for rep with."
 
 [sub_resource type="Resource" id="Resource_op15a"]
 script = ExtResource("1_etxou")
-task_id = 83
+task_id = "RiggedGame"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Rigged Game"
 task_part = ""
 description = "• Mark the boxes at Pier, Cottages, and Resort with MS2000 Markers on Shoreline
 • Survive and Extract"
-from = Array[int]([22])
-to = Array[int]([55, 227])
-link = ""
+from = Array[String](["Anesthesia"])
+to = Array[String](["Coll3", "Sadist"])
+link = "Rigged_Game"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_0riqn"]
 script = ExtResource("1_etxou")
-task_id = 84
+task_id = "SafeCorridor"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = true
-post_choice_mutual_exclusives = Array[int]([71, 57, 28])
+post_choice_mutual_exclusives = Array[String](["Chem4", "Curiosity", "BigCustomer"])
 task_name = "Safe Corridor"
 task_part = ""
 description = "• Eliminate 10 Scavs in the underground warehouse on Reserve"
-from = Array[int]([])
-to = Array[int]([])
-link = ""
+from = Array[String]([])
+to = Array[String]([])
+link = "Safe_Corridor"
 additional_info = "DEV NOTE: This is a long one.
 So, in the initial iteration of KAPPACOLLECTOR, I had zero outline and zero plan. That ended up being the 0.1 release, which I am not proud of. When I returned to fix it 3 months later, I realized that it was so fucked that It would genuinely be more efficient to just wholly remake the thing, which is what you’re currently reading on.
 But I digress.
@@ -379,33 +379,33 @@ In KAPPACOLLECTOR, I had to kinda throw together code that manually handled choi
 
 [sub_resource type="Resource" id="Resource_4yb4u"]
 script = ExtResource("1_etxou")
-task_id = 85
+task_id = "LongRoad"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Long Road"
 task_part = ""
 description = "• Eliminate 15 Scavs along the main road and shore on Lighthouse"
-from = Array[int]([75])
-to = Array[int]([86])
-link = ""
+from = Array[String](["FFtW2"])
+to = Array[String](["MissingCargo"])
+link = "Long_Road"
 additional_info = "DEV NOTE: I deserve my DVL win"
 
 [sub_resource type="Resource" id="Resource_qn6hh"]
 script = ExtResource("1_etxou")
-task_id = 86
+task_id = "MissingCargo"
 trader = 2
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
 task_name = "Missing Cargo"
 task_part = ""
 description = "• Find the Informant's Intel Folder on Lighthouse
 • Hand the folder over to Skier"
-from = Array[int]([85])
-to = Array[int]([])
-link = ""
+from = Array[String](["LongRoad"])
+to = Array[String]([])
+link = "Missing_Cargo"
 additional_info = ""
 
 [resource]

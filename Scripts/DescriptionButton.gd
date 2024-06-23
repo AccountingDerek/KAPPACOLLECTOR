@@ -1,7 +1,7 @@
 extends Button
 
 var data: TaskResource
-var id: Tasks.tasks
+var id: String
 var displayed_text: String
 var post: String = ""
 var override: bool = false

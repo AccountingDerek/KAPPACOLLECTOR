@@ -5,41 +5,54 @@
 
 [sub_resource type="Resource" id="Resource_n4q5p"]
 script = ExtResource("1_xic07")
-task_id = 166
+task_id = "OnlyBusiness"
+task_string = "OnlyBusiness"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Only Business"
 task_part = ""
 description = "• Reach Loyalty II with Ragman"
-from = Array[int]([])
-to = Array[int]([167, 168])
-link = ""
+from = Array[String]([])
+prev = Array[String]([])
+to = Array[String](["MUGA", "BigSale"])
+next = Array[String](["MUGA", "BigSale"])
+link = "Only_Business"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_j2dyl"]
 script = ExtResource("1_xic07")
-task_id = 167
+task_id = "MUGA"
+task_string = "MUGA"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Make ULTRA Great Again"
 task_part = ""
 description = "• Eliminate 25 Scavs on Interchange"
-from = Array[int]([166])
-to = Array[int]([171, 177])
-link = ""
+from = Array[String](["OnlyBusiness"])
+prev = Array[String](["OnlyBusiness"])
+to = Array[String](["Blood1", "Data1"])
+next = Array[String](["Blood1", "Data1"])
+link = "Make_ULTRA_Great_Again"
 additional_info = "DEV NOTE: This name is kind of lame, actually. Very sad!"
 
 [sub_resource type="Resource" id="Resource_tde4i"]
 script = ExtResource("1_xic07")
-task_id = 168
+task_id = "BigSale"
+task_string = "BigSale"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Big Sale"
 task_part = ""
 description = "• Locate the AVOKADO store on Interchange
@@ -48,300 +61,390 @@ description = "• Locate the AVOKADO store on Interchange
 • Locate the DINO CLOTHES store on Interchange
 • Locate the TOP BRAND store on Interchange
 • Survive and Extract"
-from = Array[int]([166])
-to = Array[int]([171, 177])
-link = ""
+from = Array[String](["OnlyBusiness"])
+prev = Array[String](["OnlyBusiness"])
+to = Array[String](["Blood1", "Data1"])
+next = Array[String](["Blood1", "Data1"])
+link = "Big_Sale"
 additional_info = "DEV NOTE: I hope you guys like Interchange."
 
 [sub_resource type="Resource" id="Resource_0dlf7"]
 script = ExtResource("1_xic07")
-task_id = 171
+task_id = "Blood1"
+task_string = "Blood1"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Blood of War"
 task_part = "Part 1"
 description = "• Mark all three fuel trucks on Interchange with MS2000 Markers
 • Survive and Extract"
-from = Array[int]([167, 168])
-to = Array[int]([181, 191, 188, 169, 172])
-link = ""
+from = Array[String](["MUGA", "BigSale"])
+prev = Array[String](["MUGA", "BigSale"])
+to = Array[String](["Blood2", "Charisma", "LHinaC1", "FuelMatter", "DressedtoKill"])
+next = Array[String](["Blood2", "Charisma", "LHinaC1", "FuelMatter", "DressedtoKill"])
+link = "The_Blood_of_War_-_Part_1"
 additional_info = "DEV NOTE: For some reason, A Fuel Matter and Inventory Check were in the list *before* this quest. I have no idea how or why this happened, but it's probably got something to do with the current president of the united states of america."
 
 [sub_resource type="Resource" id="Resource_ouyc0"]
 script = ExtResource("1_xic07")
-task_id = 181
+task_id = "Blood2"
+task_string = "Blood2"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Blood of War"
 task_part = "Part 2"
 description = "• Find 4 Fuel Conditioners in raid
 • Turn the fuckers in. Shocker!"
-from = Array[int]([171, 180])
-to = Array[int]([182])
-link = ""
+from = Array[String](["Blood1", "Sew1"])
+prev = Array[String](["Blood1", "Sew1"])
+to = Array[String](["Blood3"])
+next = Array[String](["Blood3"])
+link = "The_Blood_of_War_-_Part_2"
 additional_info = "DEV NOTE: Ok, almost all of the questlines have been pretty decently streamlined so far, but Ragman's tree is so fucking convoluted that I have to throw all that shit out in the name of visual cohesion. I'm so sorry."
 
 [sub_resource type="Resource" id="Resource_outje"]
 script = ExtResource("1_xic07")
-task_id = 182
+task_id = "Blood3"
+task_string = "Blood3"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Blood of War"
 task_part = "Part 3"
 description = "• Find and Mark all 3 Fuel Stashes on Woods with MS2000 Markets
 • Survive and Extract
 • Boy, you use a *lot* of those markers, huh?"
-from = Array[int]([181])
-to = Array[int]([189])
-link = ""
+from = Array[String](["Blood2"])
+prev = Array[String](["Blood2"])
+to = Array[String](["LHinaC2"])
+next = Array[String](["LHinaC2"])
+link = "The_Blood_of_War_-_Part_3"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_3an8c"]
 script = ExtResource("1_xic07")
-task_id = 169
+task_id = "FuelMatter"
+task_string = "FuelMatter"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "A Fuel Matter"
 task_part = ""
 description = "• Mark both groups of fuel tanks on Reserve with MS2000 Markers
 • Survive and Extract"
-from = Array[int]([171])
-to = Array[int]([170])
-link = ""
+from = Array[String](["Blood1"])
+prev = Array[String](["Blood1"])
+to = Array[String](["Inventory"])
+next = Array[String](["Inventory"])
+link = "A_Fuel_Matter"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_agmhp"]
 script = ExtResource("1_xic07")
-task_id = 170
+task_id = "Inventory"
+task_string = "Inventory"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Inventory Check"
 task_part = ""
 description = "• Locate both arsenals in Black Pawn on Reserve
 • Locate the duty room in Black Pawn on Reserve
 • Locate both arsenals in White Pawn on Reserve
 • Survive and Extract"
-from = Array[int]([169])
-to = Array[int]([])
-link = ""
+from = Array[String](["FuelMatter"])
+prev = Array[String](["FuelMatter"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Inventory_Check"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_iyx3x"]
 script = ExtResource("1_xic07")
-task_id = 172
+task_id = "DressedtoKill"
+task_string = "DressedtoKill"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Dressed to Kill"
 task_part = ""
 description = "• Find 2 Cowboy Hats in raid
 • Find 2 Ushankas in raid
 • Hand the hats over to Ragman"
-from = Array[int]([171, 173])
-to = Array[int]([])
-link = ""
+from = Array[String](["Blood1"])
+prev = Array[String](["Blood1"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Dressed_to_Kill"
 additional_info = "DEV NOTE: Why don't we wear hats anymore? It's a real shame."
 
 [sub_resource type="Resource" id="Resource_2sjmn"]
 script = ExtResource("1_xic07")
-task_id = 173
+task_id = "Gratitude"
+task_string = "Gratitude"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Gratitude"
 task_part = ""
 description = "• Stash a Ghost balaclava in the sawmill pier on Woods
 • Stash a Shemagh in the sawmill pier on Woods
 • Stash some RayBench sunglasses in the sawmill pier on Woods
 • Stash a pair of round glasses in the sawmill pier on Woods"
-from = Array[int]([172, 178])
-to = Array[int]([174, 176])
-link = ""
+from = Array[String](["DressedtoKill", "Data2"])
+prev = Array[String](["DressedtoKill", "Data2"])
+to = Array[String](["Delivery", "SalesNight"])
+next = Array[String](["Delivery", "SalesNight"])
+link = "Gratitude"
 additional_info = "DEV NOTE: I fucking hate the Beatles."
 
 [sub_resource type="Resource" id="Resource_4lmtv"]
 script = ExtResource("1_xic07")
-task_id = 174
+task_id = "Delivery"
+task_string = "Delivery"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Hot Delivery"
 task_part = ""
 description = "• Stash 2 Comtac2 Headsets in the specified place
 • Stash 2 6B47 Helmets in the specified place
 • Stash 2 Gzhels in the specified place"
-from = Array[int]([173])
-to = Array[int]([175])
-link = ""
+from = Array[String](["Gratitude"])
+prev = Array[String](["Gratitude"])
+to = Array[String](["Scav"])
+next = Array[String](["Scav"])
+link = "Hot_Delivery"
 additional_info = "DEV NOTE: If you read \"specified place\" it means I was too lazy to write it all down. go check the wiki."
 
 [sub_resource type="Resource" id="Resource_2f3il"]
 script = ExtResource("1_xic07")
-task_id = 175
+task_id = "Scav"
+task_string = "Scav"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Scavenger"
 task_part = ""
 description = "• Reach Search Level 9"
-from = Array[int]([174])
-to = Array[int]([])
-link = ""
+from = Array[String](["Delivery"])
+prev = Array[String](["Delivery"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Scavenger"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_f1kjl"]
 script = ExtResource("1_xic07")
-task_id = 176
+task_id = "SalesNight"
+task_string = "SalesNight"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Sales Night"
 task_part = ""
 description = "• Survive and Extract on Interchange 7 Times
 • Why? Because fuck you, that's why."
-from = Array[int]([173])
-to = Array[int]([186, 212])
-link = ""
+from = Array[String](["Gratitude"])
+prev = Array[String](["Gratitude"])
+to = Array[String](["Supervisor", "Sellout"])
+next = Array[String](["Supervisor", "Sellout"])
+link = "Sales_Night"
 additional_info = "DEV NOTE: \"Hey, do this thing. ok now do it 3 gorillion more times\" That's how all the tasks in this game sound to my friends who dont play Tarkov. fuck this task and fuck the designer who came up with it."
 
 [sub_resource type="Resource" id="Resource_j1vfv"]
 script = ExtResource("1_xic07")
-task_id = 177
+task_id = "Data1"
+task_string = "Data1"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Database"
 task_part = "Part 1"
 description = "• Find the Goshan Cargo Manifests on Interchange
 • Find the OLI Cargo Manifests on Interchange
 • Find the IDEA Cargo Manifests on Interchange
 • Hand the manifests over to Ragman"
-from = Array[int]([167, 168])
-to = Array[int]([178])
-link = ""
+from = Array[String](["MUGA", "BigSale"])
+prev = Array[String](["MUGA", "BigSale"])
+to = Array[String](["Data2"])
+next = Array[String](["Data2"])
+link = "Database_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ho1li"]
 script = ExtResource("1_xic07")
-task_id = 178
+task_id = "Data2"
+task_string = "Data2"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Database"
 task_part = "Part 2"
 description = "• Find the OLI cargo route documents on Interchange
 • Hand the documents over to Ragman"
-from = Array[int]([177])
-to = Array[int]([180, 179, 173])
-link = ""
+from = Array[String](["Data1"])
+prev = Array[String](["Data1"])
+to = Array[String](["Sew1", "Minibus", "Gratitude"])
+next = Array[String](["Sew1", "Minibus", "Gratitude"])
+link = "Database_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_6vnjm"]
 script = ExtResource("1_xic07")
-task_id = 179
+task_id = "Minibus"
+task_string = "Minibus"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Minibus"
 task_part = ""
 description = "• Find and Mark all 3 Minibuses on Interchange with MS2000 Markers
 • Survive and Extract"
-from = Array[int]([178])
-to = Array[int]([])
-link = ""
+from = Array[String](["Data2"])
+prev = Array[String](["Data2"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Minibus"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ioe73"]
 script = ExtResource("1_xic07")
-task_id = 180
+task_id = "Sew1"
+task_string = "Sew1"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Sew it Good"
 task_part = "Part 1"
 description = "• Find 1 Shmaska in raid
 • Find 1 Pilgrim in raid
 • Hand the gear over to Ragman"
-from = Array[int]([178])
-to = Array[int]([183, 181])
-link = ""
+from = Array[String](["Data2"])
+prev = Array[String](["Data2"])
+to = Array[String](["Sew2", "Blood2"])
+next = Array[String](["Sew2", "Blood2"])
+link = "Sew_it_Good_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_6nco2"]
 script = ExtResource("1_xic07")
-task_id = 183
+task_id = "Sew2"
+task_string = "Sew2"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Sew it Good"
 task_part = "Part 2"
 description = "• Find 2 Gzhels, one above 50% and the other below
 • Hand the body armor over to Ragman"
-from = Array[int]([180])
-to = Array[int]([187, 184])
-link = ""
+from = Array[String](["Sew1"])
+prev = Array[String](["Sew1"])
+to = Array[String](["Sew3", "KeytoSuccess"])
+next = Array[String](["Sew3", "KeytoSuccess"])
+link = "Sew_it_Good_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ytjci"]
 script = ExtResource("1_xic07")
-task_id = 187
+task_id = "Sew3"
+task_string = "Sew3"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Sew it Good"
 task_part = "Part 3"
 description = "• Find 2 6B13 assault armors in raid
 • Hand the body armor over to Ragman"
-from = Array[int]([183])
-to = Array[int]([190, 188])
-link = ""
+from = Array[String](["Sew2"])
+prev = Array[String](["Sew2"])
+to = Array[String](["Sew4", "LHinaC1"])
+next = Array[String](["Sew4", "LHinaC1"])
+link = "Sew_it_Good_-_Part_3"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_eak0b"]
 script = ExtResource("1_xic07")
-task_id = 190
+task_id = "Sew4"
+task_string = "Sew4"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Sew it Good"
 task_part = "Part 4"
 description = "• Find 2 TV-109+TV-106 Rigs in raid
 • Find 2 Blackrock rigs in raid
 • Hand the rigs over to Ragman"
-from = Array[int]([187])
-to = Array[int]([191])
-link = ""
+from = Array[String](["Sew3"])
+prev = Array[String](["Sew3"])
+to = Array[String](["Charisma"])
+next = Array[String](["Charisma"])
+link = "Sew_it_Good_-_Part_4"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fecog"]
 script = ExtResource("1_xic07")
-task_id = 188
+task_id = "LHinaC1"
+task_string = "LHinaC1"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Living High is Not a Crime"
 task_part = "Part 1"
 description = "• Find 2 Bronze Lions in raid
@@ -350,18 +453,23 @@ description = "• Find 2 Bronze Lions in raid
 • Find 1 Roler in raid
 • Find 1 Golden Egg in rain
 • Hand these illustrious items over to Ragman"
-from = Array[int]([171, 187])
-to = Array[int]([189])
-link = ""
+from = Array[String](["Blood1", "Sew3"])
+prev = Array[String](["Blood1", "Sew3"])
+to = Array[String](["LHinaC2"])
+next = Array[String](["LHinaC2"])
+link = "Living_High_is_Not_a_Crime_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_yixsg"]
 script = ExtResource("1_xic07")
-task_id = 189
+task_id = "LHinaC2"
+task_string = "LHinaC2"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Living High is Not a Crime"
 task_part = "Part 2"
 description = "• Find 3 Antique Teapots in raid
@@ -369,71 +477,93 @@ description = "• Find 3 Antique Teapots in raid
 • Find an Axel Figurine in raid
 • Find 2 Raven Figurines in raid
 • Hand these even more illustrious items over to Ragman"
-from = Array[int]([188, 182])
-to = Array[int]([])
-link = ""
+from = Array[String](["LHinaC1", "Blood3"])
+prev = Array[String](["LHinaC1", "Blood3"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Living_High_is_Not_a_Crime_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_upwe8"]
 script = ExtResource("1_xic07")
-task_id = 184
+task_id = "KeytoSuccess"
+task_string = "KeytoSuccess"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Key to Success"
 task_part = ""
 description = "• Find both parts of the Clothes Design Handbook on Interchange
 • Hand the literature over to Ragman"
-from = Array[int]([183])
-to = Array[int]([185, 191])
-link = ""
+from = Array[String](["Sew2"])
+prev = Array[String](["Sew2"])
+to = Array[String](["NoFuss", "Charisma"])
+next = Array[String](["NoFuss", "Charisma"])
+link = "The_Key_to_Success"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_3dn0r"]
 script = ExtResource("1_xic07")
-task_id = 186
+task_id = "Supervisor"
+task_string = "Supervisor"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Supervisor"
 task_part = ""
 description = "• Obtain the Goshan cash register key
 • Hand the key over to Ragman"
-from = Array[int]([176, 184])
-to = Array[int]([])
-link = ""
+from = Array[String](["SalesNight", "KeytoSuccess"])
+prev = Array[String](["SalesNight", "KeytoSuccess"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Supervisor"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_e8fph"]
 script = ExtResource("1_xic07")
-task_id = 185
+task_id = "NoFuss"
+task_string = "NoFuss"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "No Fuss Needed"
 task_part = ""
 description = "• Reach Loyalty III with Therapist"
-from = Array[int]([184])
-to = Array[int]([])
-link = ""
+from = Array[String](["KeytoSuccess"])
+prev = Array[String](["KeytoSuccess"])
+to = Array[String]([])
+next = Array[String]([])
+link = "No_Fuss_Needed"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_nptis"]
 script = ExtResource("1_xic07")
-task_id = 191
+task_id = "Charisma"
+task_string = "Charisma"
 trader = 5
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Charisma Brings Success"
 task_part = ""
 description = "• Reach Charisma Level 10"
-from = Array[int]([190])
-to = Array[int]([])
-link = ""
+from = Array[String](["Sew4"])
+prev = Array[String](["Sew4"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Charisma_Brings_Success"
 additional_info = ""
 
 [resource]

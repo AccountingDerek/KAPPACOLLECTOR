@@ -17,8 +17,8 @@ func _ready():
 	Utility.update.connect(update)
 	Settings.apply_settings.connect(apply_settings)
 
-func switch_description(task: Tasks.tasks):
-	data = %TaskData.reference_list[task]
+func switch_description(task: String):
+	data = Utility.find_id(task)
 	if data.trader == Tasks.traders.ITEMS:
 		for i in toggled:
 			i.hide()
@@ -47,13 +47,13 @@ func update() -> void:
 	note.visible = Settings.dev_notes
 	pass
 
-func generate_from_resources(array: Array[Tasks.tasks], from: bool):
+func generate_from_resources(array: Array[String], from: bool):
 	if data.post_choice == true and from == true:
 		for i in data.post_choice_mutual_exclusives.size():
 			var desc_but:= preload("res://Scenes/description_button.tscn").instantiate()
 			desc_but.id = data.post_choice_mutual_exclusives[i]
-			desc_but.trader = %TaskData.reference_list[data.post_choice_mutual_exclusives[i]].trader
-			desc_but.displayed_text = %TaskData.reference_list[data.post_choice_mutual_exclusives[i]].displayed_task_name
+			desc_but.trader = TaskData.reference_list[data.post_choice_mutual_exclusives[i]].trader
+			desc_but.displayed_text = TaskData.reference_list[data.post_choice_mutual_exclusives[i]].displayed_task_name
 			desc_but.data = data
 			desc_but.complete = SaveData.TaskCompletion[data.post_choice_mutual_exclusives[i]]
 			if i == data.post_choice_mutual_exclusives.size() -1:
@@ -94,12 +94,12 @@ func _process(delta):
 func _on_link_button_pressed():
 	%Click.play()
 
-func create_buttons(array: Array[Tasks.tasks], from: bool):
+func create_buttons(array: Array[String], from: bool):
 	for i in array:
 		var desc_but: Button = preload("res://Scenes/description_button.tscn").instantiate()
 		desc_but.id = i
-		desc_but.trader = %TaskData.reference_list[i].trader
-		desc_but.displayed_text = %TaskData.reference_list[i].displayed_task_name
+		desc_but.trader = TaskData.reference_list[i].trader
+		desc_but.displayed_text = TaskData.reference_list[i].displayed_task_name
 		desc_but.data = data
 		desc_but.complete = SaveData.TaskCompletion[i]
 		if from:

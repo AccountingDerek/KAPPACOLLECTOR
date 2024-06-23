@@ -5,93 +5,121 @@
 
 [sub_resource type="Resource" id="Resource_0om15"]
 script = ExtResource("1_qbebq")
-task_id = 192
+task_id = "Acquaintance"
+task_string = "Acquaintance"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Acquaintance"
 task_part = ""
 description = "• Find 3 Iskras in raid
 • Find 2 Packs of Instant Noodles in raid
 • Find 2 Cans of Beef Stew in raid
 • Deliver unto Jaeger his meals most delectable"
-from = Array[int]([122])
-to = Array[int]([193, 226, 218])
-link = ""
+from = Array[String](["Intro"])
+prev = Array[String](["Intro"])
+to = Array[String](["Unprotected", "FlashDrives2", "TarkShoot1"])
+next = Array[String](["Unprotected", "FlashDrives2", "TarkShoot1"])
+link = "Acquaintance"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_aimwf"]
 script = ExtResource("1_qbebq")
-task_id = 226
+task_id = "FlashDrives2"
+task_string = "FlashDrives2"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Shady Business"
 task_part = ""
 description = "• Find 3 Flash Drives in raid
 • Hand the flash drives over to Jaeger"
-from = Array[int]([66, 192])
-to = Array[int]([203])
-link = ""
+from = Array[String](["FlashDrives1", "Acquaintance"])
+prev = Array[String](["FlashDrives1", "Acquaintance"])
+to = Array[String](["Ambulance"])
+next = Array[String](["Ambulance"])
+link = "Shady_Business"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_vpdl3"]
 script = ExtResource("1_qbebq")
-task_id = 203
+task_id = "Ambulance"
+task_string = "Ambulance"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Ambulance"
 task_part = ""
 description = "• Find a Portable Defibrillator in raid
 • Find 2 CMS Kits
 • Hand the medical equipment over to Jaeger"
-from = Array[int]([226])
-to = Array[int]([])
-link = ""
+from = Array[String](["FlashDrives2"])
+prev = Array[String](["FlashDrives2"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Ambulance"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_7ylls"]
 script = ExtResource("1_qbebq")
-task_id = 193
+task_id = "Unprotected"
+task_string = "Unprotected"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Unprotected but Dangerous"
 description = "• Eliminate 5 Scavs while not wearing body armor on Woods"
-from = Array[int]([192])
-to = Array[int]([194])
-link = ""
+from = Array[String](["Acquaintance"])
+prev = Array[String](["Acquaintance"])
+to = Array[String](["Thrifty"])
+next = Array[String](["Thrifty"])
+link = "The_Survivalist_Path_-_Unprotected_but_Dangerous"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_11olp"]
 script = ExtResource("1_qbebq")
-task_id = 194
+task_id = "Thrifty"
+task_string = "Thrifty"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Thrifty"
 description = "• Stash an Iskra and Water Bottle in ZB-014
 • Stash an Iskra and Water Bottle in ZB-016"
-from = Array[int]([193])
-to = Array[int]([195, 232])
-link = ""
+from = Array[String](["Unprotected"])
+prev = Array[String](["Unprotected"])
+to = Array[String](["Zhivchik", "Sausage"])
+next = Array[String](["Zhivchik", "Sausage"])
+link = "The_Survivalist_Path_-_Thrifty"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_evcr3"]
 script = ExtResource("1_qbebq")
-task_id = 232
+task_id = "Sausage"
+task_string = "Sausage"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Delicious Sausage"
 task_part = ""
 description = "• Find a Salty Dog Sausage in raid
@@ -99,554 +127,731 @@ description = "• Find a Salty Dog Sausage in raid
 • Scout the Shestyorochka store at Nikitskaya street\\n• Scout the Sparja store at Primorsky ave
 • Scout the Sparja store in Pinewood hotel
 • Scout the Goshan store in Concordia"
-from = Array[int]([194])
-to = Array[int]([205])
-link = ""
+from = Array[String](["Thrifty"])
+prev = Array[String](["Thrifty"])
+to = Array[String](["Reserve"])
+next = Array[String](["Reserve"])
+link = "The_Delicious_Sausage"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_c3eda"]
 script = ExtResource("1_qbebq")
-task_id = 205
+task_id = "Reserve"
+task_string = "Reserve"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Reserve"
 task_part = ""
 description = "• Find the Food Storage location on Reserve
 • Survive and Extract"
-from = Array[int]([232])
-to = Array[int]([228])
-link = ""
+from = Array[String](["Sausage"])
+prev = Array[String](["Sausage"])
+to = Array[String](["PestControl"])
+next = Array[String](["PestControl"])
+link = "Reserve"
 additional_info = "DEV NOTE: Reserve"
 
 [sub_resource type="Resource" id="Resource_3mk6x"]
 script = ExtResource("1_qbebq")
-task_id = 228
+task_id = "PestControl"
+task_string = "PestControl"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Pest Control"
 task_part = ""
 description = "• Eliminate 10 Scavs in the Barracks of Reserve"
-from = Array[int]([205])
-to = Array[int]([216])
-link = ""
+from = Array[String](["Reserve"])
+prev = Array[String](["Reserve"])
+to = Array[String](["Eraser1"])
+next = Array[String](["Eraser1"])
+link = "Pest_Control"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_guuri"]
 script = ExtResource("1_qbebq")
-task_id = 195
+task_id = "Zhivchik"
+task_string = "Zhivchik"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Zhivchik"
 description = "• Survive 5 minutes of dehydration on any map other than Factory
 • Survive and Extract"
-from = Array[int]([194])
-to = Array[int]([196])
-link = ""
+from = Array[String](["Thrifty"])
+prev = Array[String](["Thrifty"])
+to = Array[String](["Wounded"])
+next = Array[String](["Wounded"])
+link = "The_Survivalist_Path_-_Zhivchik"
 additional_info = "DEV NOTE: Drink Mayo in the scav bunker extract on Woods. Bring an extra Salewa and an Aquamari"
 
 [sub_resource type="Resource" id="Resource_d7gr8"]
 script = ExtResource("1_qbebq")
-task_id = 196
+task_id = "Wounded"
+task_string = "Wounded"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Wounded Beast"
 description = "• Eliminate 3 Scavs while suffering from the Pain effect"
-from = Array[int]([195])
-to = Array[int]([197])
-link = ""
+from = Array[String](["Zhivchik"])
+prev = Array[String](["Zhivchik"])
+to = Array[String](["ToughGuy"])
+next = Array[String](["ToughGuy"])
+link = "The_Survivalist_Path_-_Wounded_Beast"
 additional_info = "DEV NOTE: If you're having trouble, remember that there are 2 different Pain effects; the status effect and what happens when you get hit! Both effects count for this quest."
 
 [sub_resource type="Resource" id="Resource_i6cs1"]
 script = ExtResource("1_qbebq")
-task_id = 197
+task_id = "ToughGuy"
+task_string = "ToughGuy"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Tough Guy"
 description = "• Eliminate 3 Scavs on Woods in a single raid without using any medicine"
-from = Array[int]([196])
-to = Array[int]([198, 229, 201, 204])
-link = ""
+from = Array[String](["Wounded"])
+prev = Array[String](["Wounded"])
+to = Array[String](["CourtesyVisit", "Hermit", "Eagle", "SecurePerimeter"])
+next = Array[String](["CourtesyVisit", "Hermit", "Eagle", "SecurePerimeter"])
+link = "The_Survivalist_Path_-_Tough_Guy"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ss7c3"]
 script = ExtResource("1_qbebq")
-task_id = 229
+task_id = "Hermit"
+task_string = "Hermit"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Hermit"
 task_part = ""
 description = "• Obtain the message from Jaeger's friend on Lighthouse
 • Hand the message over to Jaeger"
-from = Array[int]([197])
-to = Array[int]([])
-link = ""
+from = Array[String](["ToughGuy"])
+prev = Array[String](["ToughGuy"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Hermit"
 additional_info = "DEV NOTE: Touhou Hijack lol"
 
 [sub_resource type="Resource" id="Resource_antc8"]
 script = ExtResource("1_qbebq")
-task_id = 198
+task_id = "CourtesyVisit"
+task_string = "CourtesyVisit"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Courtesy Visit"
 task_part = ""
 description = "• Find the Chairman's house on Shoreline
 • Find the Fisherman's house on Shoreline
 • Find the Priest's house on Shoreline
 • Survive and Extract"
-from = Array[int]([197])
-to = Array[int]([199])
-link = ""
+from = Array[String](["ToughGuy"])
+prev = Array[String](["ToughGuy"])
+to = Array[String](["Nostalgia"])
+next = Array[String](["Nostalgia"])
+link = "Courtesy_Visit"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_rkeb3"]
 script = ExtResource("1_qbebq")
-task_id = 199
+task_id = "Nostalgia"
+task_string = "Nostalgia"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Nostalgia"
 task_part = ""
 description = "• Find Jaeger's Photo Album in the Resort on Shoreline
 • Hand the album over to Jaeger"
-from = Array[int]([198])
-to = Array[int]([209])
-link = ""
+from = Array[String](["CourtesyVisit"])
+prev = Array[String](["CourtesyVisit"])
+to = Array[String](["FishingPlace"])
+next = Array[String](["FishingPlace"])
+link = "Nostalgia"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ty0g3"]
 script = ExtResource("1_qbebq")
-task_id = 209
+task_id = "FishingPlace"
+task_string = "FishingPlace"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Fishing Place"
 task_part = ""
 description = "• Find 2 Labs Access Cards in raid
 • Hand the cards over to Jaeger"
-from = Array[int]([199])
-to = Array[int]([])
-link = ""
+from = Array[String](["Nostalgia"])
+prev = Array[String](["Nostalgia"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Fishing_Place"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_d0nq3"]
 script = ExtResource("1_qbebq")
-task_id = 201
+task_id = "Eagle"
+task_string = "Eagle"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Eagle-Owl"
 description = "• Eliminate 6 Scavs between 21:00 and 04:00 without using any NVGs or thermals (except Factory)"
-from = Array[int]([197])
-to = Array[int]([202])
-link = ""
+from = Array[String](["ToughGuy"])
+prev = Array[String](["ToughGuy"])
+to = Array[String](["Medic"])
+next = Array[String](["Medic"])
+link = "The_Survivalist_Path_-_Eagle-Owl"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fi88n"]
 script = ExtResource("1_qbebq")
-task_id = 202
+task_id = "Medic"
+task_string = "Medic"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Combat Medic"
 description = "• Reach Vitality Level 5"
-from = Array[int]([201])
-to = Array[int]([200])
-link = ""
+from = Array[String](["Eagle"])
+prev = Array[String](["Eagle"])
+to = Array[String](["Junkie"])
+next = Array[String](["Junkie"])
+link = "The_Survivalist_Path_-_Combat_Medic"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_5vhg4"]
 script = ExtResource("1_qbebq")
-task_id = 200
+task_id = "Junkie"
+task_string = "Junkie"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Survivalist Path"
 task_part = "Junkie"
 description = "• Eliminate 15 Scavs on Woods while under any stimulant effect"
-from = Array[int]([202])
-to = Array[int]([])
-link = ""
+from = Array[String](["Medic"])
+prev = Array[String](["Medic"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Survivalist_Path_-_Junkie"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_krfts"]
 script = ExtResource("1_qbebq")
-task_id = 204
+task_id = "SecurePerimeter"
+task_string = "SecurePerimeter"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Secured Perimeter"
 description = "• Eliminate 6 PMCs in the Office area on Factory"
-from = Array[int]([220, 197])
-to = Array[int]([210, 211, 213, 206, 217])
-link = ""
+from = Array[String](["TarkShoot3", "ToughGuy"])
+prev = Array[String](["TarkShoot3", "ToughGuy"])
+to = Array[String](["Trophy", "Justice", "WoodsKeeper", "ForestCleaning", "Eraser2"])
+next = Array[String](["Trophy", "Justice", "WoodsKeeper", "ForestCleaning", "Eraser2"])
+link = "The_Huntsman_Path_-_Secured_Perimeter"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_dlsed"]
 script = ExtResource("1_qbebq")
-task_id = 206
+task_id = "ForestCleaning"
+task_string = "ForestCleaning"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Forest Cleaning"
 description = "• Eliminate 30 Scavs"
-from = Array[int]([204])
-to = Array[int]([207, 215, 208, 230, 212])
-link = ""
+from = Array[String](["SecurePerimeter"])
+prev = Array[String](["SecurePerimeter"])
+to = Array[String](["Controller", "FactoryChief", "EvilWatchman", "Outcasts", "Sellout"])
+next = Array[String](["Controller", "FactoryChief", "EvilWatchman", "Outcasts", "Sellout"])
+link = "The_Huntsman_Path_-_Forest_Cleaning"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_ke6sf"]
 script = ExtResource("1_qbebq")
-task_id = 207
+task_id = "Controller"
+task_string = "Controller"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Controller"
 description = "• Eliminate 2 PMCs while they are stunned"
-from = Array[int]([206])
-to = Array[int]([])
-link = ""
+from = Array[String](["ForestCleaning"])
+prev = Array[String](["ForestCleaning"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Controller"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_vnola"]
 script = ExtResource("1_qbebq")
-task_id = 208
+task_id = "EvilWatchman"
+task_string = "EvilWatchman"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Evil Watchman"
 description = "• Eliminate 5 PMCs in Dorms on Customs"
-from = Array[int]([206])
-to = Array[int]([])
-link = ""
+from = Array[String](["ForestCleaning"])
+prev = Array[String](["ForestCleaning"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Evil_Watchman"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_jbocw"]
 script = ExtResource("1_qbebq")
-task_id = 210
+task_id = "Trophy"
+task_string = "Trophy"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Trophy"
 description = "• Eliminate Reshala
 • Find the Golden TT in raid
 • Hand the pistol over to Jaeger"
-from = Array[int]([204])
-to = Array[int]([231])
-link = ""
+from = Array[String](["SecurePerimeter"])
+prev = Array[String](["SecurePerimeter"])
+to = Array[String](["StrayDogs"])
+next = Array[String](["StrayDogs"])
+link = "The_Huntsman_Path_-_Trophy"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_fw6hf"]
 script = ExtResource("1_qbebq")
-task_id = 211
+task_id = "Justice"
+task_string = "Justice"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Justice"
 description = "• Eliminate 3 of Reshala's Guards"
-from = Array[int]([204])
-to = Array[int]([])
-link = ""
+from = Array[String](["SecurePerimeter"])
+prev = Array[String](["SecurePerimeter"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Justice"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_8md82"]
 script = ExtResource("1_qbebq")
-task_id = 212
+task_id = "Sellout"
+task_string = "Sellout"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Sellout"
 description = "• Eliminate Killa
 • Find Killa's Helmet in Raid
 • Hand the helmet over to Jaeger"
-from = Array[int]([176, 204])
-to = Array[int]([231])
-link = ""
+from = Array[String](["SalesNight", "SecurePerimeter"])
+prev = Array[String](["SalesNight", "SecurePerimeter"])
+to = Array[String](["StrayDogs"])
+next = Array[String](["StrayDogs"])
+link = "The_Huntsman_Path_-_Sellout"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_4gnlg"]
 script = ExtResource("1_qbebq")
-task_id = 213
+task_id = "WoodsKeeper"
+task_string = "WoodsKeeper"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = true
-post_choice_mutual_exclusives = Array[int]([43, 82])
+post_choice_mutual_exclusives = Array[String](["Supply", "KindaSabotage"])
+pcme = Array[String](["Supply", "KindaSabotage"])
 task_name = "The Huntsman Path"
 task_part = "Woods Keeper"
 description = "• Eliminate Shturman
 • Find 1 Stash Key in raid
 • Hand the key over to Jaeger"
-from = Array[int]([204])
-to = Array[int]([214, 231])
-link = ""
+from = Array[String](["SecurePerimeter"])
+prev = Array[String](["SecurePerimeter"])
+to = Array[String](["HuntingTrip", "StrayDogs"])
+next = Array[String](["HuntingTrip", "StrayDogs"])
+link = "The_Huntsman_Path_-_Woods_Keeper"
 additional_info = "DEV NOTE: Yerman Yaggy"
 
 [sub_resource type="Resource" id="Resource_37c2r"]
 script = ExtResource("1_qbebq")
-task_id = 214
+task_id = "HuntingTrip"
+task_string = "HuntingTrip"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Hunting Trip"
 task_part = ""
 description = "• Eliminate Shturman with a headshot from 75+ meters while using an M700 with the TAC30"
-from = Array[int]([213])
-to = Array[int]([])
-link = ""
+from = Array[String](["WoodsKeeper"])
+prev = Array[String](["WoodsKeeper"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Hunting_Trip"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_riku8"]
 script = ExtResource("1_qbebq")
-task_id = 215
+task_id = "FactoryChief"
+task_string = "FactoryChief"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Factory Chief"
 description = "• Eliminate Tagilla
 • Find 1 Boss Cap in raid
 • Hand the hat over to Jaeger"
-from = Array[int]([148, 206])
-to = Array[int]([])
-link = ""
+from = Array[String](["Scout", "ForestCleaning"])
+prev = Array[String](["Scout", "ForestCleaning"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Factory_Chief"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_l5x27"]
 script = ExtResource("1_qbebq")
-task_id = 216
+task_id = "Eraser1"
+task_string = "Eraser1"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Eraser - Part 1"
 description = "• Eliminate Glukhar"
-from = Array[int]([228])
-to = Array[int]([217])
-link = ""
+from = Array[String](["PestControl"])
+prev = Array[String](["PestControl"])
+to = Array[String](["Eraser2"])
+next = Array[String](["Eraser2"])
+link = "The_Huntsman_Path_-_Eraser_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_eyj4q"]
 script = ExtResource("1_qbebq")
-task_id = 217
+task_id = "Eraser2"
+task_string = "Eraser2"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Eraser - Part 2"
 description = "• Eliminate 6 Raiders"
-from = Array[int]([216, 204])
-to = Array[int]([])
-link = ""
+from = Array[String](["Eraser1", "SecurePerimeter"])
+prev = Array[String](["Eraser1", "SecurePerimeter"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Eraser_-_Part_2"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_0ohou"]
 script = ExtResource("1_qbebq")
-task_id = 230
+task_id = "Outcasts"
+task_string = "Outcasts"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Outcasts"
 description = "• Eliminate 10 Rogues"
-from = Array[int]([206])
-to = Array[int]([])
-link = ""
+from = Array[String](["ForestCleaning"])
+prev = Array[String](["ForestCleaning"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Huntsman_Path_-_Outcasts"
 additional_info = "DEV NOTE: Rogues tend to spawn on Lighthouse, in case you were unaware."
 
 [sub_resource type="Resource" id="Resource_0o7f3"]
 script = ExtResource("1_qbebq")
-task_id = 227
+task_id = "Sadist"
+task_string = "Sadist"
 trader = 6
-mutual_exclusives = Array[int]([55])
+mutual_exclusives = Array[String](["Coll3"])
+mutuals = Array[String](["Coll3"])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Huntsman Path"
 task_part = "Sadist"
 description = "• Eliminate Sanitar
 COMPLETING THIS QUEST LOCKS OFF \"Colleagues\""
-from = Array[int]([54, 83, 162])
-to = Array[int]([112])
-link = ""
+from = Array[String](["Coll2", "RiggedGame", "ChemCloset"])
+prev = Array[String](["Coll2", "RiggedGame", "ChemCloset"])
+to = Array[String](["Terragroup"])
+next = Array[String](["Terragroup"])
+link = "The_Huntsman_Path_-_Sadist"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_8db5w"]
 script = ExtResource("1_qbebq")
-task_id = 231
+task_id = "StrayDogs"
+task_string = "StrayDogs"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "Stray Dogs"
 task_part = ""
 description = "• Eliminate the Gooners
 • Find their Goon Cave"
-from = Array[int]([210, 212, 213])
-to = Array[int]([])
-link = ""
+from = Array[String](["Trophy", "Sellout", "WoodsKeeper"])
+prev = Array[String](["Trophy", "Sellout", "WoodsKeeper"])
+to = Array[String]([])
+next = Array[String]([])
+link = "Stray_Dogs"
 additional_info = "DEV NOTE: I had to."
 
 [sub_resource type="Resource" id="Resource_joq26"]
 script = ExtResource("1_qbebq")
-task_id = 218
+task_id = "TarkShoot1"
+task_string = "TarkShoot1"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 1"
 description = "• Eliminate 5 Scavs while using a bolt-action rifle with iron sights from over 40 meters away"
-from = Array[int]([192])
-to = Array[int]([219])
-link = ""
+from = Array[String](["Acquaintance"])
+prev = Array[String](["Acquaintance"])
+to = Array[String](["TarkShoot2"])
+next = Array[String](["TarkShoot2"])
+link = "The_Tarkov_Shooter_-_Part_1"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_stc7h"]
 script = ExtResource("1_qbebq")
-task_id = 219
+task_id = "TarkShoot2"
+task_string = "TarkShoot2"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 2"
 description = "• Hit 3 leg shots while using a bolt-action rifle with iron sights from over 40 meters away
 • Hit 3 headshots while using a bolt-action rifle with iron sights from over 40 meters away"
-from = Array[int]([218])
-to = Array[int]([220])
-link = ""
+from = Array[String](["TarkShoot1"])
+prev = Array[String](["TarkShoot1"])
+to = Array[String](["TarkShoot3"])
+next = Array[String](["TarkShoot3"])
+link = "The_Tarkov_Shooter_-_Part_2"
 additional_info = "DEV NOTE: you kinda get why Jaeger tasks have a reputation with this quest"
 
 [sub_resource type="Resource" id="Resource_c07a2"]
 script = ExtResource("1_qbebq")
-task_id = 220
+task_id = "TarkShoot3"
+task_string = "TarkShoot3"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 3"
 description = "• Eliminate 3 PMCs with bolt-action rifles from less than 25 meters"
-from = Array[int]([219])
-to = Array[int]([221])
-link = ""
+from = Array[String](["TarkShoot2"])
+prev = Array[String](["TarkShoot2"])
+to = Array[String](["TarkShoot4"])
+next = Array[String](["TarkShoot4"])
+link = "The_Tarkov_Shooter_-_Part_3"
 additional_info = "DEV NOTE: Factory"
 
 [sub_resource type="Resource" id="Resource_04254"]
 script = ExtResource("1_qbebq")
-task_id = 221
+task_id = "TarkShoot4"
+task_string = "TarkShoot4"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 4"
 description = "• Eliminate 5 PMCs with bolt-action rifles from over 80 meters away"
-from = Array[int]([220])
-to = Array[int]([222])
-link = ""
+from = Array[String](["TarkShoot3"])
+prev = Array[String](["TarkShoot3"])
+to = Array[String](["TarkShoot5"])
+next = Array[String](["TarkShoot5"])
+link = "The_Tarkov_Shooter_-_Part_4"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_r6n1j"]
 script = ExtResource("1_qbebq")
-task_id = 222
+task_id = "TarkShoot5"
+task_string = "TarkShoot5"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 5"
 description = "• Eliminate 8 Scavs on Customs with bolt-action rifles between 21:00 and 05:00"
-from = Array[int]([221])
-to = Array[int]([223])
-link = ""
+from = Array[String](["TarkShoot4"])
+prev = Array[String](["TarkShoot4"])
+to = Array[String](["TarkShoot6"])
+next = Array[String](["TarkShoot6"])
+link = "The_Tarkov_Shooter_-_Part_5"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_gtwpk"]
 script = ExtResource("1_qbebq")
-task_id = 223
+task_id = "TarkShoot6"
+task_string = "TarkShoot6"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 6"
 description = "• Eliminate 5 Sniper Scavs with bolt-action rifles"
-from = Array[int]([222])
-to = Array[int]([224])
-link = ""
+from = Array[String](["TarkShoot5"])
+prev = Array[String](["TarkShoot5"])
+to = Array[String](["TarkShoot7"])
+next = Array[String](["TarkShoot7"])
+link = "The_Tarkov_Shooter_-_Part_6"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_vqw6y"]
 script = ExtResource("1_qbebq")
-task_id = 224
+task_id = "TarkShoot7"
+task_string = "TarkShoot7"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 7"
 description = "• Eliminate 5 PMCs with suppressed bolt-action rifles from at least 45 meters"
-from = Array[int]([223])
-to = Array[int]([225])
-link = ""
+from = Array[String](["TarkShoot6"])
+prev = Array[String](["TarkShoot6"])
+to = Array[String](["TarkShoot8"])
+next = Array[String](["TarkShoot8"])
+link = "The_Tarkov_Shooter_-_Part_7"
 additional_info = ""
 
 [sub_resource type="Resource" id="Resource_dtrx4"]
 script = ExtResource("1_qbebq")
-task_id = 225
+task_id = "TarkShoot8"
+task_string = "TarkShoot8"
 trader = 6
-mutual_exclusives = Array[int]([])
+mutual_exclusives = Array[String]([])
+mutuals = Array[String]([])
 post_choice = false
-post_choice_mutual_exclusives = Array[int]([])
+post_choice_mutual_exclusives = Array[String]([])
+pcme = Array[String]([])
 task_name = "The Tarkov Shooter"
 task_part = "Part 8"
 description = "• Do not die
 • Eliminate 3 PMCs with headshots while using a bolt-action rifle"
-from = Array[int]([224])
-to = Array[int]([])
-link = ""
+from = Array[String](["TarkShoot7"])
+prev = Array[String](["TarkShoot7"])
+to = Array[String]([])
+next = Array[String]([])
+link = "The_Tarkov_Shooter_-_Part_8"
 additional_info = "DEV NOTE: This is unrelated to the quest, but I'm now done with every kappa quest in this stupid fucking list. holy shit man that was awful"
 
 [resource]

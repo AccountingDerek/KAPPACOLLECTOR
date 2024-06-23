@@ -24,6 +24,7 @@ Tasks="*res://Scripts/tasks.gd"
 Utility="*res://Scripts/Utility.gd"
 SaveData="*res://Scripts/SaveData.gd"
 Settings="*res://Scripts/Settings.gd"
+TaskData="*res://Scripts/TaskData.gd"
 
 [display]
 
